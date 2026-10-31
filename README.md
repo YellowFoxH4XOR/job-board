@@ -23,7 +23,7 @@ The seed registry includes Weekday, Instahyre, major portals (LinkedIn, Indeed, 
 - Documented public ATS adapters: Greenhouse, Lever, Ashby, SmartRecruiters, Workable, enabled Personio XML, and Teamtailor RSS.
 - Public Workday career-site adapter; each tenant/site is tracked independently.
 - Public feeds: Remotive, Remote OK, 4dayweek.io, Jobicy, Himalayas, Working Nomads, and RSS/Atom.
-- HTML/JSON-LD discovery for career pages and public boards.
+- HTML/JSON-LD, React Flight, and Homerun/Vue discovery for career pages and public boards. Configured JavaScript pages use isolated Chromium rendering, including public pagination controls; access-verification pages remain reported as blocked.
 - Isolated JobSpy processes for the four major portals, with a technology-role query matrix and bounded 200-record batches. Completed batches survive later timeouts. Descriptions are retained as supplied by the search response; per-job detail fetching is off by default to avoid losing an entire query to slow detail requests.
 - Automatic company discovery from the community-maintained [Remote In Tech](https://github.com/remoteintech/remote-jobs) profiles. Each full run refreshes directory metadata, recognizes direct ATS URLs, and checks up to 80 unresolved career sites (oldest checked first). Resolved sources join daily collection. Directory region/remote-policy labels are **hints, not proof of vacancy eligibility**.
 
@@ -54,17 +54,18 @@ Job descriptions, original listing/application links, salary metadata, timestamp
 Requires [uv](https://docs.astral.sh/uv/) and Python 3.12 (uv can install it).
 
 ```bash
-uv sync --extra portals
+uv sync --extra portals --extra browser
+uv run --extra browser python -m playwright install chromium
 uv run ruff check .
 uv run pytest -q
 uv run job-board discover --mode smoke
-uv run --extra portals job-board collect --shard feeds
+uv run --extra portals --extra browser job-board collect --shard feeds
 ```
 
 `run/plan.json` contains all generated shard names. Collect each desired shard into a separate directory, then merge:
 
 ```bash
-uv run --extra portals job-board collect --shard employer-0 --output run/results/employer-0
+uv run --extra portals --extra browser job-board collect --shard employer-0 --output run/results/employer-0
 uv run job-board publish --root run/preview
 ```
 

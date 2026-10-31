@@ -6,9 +6,11 @@ import json
 import re
 import tarfile
 from pathlib import Path
-from urllib.parse import urlsplit
+from urllib.parse import urljoin, urlsplit
 
+import httpx
 import yaml
+from bs4 import BeautifulSoup
 
 from .http import Fetcher
 from .models import Source, now_iso
@@ -64,6 +66,7 @@ def read_directory_archive(content: bytes) -> list[dict]:
                 continue
             records.append({"slug": data.get("slug") or slug(data.get("title", "")),
                             "name": data.get("title", ""), "careers_url": url,
+                            "website": data.get("website"),
                             "region_hint": data.get("region"), "remote_policy_hint": data.get("remote_policy"),
                             "directory_url": f"https://github.com/{DIRECTORY_REPO}/blob/main/" + member.name.split("/", 1)[1]})
     return records
@@ -76,6 +79,11 @@ async def discover(config_dir: str, output_dir: str, *, new_limit: int = 80, mod
     state_path = Path("registry/discovered.json")
     previous = json.loads(state_path.read_text()) if state_path.exists() else {"companies": []}
     old = {item["slug"]: item for item in previous.get("companies", [])}
+    report_path = Path("reports/latest.json")
+    last_results = json.loads(report_path.read_text()).get("sources", []) if report_path.exists() else []
+    invalid_sources = {r["source"]["id"] for r in last_results if r["status"] == "failed"
+                       and any(code in " ".join(r.get("errors", [])) for code in ("404", "410", "422"))}
+    curated = {s.id: s for s in sources}
     errors = []
     fetch = Fetcher()
     records = []
@@ -97,23 +105,32 @@ async def discover(config_dir: str, output_dir: str, *, new_limit: int = 80, mod
                 current = record.copy()
                 record.update(old[record["slug"]])
                 record.update(current)
+                if current["careers_url"] != old[record["slug"]].get("careers_url"):
+                    record["needs_revalidation"] = True
 
         curated_hosts = {urlsplit(s.url).hostname for s in sources if s.group == "employer"}
         resolved = []
         unresolved = []
         for record in records:
-            if record.get("source"):
+            source_id = f"employer-{record['slug']}"
+            if source_id in curated:
+                record["source"] = curated[source_id].model_dump()
+                record["discovery_status"] = "curated_override"
+                record.pop("needs_revalidation", None)
+            elif source_id in invalid_sources:
+                record["needs_revalidation"] = True
+            if record.get("source") and not record.get("needs_revalidation"):
                 resolved.append(record)
                 continue
             direct = detect_ats(record["careers_url"], name=record["name"], source_id=f"employer-{record['slug']}")
-            if direct:
+            if direct and not record.get("needs_revalidation"):
                 direct.discovery_url = record["directory_url"]
                 record["source"] = direct.model_dump()
                 record["discovery_status"] = "ats_detected"
                 resolved.append(record)
-            elif urlsplit(record["careers_url"]).hostname not in curated_hosts:
+            elif record.get("needs_revalidation") or urlsplit(record["careers_url"]).hostname not in curated_hosts:
                 unresolved.append(record)
-        unresolved.sort(key=lambda r: (r.get("last_checked_at", ""), r.get("region_hint") not in {"worldwide", "asia-pacific"}, r["slug"]))
+        unresolved.sort(key=lambda r: (not r.get("needs_revalidation", False), r.get("last_checked_at", ""), r.get("region_hint") not in {"worldwide", "asia-pacific"}, r["slug"]))
         gate = asyncio.Semaphore(8)
 
         async def resolve(record: dict) -> None:
@@ -122,13 +139,29 @@ async def discover(config_dir: str, output_dir: str, *, new_limit: int = 80, mod
                 seed = Source(id=f"employer-{record['slug']}", name=record["name"], company=record["name"],
                               kind="generic", url=record["careers_url"])
                 try:
-                    response = await asyncio.wait_for(fetch.request(seed.url, html=True), 55)
+                    try:
+                        response = await asyncio.wait_for(fetch.request(seed.url, html=True), 55)
+                    except httpx.HTTPStatusError as exc:
+                        website = record.get("website")
+                        if exc.response.status_code not in {404, 410, 422} or not record.get("needs_revalidation") or not website:
+                            raise
+                        response = await asyncio.wait_for(fetch.request(website, html=True), 55)
                     matches = find_ats(response.text, str(response.url), seed)
+                    if not matches and record.get("needs_revalidation"):
+                        soup = BeautifulSoup(response.text, "html.parser")
+                        career_links = [urljoin(str(response.url), a["href"]) for a in soup.select("a[href]")
+                                        if re.search(r"careers|recruit|recrut|join us|rejoindre|open positions", a.get_text(" ", strip=True), re.I)]
+                        for career_url in list(dict.fromkeys(career_links))[:2]:
+                            response = await asyncio.wait_for(fetch.request(career_url, html=True), 45)
+                            matches = find_ats(response.text, str(response.url), seed)
+                            if matches:
+                                break
                     if matches:
                         matches[0].discovery_url = record["directory_url"]
                         record["source"] = matches[0].model_dump()
                         record["discovery_status"] = "ats_detected"
                         record.pop("discovery_error", None)
+                        record.pop("needs_revalidation", None)
                     else:
                         record["discovery_status"] = "needs_adapter"
                         record["canonical_careers_url"] = str(response.url)
@@ -155,8 +188,8 @@ async def discover(config_dir: str, output_dir: str, *, new_limit: int = 80, mod
             source.timeout_seconds = min(source.timeout_seconds, 120)
             if source.kind == "jobspy":
                 source.options = {**source.options, "queries": ["software engineer"],
-                                  "results_per_query": 200, "batch_size": 200,
-                                  "query_timeout_seconds": 90}
+                                  "results_per_query": 100, "batch_size": min(source.options.get("batch_size", 200), 100),
+                                  "query_timeout_seconds": source.options.get("query_timeout_seconds", 90)}
     shards: dict[str, list[dict]] = {}
     counters = {"employer": 0, "board": 0}
     for source in sources:

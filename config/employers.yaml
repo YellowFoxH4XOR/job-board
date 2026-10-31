@@ -16,8 +16,8 @@ sources:
   - {id: employer-tigerdata, name: Tiger Data, company: Tiger Data, kind: ashby, tenant: tigerdata, url: "https://jobs.ashbyhq.com/tigerdata"}
   - {id: employer-temporal, name: Temporal, company: Temporal, kind: ashby, tenant: temporal, url: "https://jobs.ashbyhq.com/temporal"}
   - {id: employer-kit, name: Kit, company: Kit, kind: ashby, tenant: kit, url: "https://jobs.ashbyhq.com/kit"}
-  - {id: employer-calcom, name: Cal.com, company: Cal.com, kind: generic, url: "https://cal-com.breezy.hr/"}
-  - {id: employer-deel, name: Deel, company: Deel, kind: generic, url: "https://www.deel.com/careers/"}
+  - {id: employer-calcom, name: Cal.com, company: Cal.com, kind: generic, url: "https://cal.com/jobs"}
+  - {id: employer-deel, name: Deel, company: Deel, kind: generic, url: "https://www.deel.com/careers/", options: {render_details: true, detail_wait_selector: 'text=Job details'}}
   - {id: employer-crowdstrike, name: CrowdStrike, company: CrowdStrike, kind: workday, tenant: crowdstrike, url: "https://crowdstrike.wd5.myworkdayjobs.com/crowdstrikecareers", options: {site: crowdstrikecareers}, timeout_seconds: 1200}
   - {id: employer-chainguard, name: Chainguard, company: Chainguard, kind: greenhouse, tenant: chainguard, url: "https://job-boards.greenhouse.io/chainguard"}
   - {id: employer-multiplier, name: Multiplier, company: Multiplier, kind: generic, url: "https://careers.kula.ai/usemultiplier"}
@@ -40,9 +40,9 @@ sources:
   - {id: employer-mozilla, name: Mozilla, company: Mozilla, kind: greenhouse, tenant: mozilla, url: "https://job-boards.greenhouse.io/mozilla"}
   - {id: employer-linear, name: Linear, company: Linear, kind: ashby, tenant: linear, url: "https://jobs.ashbyhq.com/linear"}
   - {id: employer-oyster, name: Oyster, company: Oyster, kind: ashby, tenant: oyster, url: "https://jobs.ashbyhq.com/oyster"}
-  - {id: employer-remote, name: Remote, company: Remote, kind: generic, url: "https://remote.com/openings"}
+  - {id: employer-remote, name: Remote, company: Remote, kind: generic, url: "https://remote.com/openings", options: {render_details: true}}
   - {id: employer-zapier, name: Zapier, company: Zapier, kind: ashby, tenant: zapier, url: "https://jobs.ashbyhq.com/zapier"}
-  - {id: employer-toggl, name: Toggl, company: Toggl, kind: ashby, tenant: toggl, url: "https://jobs.ashbyhq.com/toggl"}
+  - {id: employer-toggl, name: Toggl, company: Toggl, kind: generic, url: "https://jobs.ashbyhq.com/toggl", options: {skip_ats_detection: true, render: true, render_details: true, render_wait_selector: 'a[href*="/toggl/"]'}}
   - {id: employer-helpscout, name: Help Scout, company: Help Scout, kind: ashby, tenant: helpscout, url: "https://jobs.ashbyhq.com/helpscout"}
   - {id: employer-contentsquare, name: Contentsquare, company: Contentsquare, kind: lever, tenant: contentsquare, url: "https://jobs.lever.co/contentsquare"}
   - {id: employer-testgorilla, name: TestGorilla, company: TestGorilla, kind: ashby, tenant: testgorilla, url: "https://jobs.ashbyhq.com/testgorilla"}
@@ -57,3 +57,6 @@ sources:
   - {id: employer-browserstack, name: BrowserStack, company: BrowserStack, kind: workday, tenant: browserstack, url: "https://browserstack.wd3.myworkdayjobs.com/External", options: {site: External}, timeout_seconds: 1200}
   - {id: employer-razorpay, name: Razorpay, company: Razorpay, kind: greenhouse, tenant: razorpaysoftwareprivatelimited, url: "https://job-boards.greenhouse.io/razorpaysoftwareprivatelimited"}
   - {id: employer-freshworks, name: Freshworks, company: Freshworks, kind: smartrecruiters, tenant: Freshworks, url: "https://careers.smartrecruiters.com/Freshworks", timeout_seconds: 900}
+  - {id: employer-salesforce, name: Salesforce, company: Salesforce, kind: workday, tenant: salesforce, url: "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site", options: {site: External_Career_Site}, timeout_seconds: 1200}
+  - {id: employer-lifen, name: Lifen, company: Lifen, kind: generic, url: "https://www.welcometothejungle.com/fr/companies/lifen/jobs", options: {render: true}}
+  - {id: employer-sketch, name: Sketch, company: Sketch, kind: generic, url: "https://www.sketch.com/careers/", options: {render: true}}

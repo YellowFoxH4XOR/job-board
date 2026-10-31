@@ -64,22 +64,33 @@ async def collect_feed(source: Source, fetch: Fetcher, result: SourceResult) -> 
             result.partial("4dayweek page budget reached")
     elif kind == "himalayas":
         result.coverage_scope = "Himalayas public feed; country restrictions preserved"
-        for page in range(source.max_pages):
-            data = await fetch.json(f"{source.url}?limit=20&offset={page * 20}")
+        cursor = None
+        seen_cursors = set()
+        seen_jobs = set()
+        for _page in range(source.max_pages):
+            params = {"limit": 20, **({"cursor": cursor} if cursor else {"offset": 0})}
+            data = await fetch.json(f"{source.url}?{urlencode(params)}")
             result.pages_fetched += 1
             items = data.get("jobs", [])
             result.expected_count = data.get("totalCount")
             for item in items:
                 countries = item.get("locationRestrictions") or []
                 url = item.get("guid") or item.get("applicationLink")
-                if not url:
+                if not url or url in seen_jobs:
                     continue
+                seen_jobs.add(url)
                 result.jobs.append(make_job(source, item.get("id") or url, item.get("title"), item.get("companyName"), url,
                     location=plain(countries) or "", countries=countries, workplace_type="remote",
                     description=plain(item.get("description")), posted_at=timestamp(item.get("pubDate")),
                     valid_through=timestamp(item.get("expiryDate")), application_url=item.get("applicationLink")))
-            if len(items) < 20 or (result.expected_count is not None and (page + 1) * 20 >= result.expected_count):
+            next_cursor = data.get("nextCursor")
+            if not next_cursor or not items:
                 break
+            if next_cursor in seen_cursors:
+                result.partial("Himalayas repeated a cursor; stopping to avoid duplicate traversal")
+                break
+            seen_cursors.add(next_cursor)
+            cursor = next_cursor
         else:
             result.partial("Himalayas page budget reached")
     elif kind == "workingnomads":

@@ -8,7 +8,7 @@ from .models import Job, plain
 TECH = re.compile(
     r"\b(software|developer|programmer|sde[1-4]?|sdet|frontend|front.end|backend|back.end|"
     r"full.stack|devops|devsecops|sre|site reliability|platform engineer|cloud engineer|"
-    r"data (scientist|engineer|analyst|architect)|analytics engineer|machine learning|"
+    r"data (scientist|science|engineer|analyst|analytics|architect)|analytics engineer|machine learning|"
     r"artificial intelligence|ai engineer|ml engineer|llm|android|ios|mobile engineer|"
     r"security engineer|cyber.?security|infosec|penetration test|qa engineer|quality (engineer|assurance)|"
     r"test(ing| automation| tooling)? engineer|database|postgres|kubernetes|linux|"
@@ -34,7 +34,7 @@ WORLDWIDE = re.compile(r"\b(worldwide|world.wide|anywhere|global|all countries)\
 OTHER_COUNTRY = re.compile(
     r"\b(united states|usa|u\.?s\.? only|us only|united kingdom|uk only|canada|"
     r"germany|france|australia|new zealand|singapore|japan|netherlands|europe|emea|"
-    r"namer|north america|latin america|latam|san francisco|new york|london|berlin)\b", re.I,
+    r"namer|noram|north america|latin america|latam|san francisco|new york|london|berlin)\b", re.I,
 )
 TALENT_POOL = re.compile(
     r"talent (community|pool|network)|general applications?|expression[s]? of interest|"
@@ -53,7 +53,7 @@ def workplace(value: str | None, location: str = "", description: str = "") -> s
         return "hybrid"
     if explicit in {"onsite", "on site", "office"}:
         return "onsite"
-    if re.search(r"\bhybrid\b|\b[2-5] (?:days? (?:a |per )?week (?:in (?:the )?office)|days? in (?:the )?office)\b", description, re.I):
+    if re.search(r"\bhybrid (?:role|position|work|working|schedule|model)\b|#LI-Hybrid\b|\b[2-5] (?:days? (?:a |per )?week (?:in (?:the )?office)|days? in (?:the )?office)\b", description, re.I):
         return "hybrid"
     if explicit in {"remote", "telecommute", "telecommuting"}:
         return "remote"
@@ -125,7 +125,8 @@ def classify(job: Job) -> tuple[bool, str]:
             job.description, re.I,
         )
         anywhere = re.search(
-            r"(?:work (?:from )?anywhere (?:in the world)?|hire (?:globally|worldwide)|"
+            r"(?:work\s+(?:from\s+)?anywhere(?:\s+in the world)?\b|hire (?:globally|worldwide)|"
+            r"remote[,;:\s]+any location|"
             r"remote (?:opportunities )?(?:globally|worldwide)|no restrictions on location|"
             r"never place restrictions on location|"
             r"(?:looking for|seeking|recruiting|hiring)[^.;\n]{0,130}(?:engineers|developers|candidates|talent)[^.;\n]{0,70}worldwide)", job.description, re.I,
@@ -143,9 +144,9 @@ def classify(job: Job) -> tuple[bool, str]:
 
     # Residence-timezone bands differ from merely requesting overlapping working hours.
     zone = re.search(
-        r"(?:main location|based|located|reside|must be within)[^.;\n]{0,100}?"
+        r"(?:main location|based|located|reside|must be within|open to candidates in time zones)[^.;\n]{0,100}?"
         r"(?:UTC|GMT)\s*([+-]\d+(?:\.\d+)?)\s*(?:to|and|[-–])\s*(?:UTC|GMT)\s*([+-]\d+(?:\.\d+)?)",
-        job.description, re.I,
+        job.description.replace("−", "-"), re.I,
     )
     if zone and not min(float(zone[1]), float(zone[2])) <= 5.5 <= max(float(zone[1]), float(zone[2])):
         job.india_eligibility = "excluded"

@@ -54,6 +54,10 @@ sources:
     max_details: 600
     timeout_seconds: 900
     options:
+      render: true
+      render_wait_selector: 'a[href*="/job-"]'
+      render_next_selector: 'li[ng-click="nextPage()"]:not(.hidden)'
+      render_max_pages: 5
       seed_urls:
         - https://www.instahyre.com/software-engineering-jobs/
         - https://www.instahyre.com/backend-development-jobs/
@@ -61,26 +65,26 @@ sources:
         - https://www.instahyre.com/data-science-analytics-jobs/
         - https://www.instahyre.com/remote-software-engineering-jobs/
   - {id: cutshort, name: Cutshort, kind: generic, group: board, url: "https://cutshort.io/jobs/software-engineer-jobs", max_details: 400}
-  - {id: hirist, name: Hirist, kind: generic, group: board, url: "https://www.hirist.tech/c/backend-development-jobs"}
+  - {id: hirist, name: Hirist, kind: generic, group: board, url: "https://www.hirist.tech/c/backend-development-jobs", options: {render: true, render_details: true, render_wait_selector: 'a[href*="/j/"]'}}
   - {id: foundit, name: foundit, kind: generic, group: board, url: "https://www.foundit.in/search/software-developer-jobs-in-india", max_details: 400}
   - {id: wellfound, name: Wellfound India, kind: generic, group: board, url: "https://wellfound.com/location/india", max_details: 400}
   - {id: builtin, name: Built In India, kind: generic, group: board, url: "https://builtin.com/jobs/as/india", max_details: 400}
   - {id: peerlist, name: Peerlist Jobs, kind: generic, group: board, url: "https://peerlist.io/jobs"}
-  - {id: geektrust, name: Geektrust, kind: generic, group: board, url: "https://www.geektrust.com/jobs"}
+  - {id: geektrust, name: Geektrust, kind: generic, group: board, url: "https://www.geektrust.com/jobs", options: {render: true, render_wait_selector: 'text=Apply'}}
   - {id: internshala, name: Internshala, kind: generic, group: board, url: "https://internshala.com/jobs/software-development-jobs/"}
-  - {id: unstop, name: Unstop, kind: generic, group: board, url: "https://unstop.com/job/software-development-jobs"}
+  - {id: unstop, name: Unstop, kind: generic, group: board, url: "https://unstop.com/job/software-development-jobs", options: {render: true, render_details: true, render_wait_selector: 'a[href*="/jobs/"]'}}
   - {id: shine, name: Shine, kind: generic, group: board, url: "https://www.shine.com/job-search/software-developer-jobs"}
   - {id: apna, name: apna, kind: generic, group: board, url: "https://apna.co/jobs/software-engineering-jobs"}
   - {id: freshersworld, name: Freshersworld, kind: generic, group: board, url: "https://www.freshersworld.com/jobs/category/it-software-job-vacancies"}
   - {id: yc, name: YC Work at a Startup, kind: generic, group: board, url: "https://www.ycombinator.com/jobs/location/india"}
   - {id: startupjobs, name: Startup.jobs, kind: generic, group: board, url: "https://startup.jobs/locations/india"}
   - {id: nodesk, name: NoDesk, kind: generic, group: board, url: "https://nodesk.co/remote-jobs/"}
-  - {id: remoteio, name: Remote.io India, kind: generic, group: board, url: "https://remote.io/remote-jobs/india"}
+  - {id: remoteio, name: Remote.io India, kind: generic, group: board, url: "https://remote.io/remote-jobs/india", options: {render: true, render_details: true, render_wait_selector: 'a[href*="-at-"]'}}
   - {id: tryremote, name: TryRemote, kind: generic, group: board, url: "https://tryremote.com/"}
   - {id: javascriptjobs, name: JavaScript.jobs, kind: generic, group: board, url: "https://javascript.jobs/remote"}
   - {id: web3career, name: Web3.career, kind: generic, group: board, url: "https://web3.career/web3-jobs-india"}
   - {id: cryptojobslist, name: CryptoJobsList, kind: generic, group: board, url: "https://cryptojobslist.com/jobs-india"}
-  - {id: datajobs, name: DataJobs, kind: generic, group: board, url: "https://datajobs.com/Data-Science-Jobs"}
+  - {id: datajobs, name: DataJobs, kind: generic, group: board, url: "https://datajobs.com/Data-Science-Jobs", options: {seed_urls: ["https://datajobs.com/Data-Science-Jobs", "https://datajobs.com/Data-Engineering-Jobs"]}}
 
   - id: linkedin
     name: LinkedIn Jobs
@@ -89,7 +93,7 @@ sources:
     group: portal
     url: https://in.linkedin.com/jobs/
     timeout_seconds: 2100
-    options: {queries: *queries, results_per_query: 1000, query_timeout_seconds: 150}
+    options: {queries: *queries, results_per_query: 1000, batch_size: 25, query_timeout_seconds: 90}
   - id: indeed
     name: Indeed India
     kind: jobspy

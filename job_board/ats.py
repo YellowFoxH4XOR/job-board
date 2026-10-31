@@ -3,7 +3,9 @@ from __future__ import annotations
 import xml.etree.ElementTree as ET
 from urllib.parse import quote, urljoin, urlsplit
 
-from .filtering import workplace
+import httpx
+
+from .filtering import NON_TECH, TECH, workplace
 from .http import Fetcher
 from .models import Source, SourceResult, make_job, plain
 
@@ -49,7 +51,18 @@ async def collect_ats(source: Source, fetch: Fetcher, result: SourceResult) -> N
         else:
             result.partial("Lever page budget reached")
     elif source.kind == "ashby":
-        data = await fetch.json(f"https://api.ashbyhq.com/posting-api/job-board/{tenant}?includeCompensation=true")
+        try:
+            data = await fetch.json(f"https://api.ashbyhq.com/posting-api/job-board/{tenant}?includeCompensation=true")
+        except httpx.HTTPStatusError as exc:
+            if exc.response.status_code != 404:
+                raise
+            from .web import collect_web
+            fallback = source.model_copy(update={"kind": "generic", "url": f"https://jobs.ashbyhq.com/{tenant}",
+                "options": {**source.options, "skip_ats_detection": True, "render": True, "render_details": True,
+                            "render_wait_selector": f'a[href*="/{tenant}/"]'}})
+            result.warn("Public Ashby feed unavailable; trying the published browser job board")
+            await collect_web(fallback, fetch, result)
+            return
         result.pages_fetched += 1
         for item in data["jobs"]:
             if item.get("isListed") is False:
@@ -117,13 +130,31 @@ async def collect_ats(source: Source, fetch: Fetcher, result: SourceResult) -> N
         site = source.options.get("site") or parts.path.rstrip("/").split("/")[-1]
         base = f"https://{parts.netloc}/wday/cxs/{company}/{site}"
         for page in range(source.max_pages):
-            data = await fetch.json(f"{base}/jobs", method="POST",
-                                    data={"appliedFacets": {}, "limit": 20, "offset": page * 20, "searchText": ""})
+            query = {"appliedFacets": {}, "limit": 20, "offset": page * 20, "searchText": ""}
+            try:
+                data = await fetch.json(f"{base}/jobs", method="POST", data=query)
+            except httpx.HTTPStatusError as exc:
+                if page or exc.response.status_code not in {404, 422}:
+                    raise
+                landing = await fetch.request(source.url)
+                redirected = urlsplit(str(landing.url))
+                if redirected.netloc == parts.netloc or not (redirected.hostname or "").endswith(".myworkdayjobs.com"):
+                    raise
+                parts = redirected
+                base = f"https://{parts.netloc}/wday/cxs/{company}/{site}"
+                result.warn(f"Followed Workday migration to {parts.netloc}")
+                data = await fetch.json(f"{base}/jobs", method="POST", data=query)
             result.pages_fetched += 1
-            result.expected_count = data.get("total")
+            total = data.get("total")
+            if isinstance(total, int) and total > 0:
+                result.expected_count = max(result.expected_count or 0, total)
             items = data.get("jobPostings", [])
             for item in items:
                 path = item["externalPath"]
+                if NON_TECH.search(item["title"]) or not TECH.search(item["title"]):
+                    result.jobs.append(make_job(source, path, item["title"], source.company,
+                        f"https://{parts.netloc}/en-US/{site}{path}", location=plain(item.get("locationsText"))))
+                    continue
                 detail = await fetch.json(f"{base}{path}")
                 info = detail.get("jobPostingInfo", {})
                 if not info or info.get("canApply") is False:

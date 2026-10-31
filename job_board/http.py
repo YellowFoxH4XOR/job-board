@@ -33,9 +33,21 @@ class Fetcher:
         self.robots: dict[str, RobotFileParser] = {}
         self.robots_locks: dict[str, asyncio.Lock] = {}
         self.memory: dict[str, httpx.Response] = {}
+        self.host_delays: dict[str, float] = {}
+        self.renderer = None
 
     async def close(self) -> None:
+        if self.renderer:
+            await self.renderer.close()
         await self.client.aclose()
+
+    async def render(self, url: str, *, selector: str | None = None,
+                     next_selector: str | None = None, max_pages: int = 1) -> str:
+        await self.check_robots(url)
+        if self.renderer is None:
+            from .browser import Renderer
+            self.renderer = Renderer()
+        return await self.renderer.render(url, selector=selector, next_selector=next_selector, max_pages=max_pages)
 
     async def request(self, url: str, *, method: str = "GET", data: dict | None = None,
                       html: bool = False, cache: bool = True) -> httpx.Response:
@@ -65,7 +77,7 @@ class Fetcher:
         lock = self.locks.setdefault(parts.netloc, asyncio.Lock())
         for attempt in range(3):
             async with lock:
-                delay = self.pace - (time.monotonic() - self.last_request.get(parts.netloc, 0))
+                delay = self.host_delays.get(parts.netloc, self.pace) - (time.monotonic() - self.last_request.get(parts.netloc, 0))
                 if delay > 0:
                     await asyncio.sleep(delay)
                 self.last_request[parts.netloc] = time.monotonic()
@@ -131,4 +143,4 @@ class Fetcher:
             raise BlockedError(f"robots.txt disallows {parts.path}")
         delay = parser.crawl_delay(USER_AGENT) or parser.crawl_delay("*")
         if delay:
-            self.pace = max(self.pace, min(delay, 30))
+            self.host_delays[parts.netloc] = max(self.pace, min(delay, 30))
