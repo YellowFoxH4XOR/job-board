@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-31T11:27:38.153454+00:00",
+  "updated_at": "2026-10-31T18:40:32.278046+00:00",
   "directory": "https://github.com/remoteintech/remote-jobs",
   "profile_count": 616,
   "errors": [],
@@ -2071,7 +2071,10 @@
       "website": "https://doist.com",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/doist.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/doist.md",
+      "last_checked_at": "2026-10-31T18:40:14.965644+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://www.todoist.com/careers"
     },
     {
       "slug": "doit",
@@ -2125,7 +2128,10 @@
       "website": "https://drupaljedi.com/",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/drupal-jedi.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/drupal-jedi.md",
+      "last_checked_at": "2026-10-31T18:40:14.966341+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://drupaljedi.com/careers/"
     },
     {
       "slug": "duckduckgo",
@@ -2134,7 +2140,10 @@
       "website": "https://duckduckgo.com/",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/duckduckgo.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/duckduckgo.md",
+      "last_checked_at": "2026-10-31T18:40:14.966592+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://duckduckgo.com/hiring"
     },
     {
       "slug": "eatstreet",
@@ -2161,7 +2170,10 @@
       "website": "https://ebury.com/",
       "region_hint": "worldwide",
       "remote_policy_hint": "remote-first",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/ebury.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/ebury.md",
+      "last_checked_at": "2026-10-31T18:40:14.966797+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://ebury.com/company/careers"
     },
     {
       "slug": "edgar",
@@ -2179,7 +2191,10 @@
       "website": "https://edify.cr/",
       "region_hint": "worldwide",
       "remote_policy_hint": "remote-friendly",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/edify.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/edify.md",
+      "last_checked_at": "2026-10-31T18:40:14.967105+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://edify.cr/careers/open-positions/"
     },
     {
       "slug": "elastic",
@@ -2242,7 +2257,10 @@
       "website": "https://epam.com/",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/epam.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/epam.md",
+      "last_checked_at": "2026-10-31T18:40:14.967319+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://careers.epam.com/en/jobs?country=georgia&skills=solution+architecture"
     },
     {
       "slug": "epilocal",
@@ -2251,7 +2269,10 @@
       "website": "https://epilocal.com",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/epilocal.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/epilocal.md",
+      "last_checked_at": "2026-10-31T18:40:14.967509+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://www.epilocal.com/contact"
     },
     {
       "slug": "epsy-health",
@@ -2260,7 +2281,10 @@
       "website": "https://epsyhealth.com/",
       "region_hint": "worldwide",
       "remote_policy_hint": "remote-first",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/epsy-health.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/epsy-health.md",
+      "last_checked_at": "2026-10-31T18:40:14.967692+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://www.epsyhealth.com/careers"
     },
     {
       "slug": "ergeon",
@@ -2269,7 +2293,24 @@
       "website": "https://www.ergeon.com/",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/ergeon.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/ergeon.md",
+      "last_checked_at": "2026-10-31T18:40:15.641959+00:00",
+      "source": {
+        "id": "employer-ergeon",
+        "name": "Ergeon",
+        "kind": "greenhouse",
+        "url": "https://job-boards.greenhouse.io/ergeon",
+        "company": "Ergeon",
+        "tenant": "ergeon",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/ergeon.md"
+      },
+      "discovery_status": "ats_detected"
     },
     {
       "slug": "etch",
@@ -2287,7 +2328,10 @@
       "website": "https://www.etsy.com/",
       "region_hint": "worldwide",
       "remote_policy_hint": "remote-friendly",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/etsy.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/etsy.md",
+      "last_checked_at": "2026-10-31T18:40:15.662408+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://careers.etsy.com/"
     },
     {
       "slug": "exoscale",
@@ -2305,7 +2349,10 @@
       "website": "https://www.exportdata.io/",
       "region_hint": "worldwide",
       "remote_policy_hint": "remote-first",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/exportdata.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/exportdata.md",
+      "last_checked_at": "2026-10-31T18:40:15.752534+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://www.exportdata.io/"
     },
     {
       "slug": "extreme-networks",
@@ -2314,7 +2361,26 @@
       "website": "https://www.extremenetworks.com/",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/extreme-networks.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/extreme-networks.md",
+      "last_checked_at": "2026-10-31T18:40:15.777321+00:00",
+      "source": {
+        "id": "employer-extreme-networks",
+        "name": "Extreme Networks",
+        "kind": "workday",
+        "url": "https://extremenetworks.wd503.myworkdayjobs.com/Extreme_Networks",
+        "company": "Extreme Networks",
+        "tenant": "extremenetworks",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {
+          "site": "Extreme_Networks"
+        },
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/extreme-networks.md"
+      },
+      "discovery_status": "ats_detected"
     },
     {
       "slug": "factorialhr",
@@ -2350,7 +2416,10 @@
       "website": "https://www.fastly.com/",
       "region_hint": "worldwide",
       "remote_policy_hint": "hybrid",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/fastly.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/fastly.md",
+      "last_checked_at": "2026-10-31T18:40:15.786879+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://www.fastly.com/about/careers"
     },
     {
       "slug": "fetlife",
@@ -2393,7 +2462,10 @@
       "website": "https://findify.io",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/findify.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/findify.md",
+      "last_checked_at": "2026-10-31T18:40:16.245198+00:00",
+      "discovery_status": "unresolved",
+      "discovery_error": "ConnectError: [Errno -2] Name or service not known"
     },
     {
       "slug": "fingerprint",
@@ -2402,7 +2474,10 @@
       "website": "https://fingerprint.com",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/fingerprint.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/fingerprint.md",
+      "last_checked_at": "2026-10-31T18:40:16.411812+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://fingerprint.com/careers/"
     },
     {
       "slug": "firehire",
@@ -2411,7 +2486,10 @@
       "website": "https://www.firehire.ai",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/firehire.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/firehire.md",
+      "last_checked_at": "2026-10-31T18:40:16.456223+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://www.firehire.ai/talent"
     },
     {
       "slug": "first-point",
@@ -2420,7 +2498,10 @@
       "website": "https://firstpoint.com.tr",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/first-point.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/first-point.md",
+      "last_checked_at": "2026-10-31T18:40:16.530143+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://firstpoint.com.tr/#careers"
     },
     {
       "slug": "fis-global",
@@ -2447,7 +2528,10 @@
       "website": "https://fivexl.io",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/fivexl.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/fivexl.md",
+      "last_checked_at": "2026-10-31T18:40:16.679500+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://fivexl.io/#contact"
     },
     {
       "slug": "fleetio",
@@ -2456,7 +2540,10 @@
       "website": "https://www.fleetio.com/",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/fleetio.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/fleetio.md",
+      "last_checked_at": "2026-10-31T18:40:16.816405+00:00",
+      "discovery_status": "unresolved",
+      "discovery_error": "BlockedError: HTTP 403 from www.fleetio.com"
     },
     {
       "slug": "flexera",
@@ -2465,7 +2552,26 @@
       "website": "https://www.flexera.com/",
       "region_hint": "worldwide",
       "remote_policy_hint": "hybrid",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/flexera.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/flexera.md",
+      "last_checked_at": "2026-10-31T18:40:17.118180+00:00",
+      "source": {
+        "id": "employer-flexera",
+        "name": "Flexera",
+        "kind": "workday",
+        "url": "https://flexerasoftware.wd1.myworkdayjobs.com/FlexeraSoftware",
+        "company": "Flexera",
+        "tenant": "flexerasoftware",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {
+          "site": "FlexeraSoftware"
+        },
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/flexera.md"
+      },
+      "discovery_status": "ats_detected"
     },
     {
       "slug": "flightaware",
@@ -2528,7 +2634,10 @@
       "website": "https://focusnetworks.com.br",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/focusnetworks.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/focusnetworks.md",
+      "last_checked_at": "2026-10-31T18:40:17.161375+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://focusnetworks.enlizt.me/?utm_source=jooble&utm_medium=cpc&utm_campaign=jooble"
     },
     {
       "slug": "folotop",
@@ -2537,7 +2646,10 @@
       "website": "https://folotop.com/",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/folotop.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/folotop.md",
+      "last_checked_at": "2026-10-31T18:40:17.257175+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://www.folotop.com/job/"
     },
     {
       "slug": "formidable",
@@ -2555,7 +2667,24 @@
       "website": "https://www.formstack.com/",
       "region_hint": "worldwide",
       "remote_policy_hint": "hybrid",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/formstack.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/formstack.md",
+      "last_checked_at": "2026-10-31T18:40:17.345453+00:00",
+      "source": {
+        "id": "employer-formstack",
+        "name": "Formstack",
+        "kind": "ashby",
+        "url": "https://jobs.ashbyhq.com/Intellistack",
+        "company": "Formstack",
+        "tenant": "Intellistack",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/formstack.md"
+      },
+      "discovery_status": "ats_detected"
     },
     {
       "slug": "four-kitchens",
@@ -2600,7 +2729,10 @@
       "website": "https://www.functionize.com/",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/functionize.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/functionize.md",
+      "last_checked_at": "2026-10-31T18:40:17.485830+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://www.functionize.com/careers"
     },
     {
       "slug": "fyle",
@@ -2609,7 +2741,10 @@
       "website": "https://www.fylehq.com/",
       "region_hint": "asia-pacific",
       "remote_policy_hint": "remote-first",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/fyle.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/fyle.md",
+      "last_checked_at": "2026-10-31T18:40:17.763950+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://www.fylehq.com/company/team/join"
     },
     {
       "slug": "gaggle",
@@ -2627,7 +2762,10 @@
       "website": "https://www.geckoboard.com",
       "region_hint": "worldwide",
       "remote_policy_hint": "remote-friendly",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/geckoboard.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/geckoboard.md",
+      "last_checked_at": "2026-10-31T18:40:17.919635+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://www.geckoboard.com/about/careers/"
     },
     {
       "slug": "general-assembly",
@@ -2636,7 +2774,24 @@
       "website": "https://generalassemb.ly/",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/general-assembly.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/general-assembly.md",
+      "last_checked_at": "2026-10-31T18:40:17.968591+00:00",
+      "source": {
+        "id": "employer-general-assembly",
+        "name": "General Assembly",
+        "kind": "greenhouse",
+        "url": "https://job-boards.greenhouse.io/generalassembly",
+        "company": "General Assembly",
+        "tenant": "generalassembly",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/general-assembly.md"
+      },
+      "discovery_status": "ats_detected"
     },
     {
       "slug": "gerencianet",
@@ -2690,7 +2845,10 @@
       "website": "https://github.com/",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/github.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/github.md",
+      "last_checked_at": "2026-10-31T18:40:18.239908+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://www.github.careers/careers-home"
     },
     {
       "slug": "gitlab",
@@ -2733,7 +2891,10 @@
       "website": "https://glennwebsitedesign.com/",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/glenn-website-design.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/glenn-website-design.md",
+      "last_checked_at": "2026-10-31T18:40:18.318296+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://glennwebsitedesign.com/contact/"
     },
     {
       "slug": "gmbapi",
@@ -2751,7 +2912,10 @@
       "website": "https://www.godaddy.com/",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/godaddy.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/godaddy.md",
+      "last_checked_at": "2026-10-31T18:40:18.319199+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://careers.godaddy/"
     },
     {
       "slug": "gohiring",
@@ -2760,7 +2924,10 @@
       "website": "https://www.gohiring.com/",
       "region_hint": "worldwide",
       "remote_policy_hint": "hybrid",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/gohiring.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/gohiring.md",
+      "last_checked_at": "2026-10-31T18:40:18.449735+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://gohiring.com/jobs/#jobs"
     },
     {
       "slug": "gojob",
@@ -2814,7 +2981,10 @@
       "website": "https://www.graylog.org/",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/graylog.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/graylog.md",
+      "last_checked_at": "2026-10-31T18:40:18.647748+00:00",
+      "discovery_status": "unresolved",
+      "discovery_error": "BlockedError: HTTP 403 from www.graylog.org"
     },
     {
       "slug": "greenstitch-io",
@@ -2823,7 +2993,10 @@
       "website": "https://greenstitch.io",
       "region_hint": "asia-pacific",
       "remote_policy_hint": "remote-friendly",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/greenstitch-io.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/greenstitch-io.md",
+      "last_checked_at": "2026-10-31T18:40:19.098307+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://greenstitch.io/#/about-us"
     },
     {
       "slug": "gremlin",
@@ -2850,7 +3023,10 @@
       "website": "https://www.groovehq.com",
       "region_hint": "worldwide",
       "remote_policy_hint": "hybrid",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/groove.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/groove.md",
+      "last_checked_at": "2026-10-31T18:40:19.267365+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://helply.com/about#hiring"
     },
     {
       "slug": "grou-ps",
@@ -2859,7 +3035,10 @@
       "website": "https://build.gr.ps",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/grou-ps.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/grou-ps.md",
+      "last_checked_at": "2026-10-31T18:40:19.371393+00:00",
+      "discovery_status": "unresolved",
+      "discovery_error": "ConnectError: [Errno -2] Name or service not known"
     },
     {
       "slug": "grubhub",
@@ -2895,7 +3074,10 @@
       "website": "https://www.getharvest.com/",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/harvest.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/harvest.md",
+      "last_checked_at": "2026-10-31T18:40:19.601481+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://www.getharvest.com/careers"
     },
     {
       "slug": "hashex",
@@ -2913,7 +3095,10 @@
       "website": "https://www.hashicorp.com/",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/hashicorp.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/hashicorp.md",
+      "last_checked_at": "2026-10-31T18:40:19.743357+00:00",
+      "discovery_status": "unresolved",
+      "discovery_error": "BlockedError: HTTP 429 from www.hashicorp.com"
     },
     {
       "slug": "headforwards",
@@ -2949,7 +3134,24 @@
       "website": "https://www.helpscout.net/",
       "region_hint": "worldwide",
       "remote_policy_hint": "remote-first",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/help-scout.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/help-scout.md",
+      "last_checked_at": "2026-10-31T18:40:20.088949+00:00",
+      "source": {
+        "id": "employer-help-scout",
+        "name": "Help Scout",
+        "kind": "ashby",
+        "url": "https://jobs.ashbyhq.com/helpscout",
+        "company": "Help Scout",
+        "tenant": "helpscout",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/help-scout.md"
+      },
+      "discovery_status": "ats_detected"
     },
     {
       "slug": "heroku",
@@ -2985,7 +3187,10 @@
       "website": "https://www.honeybadger.io/",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/honeybadger.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/honeybadger.md",
+      "last_checked_at": "2026-10-31T18:40:20.162480+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://www.honeybadger.io/careers/"
     },
     {
       "slug": "hopper",
@@ -3003,7 +3208,10 @@
       "website": "https://www.hubspot.com/",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/hubspot.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/hubspot.md",
+      "last_checked_at": "2026-10-31T18:40:20.258024+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://www.hubspot.com/careers/jobs?hubs_signup-url=www.hubspot.com%2Fcareers%2Fremote&hubs_signup-cta=careers-location-hero&page=1"
     },
     {
       "slug": "hudl",
@@ -3046,7 +3254,10 @@
       "website": "https://hugo.events",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/hugo.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/hugo.md",
+      "last_checked_at": "2026-10-31T18:40:20.815941+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://hugo.events/en/careers"
     },
     {
       "slug": "human-made",
@@ -3055,7 +3266,24 @@
       "website": "https://hmn.md",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/human-made.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/human-made.md",
+      "last_checked_at": "2026-10-31T18:40:20.913751+00:00",
+      "source": {
+        "id": "employer-human-made",
+        "name": "Human Made",
+        "kind": "workable",
+        "url": "https://apply.workable.com/humanmade",
+        "company": "Human Made",
+        "tenant": "humanmade",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/human-made.md"
+      },
+      "discovery_status": "ats_detected"
     },
     {
       "slug": "hypergiant",
@@ -3082,7 +3310,10 @@
       "website": "https://www.istemai.com/",
       "region_hint": "asia-pacific",
       "remote_policy_hint": "remote-friendly",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/i-stem.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/i-stem.md",
+      "last_checked_at": "2026-10-31T18:40:20.968149+00:00",
+      "discovery_status": "unresolved",
+      "discovery_error": "BlockedError: HTTP 403 from wellfound.com"
     },
     {
       "slug": "ibm",
@@ -3091,7 +3322,10 @@
       "website": "https://www.ibm.com",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/ibm.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/ibm.md",
+      "last_checked_at": "2026-10-31T18:40:21.436604+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://www.ibm.com/careers"
     },
     {
       "slug": "igalia",
@@ -3100,7 +3334,10 @@
       "website": "https://www.igalia.com/",
       "region_hint": "worldwide",
       "remote_policy_hint": "remote-friendly",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/igalia.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/igalia.md",
+      "last_checked_at": "2026-10-31T18:40:21.597792+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://www.igalia.com/jobs/"
     },
     {
       "slug": "imagine-learning",
@@ -3145,7 +3382,10 @@
       "website": "https://www.inshorts.com/",
       "region_hint": "asia-pacific",
       "remote_policy_hint": "remote-friendly",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/inshorts.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/inshorts.md",
+      "last_checked_at": "2026-10-31T18:40:21.987740+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://inshorts.zohorecruit.com/careers"
     },
     {
       "slug": "instructure",
@@ -3172,7 +3412,10 @@
       "website": "https://inter.link/",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/inter-link.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/inter-link.md",
+      "last_checked_at": "2026-10-31T18:40:21.995034+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://inter.link/about-interlink/careers/"
     },
     {
       "slug": "interactive-intelligence",
@@ -3208,7 +3451,10 @@
       "website": "https://www.intuit.com/",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/intuit.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/intuit.md",
+      "last_checked_at": "2026-10-31T18:40:22.116474+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://www.intuit.com/careers/"
     },
     {
       "slug": "intuition-machines-inc",
@@ -3217,7 +3463,24 @@
       "website": "https://www.imachines.com/",
       "region_hint": "worldwide",
       "remote_policy_hint": "remote-first",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/intuition-machines-inc.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/intuition-machines-inc.md",
+      "last_checked_at": "2026-10-31T18:40:22.171358+00:00",
+      "source": {
+        "id": "employer-intuition-machines-inc",
+        "name": "Intuition Machines, Inc.",
+        "kind": "workable",
+        "url": "https://apply.workable.com/imachines",
+        "company": "Intuition Machines, Inc.",
+        "tenant": "imachines",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/intuition-machines-inc.md"
+      },
+      "discovery_status": "ats_detected"
     },
     {
       "slug": "invesco",
@@ -3226,7 +3489,26 @@
       "website": "https://www.invesco.com/corporate",
       "region_hint": "worldwide",
       "remote_policy_hint": "hybrid",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/invesco.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/invesco.md",
+      "last_checked_at": "2026-10-31T18:40:22.414174+00:00",
+      "source": {
+        "id": "employer-invesco",
+        "name": "Invesco",
+        "kind": "workday",
+        "url": "https://invesco.wd1.myworkdayjobs.com/IVZ",
+        "company": "Invesco",
+        "tenant": "invesco",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {
+          "site": "IVZ"
+        },
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/invesco.md"
+      },
+      "discovery_status": "ats_detected"
     },
     {
       "slug": "iohk",
@@ -3235,7 +3517,10 @@
       "website": "https://iohk.io/",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/iohk.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/iohk.md",
+      "last_checked_at": "2026-10-31T18:40:22.817403+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://www.iog.io/careers"
     },
     {
       "slug": "iopipe",
@@ -3271,7 +3556,10 @@
       "website": "https://jobs.iqvia.com/our-company",
       "region_hint": "worldwide",
       "remote_policy_hint": "hybrid",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/iqvia.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/iqvia.md",
+      "last_checked_at": "2026-10-31T18:40:22.828580+00:00",
+      "discovery_status": "unresolved",
+      "discovery_error": "BlockedError: HTTP 403 from jobs.iqvia.com"
     },
     {
       "slug": "ironin",
@@ -3280,7 +3568,10 @@
       "website": "https://www.ironin.it/",
       "region_hint": "worldwide",
       "remote_policy_hint": "remote-first",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/ironin.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/ironin.md",
+      "last_checked_at": "2026-10-31T18:40:22.986192+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://careers.ironin.it/"
     },
     {
       "slug": "jitera",
@@ -3289,7 +3580,10 @@
       "website": "https://iruuza-inc.com/",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/jitera.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/jitera.md",
+      "last_checked_at": "2026-10-31T18:40:22.996098+00:00",
+      "discovery_status": "unresolved",
+      "discovery_error": "BlockedError: HTTP 403 from angel.co"
     },
     {
       "slug": "jobsity",
@@ -3352,7 +3646,10 @@
       "website": "https://www.khanacademy.org/",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/khan-academy.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/khan-academy.md",
+      "last_checked_at": "2026-10-31T18:40:23.018776+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://www.khanacademy.org/about/careers"
     },
     {
       "slug": "kindred",
@@ -3386,7 +3683,10 @@
       "website": "https://kinsta.com",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/kinsta.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/kinsta.md",
+      "last_checked_at": "2026-10-31T18:40:23.095162+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://kinsta.com/careers/"
     },
     {
       "slug": "kiprosh",
@@ -3413,7 +3713,10 @@
       "website": "https://www.klaviyo.com/",
       "region_hint": "worldwide",
       "remote_policy_hint": "hybrid",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/klaviyo.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/klaviyo.md",
+      "last_checked_at": "2026-10-31T18:40:23.563766+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://www.klaviyo.com/careers#open-roles"
     },
     {
       "slug": "kodify",
@@ -3440,7 +3743,10 @@
       "website": "https://www.heykona.com",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/kona.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/kona.md",
+      "last_checked_at": "2026-10-31T18:40:23.673886+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://www.15five.com/about/careers"
     },
     {
       "slug": "konkurenta",
@@ -3458,7 +3764,24 @@
       "website": "https://kraken.com",
       "region_hint": "worldwide",
       "remote_policy_hint": "remote-first",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/kraken.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/kraken.md",
+      "last_checked_at": "2026-10-31T18:40:23.737552+00:00",
+      "source": {
+        "id": "employer-kraken",
+        "name": "Kraken",
+        "kind": "ashby",
+        "url": "https://jobs.ashbyhq.com/kraken.com",
+        "company": "Kraken",
+        "tenant": "kraken.com",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/kraken.md"
+      },
+      "discovery_status": "ats_detected"
     },
     {
       "slug": "labelbox",
@@ -3467,7 +3790,10 @@
       "website": "https://labelbox.com/",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/labelbox.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/labelbox.md",
+      "last_checked_at": "2026-10-31T18:40:23.770091+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://labelbox.com/company/careers/"
     },
     {
       "slug": "lambda-school",
@@ -3494,7 +3820,24 @@
       "website": "https://launchpotato.com/",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/launch-potato.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/launch-potato.md",
+      "last_checked_at": "2026-10-31T18:40:23.854868+00:00",
+      "source": {
+        "id": "employer-launch-potato",
+        "name": "Launch Potato",
+        "kind": "greenhouse",
+        "url": "https://boards.greenhouse.io/launchpotato",
+        "company": "Launch Potato",
+        "tenant": "launchpotato",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/launch-potato.md"
+      },
+      "discovery_status": "ats_detected"
     },
     {
       "slug": "leadfeeder",
@@ -3512,7 +3855,10 @@
       "website": "https://leadiq.com/",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/leadiq.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/leadiq.md",
+      "last_checked_at": "2026-10-31T18:40:23.960522+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://leadiq.com/careers"
     },
     {
       "slug": "let-s-encrypt",
@@ -3557,7 +3903,10 @@
       "website": "https://www.lightspeedhq.com/",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/lightspeed.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/lightspeed.md",
+      "last_checked_at": "2026-10-31T18:40:24.453584+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://www.lightspeedhq.com/careers/"
     },
     {
       "slug": "linaro",
@@ -3566,7 +3915,10 @@
       "website": "https://www.linaro.org/",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/linaro.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/linaro.md",
+      "last_checked_at": "2026-10-31T18:40:24.521450+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://www.linaro.org/careers/"
     },
     {
       "slug": "linear",
@@ -3609,7 +3961,10 @@
       "website": "https://www.linuxfoundation.org/",
       "region_hint": "worldwide",
       "remote_policy_hint": "hybrid",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/linux-foundation.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/linux-foundation.md",
+      "last_checked_at": "2026-10-31T18:40:24.629429+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://www.linuxfoundation.org/careers"
     },
     {
       "slug": "lorum",
@@ -3618,7 +3973,10 @@
       "website": "https://www.lorum.com",
       "region_hint": "worldwide",
       "remote_policy_hint": "remote-friendly",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/lorum.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/lorum.md",
+      "last_checked_at": "2026-10-31T18:40:24.680304+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://www.lorum.com/about"
     },
     {
       "slug": "lullabot",
@@ -3679,7 +4037,10 @@
       "website": "https://www.mailerlite.com",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/mailerlite.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/mailerlite.md",
+      "last_checked_at": "2026-10-31T18:40:24.883227+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://www.mailerlite.com/jobs"
     },
     {
       "slug": "mapbox",
@@ -3706,7 +4067,24 @@
       "website": "https://www.mariadb.com/",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/mariadb.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/mariadb.md",
+      "last_checked_at": "2026-10-31T18:40:25.003422+00:00",
+      "source": {
+        "id": "employer-mariadb",
+        "name": "MariaDB",
+        "kind": "greenhouse",
+        "url": "https://boards.eu.greenhouse.io/mariadbplc/jobs/4288212101",
+        "company": "MariaDB",
+        "tenant": "mariadbplc",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/mariadb.md"
+      },
+      "discovery_status": "ats_detected"
     },
     {
       "slug": "marsbased",
@@ -3715,7 +4093,10 @@
       "website": "https://marsbased.com/",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/marsbased.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/marsbased.md",
+      "last_checked_at": "2026-10-31T18:40:25.148137+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://marsbased.com/jobs"
     },
     {
       "slug": "massive-pixel-creation",
@@ -3733,7 +4114,10 @@
       "website": "https://maxicus.com/",
       "region_hint": "asia-pacific",
       "remote_policy_hint": "remote-friendly",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/maxicus.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/maxicus.md",
+      "last_checked_at": "2026-10-31T18:40:25.180296+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://remoters.net/jobs/maxicus/"
     },
     {
       "slug": "mayvue-solutions",
@@ -3769,7 +4153,10 @@
       "website": "https://memberful.com",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/memberful.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/memberful.md",
+      "last_checked_at": "2026-10-31T18:40:25.324694+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://memberful.com/careers"
     },
     {
       "slug": "memory",
@@ -3778,7 +4165,10 @@
       "website": "https://memory.ai/",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/memory.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/memory.md",
+      "last_checked_at": "2026-10-31T18:40:25.344002+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://www.timely.com/jobs/"
     },
     {
       "slug": "mercari",
@@ -3787,7 +4177,10 @@
       "website": "https://about.mercari.com/en/",
       "region_hint": "asia-pacific",
       "remote_policy_hint": "hybrid",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/mercari.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/mercari.md",
+      "last_checked_at": "2026-10-31T18:40:25.655315+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://careers.mercari.com/en/jobs/engineering/?utm_source=remoteintech.company&utm_medium=Referral&utm_campaign=remote-in-tech"
     },
     {
       "slug": "meridianlink",
@@ -3805,7 +4198,10 @@
       "website": "https://messagebird.com/",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/messagebird.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/messagebird.md",
+      "last_checked_at": "2026-10-31T18:40:25.747901+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://bird.com/careers#jobs"
     },
     {
       "slug": "metalab",
@@ -3857,7 +4253,10 @@
       "website": "https://www.microsoft.com/",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/microsoft.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/microsoft.md",
+      "last_checked_at": "2026-10-31T18:40:25.942659+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://careers.microsoft.com/v2/global/en/home.html"
     },
     {
       "slug": "mixcloud",
@@ -3891,7 +4290,10 @@
       "website": "https://mixmax.com",
       "region_hint": "worldwide",
       "remote_policy_hint": "remote-friendly",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/mixmax.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/mixmax.md",
+      "last_checked_at": "2026-10-31T18:40:25.971445+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://www.mixmax.com/"
     },
     {
       "slug": "mixrank",
@@ -3900,7 +4302,10 @@
       "website": "https://mixrank.com",
       "region_hint": "worldwide",
       "remote_policy_hint": "remote-friendly",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/mixrank.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/mixrank.md",
+      "last_checked_at": "2026-10-31T18:40:26.043868+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://www.ycombinator.com/companies/mixrank"
     },
     {
       "slug": "mobile-jazz",
@@ -3909,7 +4314,10 @@
       "website": "https://mobilejazz.com",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/mobile-jazz.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/mobile-jazz.md",
+      "last_checked_at": "2026-10-31T18:40:26.094572+00:00",
+      "discovery_status": "unresolved",
+      "discovery_error": "ConnectError: [Errno -5] No address associated with hostname"
     },
     {
       "slug": "modern-health",
@@ -3943,7 +4351,10 @@
       "website": "https://tri.be/",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/modern-tribe.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/modern-tribe.md",
+      "last_checked_at": "2026-10-31T18:40:26.484123+00:00",
+      "discovery_status": "needs_adapter",
+      "canonical_careers_url": "https://moderntribeagency.com/careers/"
     },
     {
       "slug": "modsquad",
@@ -3952,7 +4363,26 @@
       "website": "https://modsquad.com/",
       "region_hint": "worldwide",
       "remote_policy_hint": "fully-remote",
-      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/modsquad.md"
+      "directory_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/modsquad.md",
+      "last_checked_at": "2026-10-31T18:40:26.567809+00:00",
+      "source": {
+        "id": "employer-modsquad",
+        "name": "MODSQUAD",
+        "kind": "workday",
+        "url": "https://modsquad.wd5.myworkdayjobs.com/ModSquad_Contractor",
+        "company": "MODSQUAD",
+        "tenant": "modsquad",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {
+          "site": "ModSquad_Contractor"
+        },
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/modsquad.md"
+      },
+      "discovery_status": "ats_detected"
     },
     {
       "slug": "molteo",
