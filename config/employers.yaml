@@ -1,0 +1,59 @@
+# Geographic hints from directories are never used as job-level eligibility proof.
+# ATS tenant names are explicit so rebrands do not silently break collection.
+sources:
+  - {id: railway, name: Railway, company: Railway, kind: generic, url: "https://railway.com/careers", max_details: 100}
+  - {id: employer-supabase, name: Supabase, company: Supabase, kind: ashby, tenant: supabase, url: "https://jobs.ashbyhq.com/supabase"}
+  - {id: employer-automattic, name: Automattic, company: Automattic, kind: greenhouse, tenant: automatticcareers, url: "https://job-boards.greenhouse.io/automatticcareers"}
+  - {id: employer-highlevel, name: HighLevel, company: HighLevel, kind: lever, tenant: gohighlevel, url: "https://jobs.lever.co/gohighlevel"}
+  - {id: employer-egnyte, name: Egnyte, company: Egnyte, kind: generic, url: "https://jobs.jobvite.com/egnyte/jobs"}
+  - {id: employer-gitlab, name: GitLab, company: GitLab, kind: greenhouse, tenant: gitlab, url: "https://job-boards.greenhouse.io/gitlab"}
+  - {id: employer-grafana, name: Grafana Labs, company: Grafana Labs, kind: greenhouse, tenant: grafanalabs, url: "https://job-boards.greenhouse.io/grafanalabs"}
+  - {id: employer-canonical, name: Canonical, company: Canonical, kind: generic, url: "https://canonical.com/careers/all", max_details: 500, timeout_seconds: 900}
+  - {id: employer-atlassian, name: Atlassian, company: Atlassian, kind: generic, url: "https://www.atlassian.com/company/careers/all-jobs", max_details: 500, timeout_seconds: 900}
+  - {id: employer-clickhouse, name: ClickHouse, company: ClickHouse, kind: ashby, tenant: clickhouse, url: "https://jobs.ashbyhq.com/clickhouse"}
+  - {id: employer-wikimedia, name: Wikimedia Foundation, company: Wikimedia Foundation, kind: greenhouse, tenant: wikimedia, url: "https://job-boards.greenhouse.io/wikimedia"}
+  - {id: employer-todoist, name: Todoist, company: Todoist, kind: ashby, tenant: todoist-inc, url: "https://jobs.ashbyhq.com/todoist-inc"}
+  - {id: employer-tigerdata, name: Tiger Data, company: Tiger Data, kind: ashby, tenant: tigerdata, url: "https://jobs.ashbyhq.com/tigerdata"}
+  - {id: employer-temporal, name: Temporal, company: Temporal, kind: ashby, tenant: temporal, url: "https://jobs.ashbyhq.com/temporal"}
+  - {id: employer-kit, name: Kit, company: Kit, kind: ashby, tenant: kit, url: "https://jobs.ashbyhq.com/kit"}
+  - {id: employer-calcom, name: Cal.com, company: Cal.com, kind: generic, url: "https://cal-com.breezy.hr/"}
+  - {id: employer-deel, name: Deel, company: Deel, kind: generic, url: "https://www.deel.com/careers/"}
+  - {id: employer-crowdstrike, name: CrowdStrike, company: CrowdStrike, kind: workday, tenant: crowdstrike, url: "https://crowdstrike.wd5.myworkdayjobs.com/crowdstrikecareers", options: {site: crowdstrikecareers}, timeout_seconds: 1200}
+  - {id: employer-chainguard, name: Chainguard, company: Chainguard, kind: greenhouse, tenant: chainguard, url: "https://job-boards.greenhouse.io/chainguard"}
+  - {id: employer-multiplier, name: Multiplier, company: Multiplier, kind: generic, url: "https://careers.kula.ai/usemultiplier"}
+  - {id: employer-netlify, name: Netlify, company: Netlify, kind: greenhouse, tenant: netlify, url: "https://job-boards.greenhouse.io/netlify"}
+  - {id: employer-vercel, name: Vercel, company: Vercel, kind: greenhouse, tenant: vercel, url: "https://job-boards.greenhouse.io/vercel"}
+  - {id: employer-render, name: Render, company: Render, kind: ashby, tenant: render, url: "https://jobs.ashbyhq.com/render"}
+  - {id: employer-fly, name: Fly.io, company: Fly.io, kind: generic, url: "https://fly.io/jobs/"}
+  - {id: employer-inngest, name: Inngest, company: Inngest, kind: ashby, tenant: inngest, url: "https://jobs.ashbyhq.com/inngest"}
+  - {id: employer-trigger, name: Trigger.dev, company: Trigger.dev, kind: ashby, tenant: triggerdev, url: "https://jobs.ashbyhq.com/triggerdev"}
+  - {id: employer-n8n, name: n8n, company: n8n, kind: ashby, tenant: n8n, url: "https://jobs.ashbyhq.com/n8n"}
+  - {id: employer-convex, name: Convex, company: Convex, kind: ashby, tenant: convex-dev, url: "https://jobs.ashbyhq.com/convex-dev"}
+  - {id: employer-docker, name: Docker, company: Docker, kind: ashby, tenant: docker, url: "https://jobs.ashbyhq.com/docker"}
+  - {id: employer-tailscale, name: Tailscale, company: Tailscale, kind: greenhouse, tenant: tailscale, url: "https://job-boards.greenhouse.io/tailscale"}
+  - {id: employer-teleport, name: Teleport, company: Teleport, kind: ashby, tenant: goteleport, url: "https://jobs.ashbyhq.com/goteleport"}
+  - {id: employer-kong, name: Kong, company: Kong, kind: ashby, tenant: kong, url: "https://jobs.ashbyhq.com/kong"}
+  - {id: employer-motherduck, name: MotherDuck, company: MotherDuck, kind: ashby, tenant: MotherDuck, url: "https://jobs.ashbyhq.com/MotherDuck"}
+  - {id: employer-1password, name: 1Password, company: 1Password, kind: ashby, tenant: 1password, url: "https://jobs.ashbyhq.com/1password"}
+  - {id: employer-bitwarden, name: Bitwarden, company: Bitwarden, kind: greenhouse, tenant: bitwarden, url: "https://job-boards.greenhouse.io/bitwarden"}
+  - {id: employer-sourcegraph, name: Sourcegraph, company: Sourcegraph, kind: greenhouse, tenant: sourcegraph91, url: "https://job-boards.greenhouse.io/sourcegraph91"}
+  - {id: employer-mozilla, name: Mozilla, company: Mozilla, kind: greenhouse, tenant: mozilla, url: "https://job-boards.greenhouse.io/mozilla"}
+  - {id: employer-linear, name: Linear, company: Linear, kind: ashby, tenant: linear, url: "https://jobs.ashbyhq.com/linear"}
+  - {id: employer-oyster, name: Oyster, company: Oyster, kind: ashby, tenant: oyster, url: "https://jobs.ashbyhq.com/oyster"}
+  - {id: employer-remote, name: Remote, company: Remote, kind: generic, url: "https://remote.com/openings"}
+  - {id: employer-zapier, name: Zapier, company: Zapier, kind: ashby, tenant: zapier, url: "https://jobs.ashbyhq.com/zapier"}
+  - {id: employer-toggl, name: Toggl, company: Toggl, kind: ashby, tenant: toggl, url: "https://jobs.ashbyhq.com/toggl"}
+  - {id: employer-helpscout, name: Help Scout, company: Help Scout, kind: ashby, tenant: helpscout, url: "https://jobs.ashbyhq.com/helpscout"}
+  - {id: employer-contentsquare, name: Contentsquare, company: Contentsquare, kind: lever, tenant: contentsquare, url: "https://jobs.lever.co/contentsquare"}
+  - {id: employer-testgorilla, name: TestGorilla, company: TestGorilla, kind: ashby, tenant: testgorilla, url: "https://jobs.ashbyhq.com/testgorilla"}
+  - {id: employer-xapo, name: Xapo Bank, company: Xapo Bank, kind: greenhouse, tenant: xapo61, url: "https://job-boards.greenhouse.io/xapo61"}
+  - {id: employer-rtcamp, name: rtCamp, company: rtCamp, kind: generic, url: "https://careers.rtcamp.com/"}
+  - {id: employer-multidots, name: Multidots, company: Multidots, kind: generic, url: "https://careers.multidots.com/"}
+  - {id: employer-37signals, name: 37signals, company: 37signals, kind: generic, url: "https://37signals.com/jobs"}
+  - {id: employer-buffer, name: Buffer, company: Buffer, kind: generic, url: "https://buffer.com/journey"}
+  - {id: employer-appwrite, name: Appwrite, company: Appwrite, kind: generic, url: "https://appwrite.io/company"}
+  - {id: employer-discourse, name: Discourse, company: Discourse, kind: generic, url: "https://www.discourse.org/jobs"}
+  - {id: employer-ghost, name: Ghost, company: Ghost, kind: generic, url: "https://careers.ghost.org/"}
+  - {id: employer-browserstack, name: BrowserStack, company: BrowserStack, kind: workday, tenant: browserstack, url: "https://browserstack.wd3.myworkdayjobs.com/External", options: {site: External}, timeout_seconds: 1200}
+  - {id: employer-razorpay, name: Razorpay, company: Razorpay, kind: greenhouse, tenant: razorpaysoftwareprivatelimited, url: "https://job-boards.greenhouse.io/razorpaysoftwareprivatelimited"}
+  - {id: employer-freshworks, name: Freshworks, company: Freshworks, kind: smartrecruiters, tenant: Freshworks, url: "https://careers.smartrecruiters.com/Freshworks", timeout_seconds: 900}

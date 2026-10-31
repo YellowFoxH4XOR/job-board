@@ -1,0 +1,116 @@
+# All sources are attempted independently. Reports distinguish partial/blocked access from zero jobs.
+portal_queries: &queries
+  - software engineer
+  - backend developer
+  - frontend developer
+  - full stack developer
+  - data engineer
+  - data scientist
+  - machine learning engineer
+  - devops engineer
+  - site reliability engineer
+  - qa engineer
+  - security engineer
+  - mobile developer
+
+sources:
+  - {id: remotive, name: Remotive, kind: remotive, group: feed, url: "https://remotive.com/api/remote-jobs"}
+  - {id: remoteok, name: Remote OK, kind: remoteok, group: feed, url: "https://remoteok.com/api"}
+  - {id: fourdayweek, name: 4dayweek.io, kind: fourdayweek, group: feed, url: "https://4dayweek.io/api/v2/jobs"}
+  - {id: jobicy, name: Jobicy, kind: jobicy, group: feed, url: "https://jobicy.com/api/jobs"}
+  - {id: himalayas, name: Himalayas, kind: himalayas, group: feed, url: "https://himalayas.app/jobs/api", max_pages: 500, timeout_seconds: 900}
+  - {id: workingnomads, name: Working Nomads, kind: workingnomads, group: feed, url: "https://www.workingnomads.com/api/exposed_jobs/"}
+  - {id: weworkremotely, name: We Work Remotely, kind: rss, group: feed, url: "https://weworkremotely.com/remote-jobs.rss", options: {remote_only: true}}
+  - {id: hasjob, name: Hasjob, kind: rss, group: feed, url: "https://hasjob.co/feed"}
+  - {id: pythonjobs, name: Python.org Jobs, kind: rss, group: feed, url: "https://www.python.org/jobs/feed/rss/"}
+  - {id: authenticjobs, name: Authentic Jobs, kind: rss, group: feed, url: "https://authenticjobs.com/?feed=job_feed"}
+
+  - id: weekday
+    name: Weekday
+    kind: weekday
+    group: board
+    url: https://www.weekday.works/jobs/remote-backend-developer-jobs
+    max_pages: 100
+    max_details: 1200
+    timeout_seconds: 1500
+    options:
+      seed_urls:
+        - https://www.weekday.works/jobs/remote-backend-developer-jobs
+        - https://www.weekday.works/jobs/remote-frontend-developer-jobs
+        - https://www.weekday.works/jobs/remote-devops-engineer-jobs
+        - https://www.weekday.works/jobs/remote-software-engineer-jobs
+        - https://www.weekday.works/jobs/backend-developer-jobs-in-bangalore
+        - https://www.weekday.works/jobs/frontend-developer-jobs-in-bangalore
+        - https://www.weekday.works/jobs/backend-developer-jobs-in-delhi
+        - https://www.weekday.works/jobs/backend-developer-jobs-in-hyderabad
+        - https://www.weekday.works/jobs/backend-developer-jobs-in-pune
+        - https://www.weekday.works/jobs/backend-developer-jobs-in-mumbai
+        - https://www.weekday.works/jobs/backend-developer-jobs-in-chennai
+  - id: instahyre
+    name: Instahyre
+    kind: instahyre
+    group: board
+    url: https://www.instahyre.com/software-engineering-jobs/
+    max_details: 600
+    timeout_seconds: 900
+    options:
+      seed_urls:
+        - https://www.instahyre.com/software-engineering-jobs/
+        - https://www.instahyre.com/backend-development-jobs/
+        - https://www.instahyre.com/frontend-development-jobs/
+        - https://www.instahyre.com/data-science-analytics-jobs/
+        - https://www.instahyre.com/remote-software-engineering-jobs/
+  - {id: cutshort, name: Cutshort, kind: generic, group: board, url: "https://cutshort.io/jobs/software-engineer-jobs", max_details: 400}
+  - {id: hirist, name: Hirist, kind: generic, group: board, url: "https://www.hirist.tech/c/backend-development-jobs"}
+  - {id: foundit, name: foundit, kind: generic, group: board, url: "https://www.foundit.in/search/software-developer-jobs-in-india", max_details: 400}
+  - {id: wellfound, name: Wellfound India, kind: generic, group: board, url: "https://wellfound.com/location/india", max_details: 400}
+  - {id: builtin, name: Built In India, kind: generic, group: board, url: "https://builtin.com/jobs/as/india", max_details: 400}
+  - {id: peerlist, name: Peerlist Jobs, kind: generic, group: board, url: "https://peerlist.io/jobs"}
+  - {id: geektrust, name: Geektrust, kind: generic, group: board, url: "https://www.geektrust.com/jobs"}
+  - {id: internshala, name: Internshala, kind: generic, group: board, url: "https://internshala.com/jobs/software-development-jobs/"}
+  - {id: unstop, name: Unstop, kind: generic, group: board, url: "https://unstop.com/job/software-development-jobs"}
+  - {id: shine, name: Shine, kind: generic, group: board, url: "https://www.shine.com/job-search/software-developer-jobs"}
+  - {id: apna, name: apna, kind: generic, group: board, url: "https://apna.co/jobs/software-engineering-jobs"}
+  - {id: freshersworld, name: Freshersworld, kind: generic, group: board, url: "https://www.freshersworld.com/jobs/category/it-software-job-vacancies"}
+  - {id: yc, name: YC Work at a Startup, kind: generic, group: board, url: "https://www.ycombinator.com/jobs/location/india"}
+  - {id: startupjobs, name: Startup.jobs, kind: generic, group: board, url: "https://startup.jobs/locations/india"}
+  - {id: nodesk, name: NoDesk, kind: generic, group: board, url: "https://nodesk.co/remote-jobs/"}
+  - {id: remoteio, name: Remote.io India, kind: generic, group: board, url: "https://remote.io/remote-jobs/india"}
+  - {id: tryremote, name: TryRemote, kind: generic, group: board, url: "https://tryremote.com/"}
+  - {id: javascriptjobs, name: JavaScript.jobs, kind: generic, group: board, url: "https://javascript.jobs/remote"}
+  - {id: web3career, name: Web3.career, kind: generic, group: board, url: "https://web3.career/web3-jobs-india"}
+  - {id: cryptojobslist, name: CryptoJobsList, kind: generic, group: board, url: "https://cryptojobslist.com/jobs-india"}
+  - {id: datajobs, name: DataJobs, kind: generic, group: board, url: "https://datajobs.com/Data-Science-Jobs"}
+
+  - id: linkedin
+    name: LinkedIn Jobs
+    kind: jobspy
+    tenant: linkedin
+    group: portal
+    url: https://in.linkedin.com/jobs/
+    timeout_seconds: 2100
+    options: {queries: *queries, results_per_query: 1000, query_timeout_seconds: 150}
+  - id: indeed
+    name: Indeed India
+    kind: jobspy
+    tenant: indeed
+    group: portal
+    url: https://in.indeed.com/
+    timeout_seconds: 2100
+    options: {queries: *queries, results_per_query: 1000, query_timeout_seconds: 150}
+  - id: naukri
+    name: Naukri
+    kind: jobspy
+    tenant: naukri
+    group: portal
+    url: https://www.naukri.com/
+    timeout_seconds: 2100
+    options: {queries: *queries, results_per_query: 1000, query_timeout_seconds: 150}
+  - id: glassdoor
+    name: Glassdoor India
+    kind: jobspy
+    tenant: glassdoor
+    group: portal
+    url: https://www.glassdoor.co.in/
+    timeout_seconds: 2100
+    options: {queries: *queries, results_per_query: 1000, query_timeout_seconds: 150}

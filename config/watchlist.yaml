@@ -1,0 +1,27 @@
+# Discovery-only entries: paid, gated, unresolved, or custom interfaces awaiting a verified adapter.
+# These are not counted as successful collection sources.
+candidates:
+  - {name: Adzuna India, url: "https://developer.adzuna.com/", reason: "Requires an API key and account-specific quota"}
+  - {name: Jooble India, url: "https://in.jooble.org/", reason: "Country-specific API key; finite free lifetime quota"}
+  - {name: Remote Rocketship, url: "https://www.remoterocketship.com/api-docs/", reason: "Subscription API; bounded daily return allowance"}
+  - {name: FlexJobs, url: "https://www.flexjobs.com/", reason: "Full inventory requires paid access"}
+  - {name: Cuvette, url: "https://cuvette.tech/", reason: "Public enumeration unverified"}
+  - {name: Talent500, url: "https://talent500.com/jobs/", reason: "Public enumeration unverified"}
+  - {name: TopHire, url: "https://tophire.co/", reason: "Candidate matching service; no enumerable public catalog verified"}
+  - {name: Foorilla, url: "https://foorilla.com/hiring/", reason: "Public job/API enumeration unverified"}
+  - {name: Uplers, url: "https://platform.uplers.com/talent/all-opportunities", reason: "Public detail pages but index enumeration unverified"}
+  - {name: F6S, url: "https://www.f6s.com/jobs/india-jobs-in-india", reason: "Bot-protected listing pages"}
+  - {name: HiringCafe, url: "https://hiringcafe.com/", reason: "India-specific enumeration unverified"}
+  - {name: HN Who Is Hiring, url: "https://news.ycombinator.com/submitted?id=whoishiring", reason: "Employer hiring posts, not verified active vacancy records"}
+aliases:
+  Monster India: foundit
+  AngelList Jobs: Wellfound
+  Dare2Compete: Unstop
+  React Jobs Board: TryRemote
+  JS Remotely: JavaScript.jobs
+  Timescale: Tiger Data
+  ConvertKit: Kit
+  Hotjar: Contentsquare
+  Turso: Supabase
+  Neon: Databricks
+  Deno: Cloudflare
