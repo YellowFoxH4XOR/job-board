@@ -24,7 +24,7 @@ The seed registry includes Weekday, Instahyre, major portals (LinkedIn, Indeed, 
 - Public Workday career-site adapter; each tenant/site is tracked independently.
 - Public feeds: Remotive, Remote OK, 4dayweek.io, Jobicy, Himalayas, Working Nomads, and RSS/Atom.
 - HTML/JSON-LD discovery for career pages and public boards.
-- Isolated JobSpy processes for the four major portals, with a technology-role query matrix and bounded query runtime.
+- Isolated JobSpy processes for the four major portals, with a technology-role query matrix and bounded 200-record batches. Completed batches survive later timeouts. Descriptions are retained as supplied by the search response; per-job detail fetching is off by default to avoid losing an entire query to slow detail requests.
 - Automatic company discovery from the community-maintained [Remote In Tech](https://github.com/remoteintech/remote-jobs) profiles. Each full run refreshes directory metadata, recognizes direct ATS URLs, and checks up to 80 unresolved career sites (oldest checked first). Resolved sources join daily collection. Directory region/remote-policy labels are **hints, not proof of vacancy eligibility**.
 
 Edit `config/sources.yaml` and `config/employers.yaml` to add or tune sources. `config/watchlist.yaml` records gated/paid/unresolved sources and aliases; these are not silently counted as operational adapters.

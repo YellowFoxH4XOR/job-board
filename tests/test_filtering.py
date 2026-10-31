@@ -43,6 +43,19 @@ def test_explicit_worldwide_role_is_kept():
     assert job.india_eligibility == "worldwide"
 
 
+def test_automattic_explicit_worldwide_recruitment_is_eligible():
+    job = vacancy(location="Remote", workplace_type="remote",
+                  description="We’re always looking for talented and experienced engineers worldwide, excited to help our product ecosystem.")
+    assert classify(job)[0]
+    assert job.india_eligibility == "worldwide"
+
+
+def test_worldwide_customers_do_not_establish_applicant_eligibility():
+    job = vacancy(location="Remote", workplace_type="remote",
+                  description="Our engineers build products for customers worldwide.")
+    assert not classify(job)[0]
+
+
 def test_residency_timezone_excludes_ist_without_excluding_work_overlap():
     job = vacancy(location="Remote, Worldwide", workplace_type="remote",
                   description="Your main location must be between UTC-4 and UTC+4.")

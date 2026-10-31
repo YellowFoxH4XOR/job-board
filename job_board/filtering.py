@@ -127,7 +127,8 @@ def classify(job: Job) -> tuple[bool, str]:
         anywhere = re.search(
             r"(?:work (?:from )?anywhere (?:in the world)?|hire (?:globally|worldwide)|"
             r"remote (?:opportunities )?(?:globally|worldwide)|no restrictions on location|"
-            r"never place restrictions on location)", job.description, re.I,
+            r"never place restrictions on location|"
+            r"(?:looking for|seeking|recruiting|hiring)[^.;\n]{0,130}(?:engineers|developers|candidates|talent)[^.;\n]{0,70}worldwide)", job.description, re.I,
         )
         if eligible_india:
             job.india_eligibility = "india"

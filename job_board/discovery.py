@@ -147,12 +147,16 @@ async def discover(config_dir: str, output_dir: str, *, new_limit: int = 80, mod
     # One tenant can appear under multiple products/brands and in both seed lists.
     sources = deduplicate_sources(sources)
     if mode == "smoke":
-        smoke = {"remotive", "remoteok", "employer-supabase", "employer-highlevel", "employer-gitlab", "railway", "weekday", "instahyre"}
+        smoke = {"remotive", "remoteok", "employer-supabase", "employer-highlevel", "employer-gitlab", "employer-automattic", "railway", "weekday", "instahyre", "linkedin", "naukri"}
         sources = [s for s in sources if s.id in smoke]
         for source in sources:
             source.max_pages = min(source.max_pages, 3)
             source.max_details = min(source.max_details, 8)
             source.timeout_seconds = min(source.timeout_seconds, 120)
+            if source.kind == "jobspy":
+                source.options = {**source.options, "queries": ["software engineer"],
+                                  "results_per_query": 200, "batch_size": 200,
+                                  "query_timeout_seconds": 90}
     shards: dict[str, list[dict]] = {}
     counters = {"employer": 0, "board": 0}
     for source in sources:

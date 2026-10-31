@@ -14,7 +14,8 @@ def main() -> None:
     request = json.load(sys.stdin)
     kwargs = {"site_name": [request["site"]], "search_term": request["query"],
               "location": "India", "country_indeed": "India", "results_wanted": request.get("limit", 1000),
-              "description_format": "plain", "fetch_description": True, "verbose": 1}
+              "offset": request.get("offset", 0), "description_format": "plain",
+              "fetch_description": request.get("fetch_description", False), "verbose": 1}
     signature = inspect.signature(scrape_jobs)
     if not any(p.kind == p.VAR_KEYWORD for p in signature.parameters.values()):
         kwargs = {k: v for k, v in kwargs.items() if k in signature.parameters}
