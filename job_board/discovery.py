@@ -27,6 +27,21 @@ def load_sources(path: str) -> list[Source]:
     return [Source.model_validate(item) for item in data.get("sources", []) if item.get("enabled", True)]
 
 
+def deduplicate_sources(sources: list[Source]) -> list[Source]:
+    """Curated entries come first and override stale directory ATS mappings."""
+    identities = set()
+    ids = set()
+    unique = []
+    for source in sources:
+        identity = (source.kind, source.tenant or source.url.rstrip("/"), source.options.get("site", ""))
+        if source.id in ids or identity in identities:
+            continue
+        ids.add(source.id)
+        identities.add(identity)
+        unique.append(source)
+    return unique
+
+
 def read_directory_archive(content: bytes) -> list[dict]:
     records = []
     # Read individual text members in memory; never extract or execute the repository.
@@ -130,11 +145,7 @@ async def discover(config_dir: str, output_dir: str, *, new_limit: int = 80, mod
         await fetch.close()
 
     # One tenant can appear under multiple products/brands and in both seed lists.
-    unique = {}
-    for source in sources:
-        identity = (source.kind, source.tenant or source.url.rstrip("/"), source.options.get("site", ""))
-        unique.setdefault(identity, source)
-    sources = list(unique.values())
+    sources = deduplicate_sources(sources)
     if mode == "smoke":
         smoke = {"remotive", "remoteok", "employer-supabase", "employer-highlevel", "employer-gitlab", "railway", "weekday", "instahyre"}
         sources = [s for s in sources if s.id in smoke]

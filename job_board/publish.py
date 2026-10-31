@@ -45,7 +45,10 @@ def atomic_json(path: Path, value, *, pretty: bool = False) -> None:
 def publish(plan_path: str, results_dir: str, *, root_dir: str = ".", registry_path: str | None = None) -> dict:
     root = Path(root_dir)
     plan = json.loads(Path(plan_path).read_text())
-    expected = {s["id"]: Source.model_validate(s) for group in plan["shards"].values() for s in group}
+    planned = [Source.model_validate(s) for group in plan["shards"].values() for s in group]
+    expected = {s.id: s for s in planned}
+    if len(expected) != len(planned):
+        raise ValueError("Collection plan has duplicate source IDs; refusing ambiguous publication")
     results = {}
     for path in Path(results_dir).rglob("source-*.json"):
         result = SourceResult.model_validate_json(path.read_text())

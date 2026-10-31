@@ -4,7 +4,7 @@ import tarfile
 
 import pytest
 
-from job_board.discovery import load_sources, read_directory_archive
+from job_board.discovery import deduplicate_sources, load_sources, read_directory_archive
 from job_board.models import Source, SourceResult, canonical_url, make_job
 from job_board.publish import merge_jobs, publish
 
@@ -13,6 +13,14 @@ def test_all_configured_sources_have_unique_ids():
     sources = load_sources("config/sources.yaml") + load_sources("config/employers.yaml")
     assert len(sources) == len({s.id for s in sources})
     assert {"weekday", "instahyre", "railway", "employer-supabase", "employer-automattic", "naukri"} <= {s.id for s in sources}
+
+
+def test_curated_ats_migration_wins_over_stale_directory_entry():
+    curated = Source(id="employer-deel", name="Deel", kind="generic", url="https://www.deel.com/careers/")
+    stale = curated.model_copy(update={"kind": "ashby", "tenant": "deel", "url": "https://jobs.ashbyhq.com/deel"})
+    assert deduplicate_sources([curated, stale]) == [curated]
+    duplicate_tenant = stale.model_copy(update={"id": "different-name"})
+    assert deduplicate_sources([stale, duplicate_tenant]) == [stale]
 
 
 def test_discovery_reads_profile_frontmatter_without_extracting_archive(tmp_path):
