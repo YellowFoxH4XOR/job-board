@@ -1,0 +1,4827 @@
+{
+  "date": "2026-11-02",
+  "started_at": "2026-11-01T19:02:32.571279+00:00",
+  "finished_at": "2026-11-01T19:24:32.438980+00:00",
+  "run_url": "https://github.com/YellowFoxH4XOR/job-board/actions/runs/41339593632",
+  "mode": "full",
+  "discovered_profiles": 616,
+  "discovery_errors": [],
+  "source_counts": {
+    "success": 103,
+    "failed": 1,
+    "partial": 41,
+    "blocked": 5,
+    "unsupported": 3
+  },
+  "sources": [
+    {
+      "source": {
+        "id": "apna",
+        "name": "apna",
+        "kind": "generic",
+        "url": "https://apna.co/jobs/software-engineering-jobs",
+        "company": null,
+        "tenant": null,
+        "group": "board",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "partial",
+      "complete": false,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:10.288468+00:00",
+      "finished_at": "2026-11-01T19:05:12.481786+00:00",
+      "pages_fetched": 4,
+      "jobs_seen": 95,
+      "jobs_kept": 66,
+      "expected_count": null,
+      "warnings": [
+        "Detail failed: HTTPStatusError: Client error '404 Not Found' for url 'https://apna.co/job/1166832387'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+        "Detail failed: HTTPStatusError: Client error '481 unknown' for url 'https://apna.co/job/1730985118'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/481",
+        "Detail failed: HTTPStatusError: Client error '481 unknown' for url 'https://apna.co/job/1032316852'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/481",
+        "Detail failed: HTTPStatusError: Client error '481 unknown' for url 'https://apna.co/job/1469640858'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/481",
+        "Detail failed: HTTPStatusError: Client error '481 unknown' for url 'https://apna.co/job/1763595367'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/481",
+        "Filtered: outside technology role scope: 9; closed or expired: 20"
+      ],
+      "errors": [
+        "HTTPStatusError: Client error '481 unknown' for url 'https://apna.co/jobs/software-engineering-jobs?page=5'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/481"
+      ]
+    },
+    {
+      "source": {
+        "id": "authenticjobs",
+        "name": "Authentic Jobs",
+        "kind": "rss",
+        "url": "https://authenticjobs.com/?feed=job_feed",
+        "company": null,
+        "tenant": null,
+        "group": "feed",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "partial",
+      "complete": false,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:02:56.525154+00:00",
+      "finished_at": "2026-11-01T19:02:56.955212+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 10,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "RSS/Atom feed retention may omit older active vacancies",
+        "Filtered: outside technology role scope: 3; no India location and not fully remote: 5; remote position is restricted to other countries: 2"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "builtin",
+        "name": "Built In India",
+        "kind": "generic",
+        "url": "https://builtin.com/jobs/as/india",
+        "company": null,
+        "tenant": null,
+        "group": "board",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 400,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "partial",
+      "complete": false,
+      "coverage_scope": "Public HTML/JSON-LD vacancies reachable from the configured career/listing pages",
+      "started_at": "2026-11-01T19:03:10.916775+00:00",
+      "finished_at": "2026-11-01T19:09:20.086374+00:00",
+      "pages_fetched": 31,
+      "jobs_seen": 329,
+      "jobs_kept": 111,
+      "expected_count": null,
+      "warnings": [
+        "Public HTML discovery does not establish exhaustive active-catalog coverage",
+        "Filtered: outside technology role scope: 205; closed or expired: 13"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "cryptojobslist",
+        "name": "CryptoJobsList",
+        "kind": "generic",
+        "url": "https://cryptojobslist.com/jobs-india",
+        "company": null,
+        "tenant": null,
+        "group": "board",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "partial",
+      "complete": false,
+      "coverage_scope": "Public HTML/JSON-LD vacancies reachable from the configured career/listing pages",
+      "started_at": "2026-11-01T19:03:26.514853+00:00",
+      "finished_at": "2026-11-01T19:03:39.717064+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 20,
+      "jobs_kept": 14,
+      "expected_count": null,
+      "warnings": [
+        "Public HTML discovery does not establish exhaustive active-catalog coverage",
+        "Filtered: outside technology role scope: 6"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "cutshort",
+        "name": "Cutshort",
+        "kind": "generic",
+        "url": "https://cutshort.io/jobs/software-engineer-jobs",
+        "company": null,
+        "tenant": null,
+        "group": "board",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 400,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "unsupported",
+      "complete": false,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:10.866199+00:00",
+      "finished_at": "2026-11-01T19:03:11.624826+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 0,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [],
+      "errors": [
+        "No job records or explicit no-openings message exposed; dynamic rendering or a dedicated adapter is required"
+      ]
+    },
+    {
+      "source": {
+        "id": "datajobs",
+        "name": "DataJobs",
+        "kind": "generic",
+        "url": "https://datajobs.com/Data-Science-Jobs",
+        "company": null,
+        "tenant": null,
+        "group": "board",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {
+          "seed_urls": [
+            "https://datajobs.com/Data-Science-Jobs",
+            "https://datajobs.com/Data-Engineering-Jobs"
+          ]
+        },
+        "discovery_url": null
+      },
+      "status": "partial",
+      "complete": false,
+      "coverage_scope": "Public HTML/JSON-LD vacancies reachable from the configured career/listing pages",
+      "started_at": "2026-11-01T19:03:24.433079+00:00",
+      "finished_at": "2026-11-01T19:06:34.346408+00:00",
+      "pages_fetched": 23,
+      "jobs_seen": 249,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Detail failed: HTTPStatusError: Server error '500 INTERNAL SERVER ERROR' for url 'https://datajobs.com/Caleba-S/Data-Science-Senior-Engineer-Job~3076'\nFor more information check: https://developer.mozilla.org/en-",
+        "Detail budget (250) reached; more listings may exist",
+        "Crawl ended with unvisited listing pages",
+        "Public HTML discovery does not establish exhaustive active-catalog coverage",
+        "Filtered: closed or expired: 1; no India location and not fully remote: 179; remote India eligibility is unconfirmed: 22; outside technology role scope: 46; remote position is restricted to other countries: 1"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-1password",
+        "name": "1Password",
+        "kind": "ashby",
+        "url": "https://jobs.ashbyhq.com/1password",
+        "company": "1Password",
+        "tenant": "1password",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:07.040362+00:00",
+      "finished_at": "2026-11-01T19:03:08.335983+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 87,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: outside technology role scope: 54; talent pool rather than a vacancy: 1; remote position is restricted to other countries: 8; no India location and not fully remote: 24"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-37signals",
+        "name": "37signals",
+        "kind": "generic",
+        "url": "https://37signals.com/jobs",
+        "company": "37signals",
+        "tenant": null,
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:18.167777+00:00",
+      "finished_at": "2026-11-01T19:03:18.800761+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 0,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-acquia",
+        "name": "Acquia",
+        "kind": "greenhouse",
+        "url": "https://job-boards.greenhouse.io/acquia",
+        "company": "Acquia",
+        "tenant": "acquia",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/acquia.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:13.654044+00:00",
+      "finished_at": "2026-11-01T19:03:13.702722+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 5,
+      "jobs_kept": 0,
+      "expected_count": 5,
+      "warnings": [
+        "Filtered: outside technology role scope: 4; remote position is restricted to other countries: 1"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-anomali",
+        "name": "Anomali",
+        "kind": "lever",
+        "url": "https://jobs.lever.co/anomali",
+        "company": "Anomali",
+        "tenant": "anomali",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/anomali.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:23.030061+00:00",
+      "finished_at": "2026-11-01T19:03:23.866803+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 8,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: outside technology role scope: 4; remote position is restricted to other countries: 1; no India location and not fully remote: 3"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-appen",
+        "name": "Appen",
+        "kind": "lever",
+        "url": "https://jobs.lever.co/appen-2",
+        "company": "Appen",
+        "tenant": "appen-2",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/appen.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:09.915090+00:00",
+      "finished_at": "2026-11-01T19:03:10.409469+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 27,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: outside technology role scope: 27"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-appwrite",
+        "name": "Appwrite",
+        "kind": "generic",
+        "url": "https://appwrite.io/company",
+        "company": "Appwrite",
+        "tenant": null,
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:04.894993+00:00",
+      "finished_at": "2026-11-01T19:03:06.236301+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 0,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-atlassian",
+        "name": "Atlassian",
+        "kind": "generic",
+        "url": "https://www.atlassian.com/company/careers/all-jobs",
+        "company": "Atlassian",
+        "tenant": null,
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 500,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "partial",
+      "complete": false,
+      "coverage_scope": "Public HTML/JSON-LD vacancies reachable from the configured career/listing pages",
+      "started_at": "2026-11-01T19:03:04.550267+00:00",
+      "finished_at": "2026-11-01T19:09:53.416004+00:00",
+      "pages_fetched": 11,
+      "jobs_seen": 454,
+      "jobs_kept": 15,
+      "expected_count": null,
+      "warnings": [
+        "Detail failed: HTTPStatusError: Server error '503 Service Unavailable' for url 'https://www.atlassian.com/company/careers/details/27486'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HT",
+        "Detail budget (500) reached; more listings may exist",
+        "Crawl ended with unvisited listing pages",
+        "Public HTML discovery does not establish exhaustive active-catalog coverage",
+        "Filtered: outside technology role scope: 274; remote India eligibility is unconfirmed: 144; no India location and not fully remote: 20; description explicitly restricts candidate geography: 1"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-automattic",
+        "name": "Automattic",
+        "kind": "greenhouse",
+        "url": "https://job-boards.greenhouse.io/automatticcareers",
+        "company": "Automattic",
+        "tenant": "automatticcareers",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:02.360503+00:00",
+      "finished_at": "2026-11-01T19:03:02.620695+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 12,
+      "jobs_kept": 1,
+      "expected_count": 12,
+      "warnings": [
+        "Filtered: outside technology role scope: 8; remote India eligibility is unconfirmed: 3"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-balena",
+        "name": "Balena",
+        "kind": "workable",
+        "url": "https://apply.workable.com/balena",
+        "company": "Balena",
+        "tenant": "balena",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/balena.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:05.572843+00:00",
+      "finished_at": "2026-11-01T19:03:05.766133+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 0,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-bandlab",
+        "name": "BandLab",
+        "kind": "workable",
+        "url": "https://apply.workable.com/bandlabtechnologies/",
+        "company": "BandLab",
+        "tenant": "bandlabtechnologies",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/bandlab.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:13.703034+00:00",
+      "finished_at": "2026-11-01T19:03:14.026963+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 0,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-bitwarden",
+        "name": "Bitwarden",
+        "kind": "greenhouse",
+        "url": "https://job-boards.greenhouse.io/bitwarden",
+        "company": "Bitwarden",
+        "tenant": "bitwarden",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:03.661353+00:00",
+      "finished_at": "2026-11-01T19:03:04.894407+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 31,
+      "jobs_kept": 13,
+      "expected_count": 31,
+      "warnings": [
+        "Filtered: talent pool rather than a vacancy: 1; outside technology role scope: 11; remote India eligibility is unconfirmed: 6"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-browserstack",
+        "name": "BrowserStack",
+        "kind": "workday",
+        "url": "https://browserstack.wd3.myworkdayjobs.com/External",
+        "company": "BrowserStack",
+        "tenant": "browserstack",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 1200,
+        "options": {
+          "site": "External"
+        },
+        "discovery_url": null
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:08.796426+00:00",
+      "finished_at": "2026-11-01T19:03:13.024009+00:00",
+      "pages_fetched": 2,
+      "jobs_seen": 29,
+      "jobs_kept": 5,
+      "expected_count": 29,
+      "warnings": [
+        "Filtered: outside technology role scope: 24"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-buffer",
+        "name": "Buffer",
+        "kind": "generic",
+        "url": "https://buffer.com/journey",
+        "company": "Buffer",
+        "tenant": null,
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:08.403843+00:00",
+      "finished_at": "2026-11-01T19:03:09.300837+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 0,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-calcom",
+        "name": "Cal.com",
+        "kind": "generic",
+        "url": "https://cal.com/jobs",
+        "company": "Cal.com",
+        "tenant": null,
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "partial",
+      "complete": false,
+      "coverage_scope": "Public HTML/JSON-LD vacancies reachable from the configured career/listing pages",
+      "started_at": "2026-11-01T19:03:06.811788+00:00",
+      "finished_at": "2026-11-01T19:03:08.154305+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 1,
+      "jobs_kept": 1,
+      "expected_count": null,
+      "warnings": [
+        "Public HTML discovery does not establish exhaustive active-catalog coverage"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-canonical",
+        "name": "Canonical",
+        "kind": "generic",
+        "url": "https://canonical.com/careers/all",
+        "company": "Canonical",
+        "tenant": null,
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 500,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:06.810719+00:00",
+      "finished_at": "2026-11-01T19:03:08.945016+00:00",
+      "pages_fetched": 2,
+      "jobs_seen": 314,
+      "jobs_kept": 59,
+      "expected_count": 314,
+      "warnings": [
+        "Filtered: outside technology role scope: 151; remote position is restricted to other countries: 72; remote India eligibility is unconfirmed: 17; no India location and not fully remote: 15"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-capmo",
+        "name": "Capmo",
+        "kind": "personio",
+        "url": "https://capmo.jobs.personio.de",
+        "company": "Capmo",
+        "tenant": "capmo",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/capmo.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:23.867062+00:00",
+      "finished_at": "2026-11-01T19:03:24.397651+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 9,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: outside technology role scope: 6; talent pool rather than a vacancy: 1; no India location and not fully remote: 2"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-chainguard",
+        "name": "Chainguard",
+        "kind": "greenhouse",
+        "url": "https://job-boards.greenhouse.io/chainguard",
+        "company": "Chainguard",
+        "tenant": "chainguard",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:02.547302+00:00",
+      "finished_at": "2026-11-01T19:03:04.395826+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 94,
+      "jobs_kept": 1,
+      "expected_count": 94,
+      "warnings": [
+        "Filtered: outside technology role scope: 54; remote India eligibility is unconfirmed: 3; remote position is restricted to other countries: 35; talent pool rather than a vacancy: 1"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-circleci",
+        "name": "CircleCI",
+        "kind": "greenhouse",
+        "url": "https://boards.greenhouse.io/circleci",
+        "company": "CircleCI",
+        "tenant": "circleci",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/circleci.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:10.409825+00:00",
+      "finished_at": "2026-11-01T19:03:10.530660+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 14,
+      "jobs_kept": 0,
+      "expected_count": 14,
+      "warnings": [
+        "Filtered: outside technology role scope: 6; no India location and not fully remote: 6; remote position is restricted to other countries: 2"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-clickhouse",
+        "name": "ClickHouse",
+        "kind": "ashby",
+        "url": "https://jobs.ashbyhq.com/clickhouse",
+        "company": "ClickHouse",
+        "tenant": "clickhouse",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:05.207956+00:00",
+      "finished_at": "2026-11-01T19:03:06.548667+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 206,
+      "jobs_kept": 5,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: no India location and not fully remote: 50; remote position is restricted to other countries: 78; remote India eligibility is unconfirmed: 5; outside technology role scope: 68"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-close",
+        "name": "Close",
+        "kind": "ashby",
+        "url": "https://jobs.ashbyhq.com/close",
+        "company": "Close",
+        "tenant": "close",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/close.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:05.766427+00:00",
+      "finished_at": "2026-11-01T19:03:06.059287+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 6,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: remote position is restricted to other countries: 6"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-cloudera",
+        "name": "CloudEra",
+        "kind": "workday",
+        "url": "https://cloudera.wd5.myworkdayjobs.com/External_Career",
+        "company": "CloudEra",
+        "tenant": "cloudera",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {
+          "site": "External_Career"
+        },
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/cloudera.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:14.027240+00:00",
+      "finished_at": "2026-11-01T19:03:31.328247+00:00",
+      "pages_fetched": 3,
+      "jobs_seen": 56,
+      "jobs_kept": 1,
+      "expected_count": 56,
+      "warnings": [
+        "Filtered: no India location and not fully remote: 16; outside technology role scope: 31; remote position is restricted to other countries: 3; remote India eligibility is unconfirmed: 5"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-collabora",
+        "name": "Collabora",
+        "kind": "lever",
+        "url": "https://jobs.lever.co/collabora",
+        "company": "Collabora",
+        "tenant": "collabora",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/collabora.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:24.397910+00:00",
+      "finished_at": "2026-11-01T19:03:28.889249+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 2,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: remote position is restricted to other countries: 2"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-consensys-inc",
+        "name": "ConsenSys Inc",
+        "kind": "ashby",
+        "url": "https://jobs.ashbyhq.com/consensys",
+        "company": "ConsenSys Inc",
+        "tenant": "consensys",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/consensys.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:10.531086+00:00",
+      "finished_at": "2026-11-01T19:03:10.598229+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 8,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: no India location and not fully remote: 5; outside technology role scope: 3"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-contentsquare",
+        "name": "Contentsquare",
+        "kind": "lever",
+        "url": "https://jobs.lever.co/contentsquare",
+        "company": "Contentsquare",
+        "tenant": "contentsquare",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:09.590122+00:00",
+      "finished_at": "2026-11-01T19:03:10.923873+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 19,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: outside technology role scope: 16; no India location and not fully remote: 1; remote position is restricted to other countries: 2"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-convex",
+        "name": "Convex",
+        "kind": "ashby",
+        "url": "https://jobs.ashbyhq.com/convex-dev",
+        "company": "Convex",
+        "tenant": "convex-dev",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:08.946867+00:00",
+      "finished_at": "2026-11-01T19:03:08.970550+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 11,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: no India location and not fully remote: 8; outside technology role scope: 3"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-crowdstrike",
+        "name": "CrowdStrike",
+        "kind": "workday",
+        "url": "https://crowdstrike.wd5.myworkdayjobs.com/crowdstrikecareers",
+        "company": "CrowdStrike",
+        "tenant": "crowdstrike",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 1200,
+        "options": {
+          "site": "crowdstrikecareers"
+        },
+        "discovery_url": null
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:05.492608+00:00",
+      "finished_at": "2026-11-01T19:04:36.309194+00:00",
+      "pages_fetched": 19,
+      "jobs_seen": 365,
+      "jobs_kept": 16,
+      "expected_count": 365,
+      "warnings": [
+        "Filtered: no India location and not fully remote: 69; outside technology role scope: 235; remote position is restricted to other countries: 41; remote India eligibility is unconfirmed: 4"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-customer-io",
+        "name": "Customer.io",
+        "kind": "greenhouse",
+        "url": "https://job-boards.greenhouse.io/customerio",
+        "company": "Customer.io",
+        "tenant": "customerio",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/customer-io.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:06.059543+00:00",
+      "finished_at": "2026-11-01T19:03:06.167472+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 24,
+      "jobs_kept": 0,
+      "expected_count": 24,
+      "warnings": [
+        "Filtered: outside technology role scope: 10; remote India eligibility is unconfirmed: 12; remote position is restricted to other countries: 2"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-deel",
+        "name": "Deel",
+        "kind": "generic",
+        "url": "https://www.deel.com/careers/",
+        "company": "Deel",
+        "tenant": null,
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {
+          "render_details": true,
+          "detail_wait_selector": "text=Job details"
+        },
+        "discovery_url": null
+      },
+      "status": "partial",
+      "complete": false,
+      "coverage_scope": "Public HTML/JSON-LD vacancies reachable from the configured career/listing pages",
+      "started_at": "2026-11-01T19:03:04.648277+00:00",
+      "finished_at": "2026-11-01T19:06:38.138746+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 254,
+      "jobs_kept": 5,
+      "expected_count": null,
+      "warnings": [
+        "Detail budget (250) reached; more listings may exist",
+        "Public HTML discovery does not establish exhaustive active-catalog coverage",
+        "Filtered: outside technology role scope: 208; no India location and not fully remote: 41"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-devsquad",
+        "name": "Devsquad",
+        "kind": "workable",
+        "url": "https://apply.workable.com/devsquad",
+        "company": "Devsquad",
+        "tenant": "devsquad",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/devsquad.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:31.328688+00:00",
+      "finished_at": "2026-11-01T19:03:31.502604+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 0,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-discourse",
+        "name": "Discourse",
+        "kind": "generic",
+        "url": "https://www.discourse.org/jobs",
+        "company": "Discourse",
+        "tenant": null,
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:12.068362+00:00",
+      "finished_at": "2026-11-01T19:03:12.709413+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 0,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-docker",
+        "name": "Docker",
+        "kind": "ashby",
+        "url": "https://jobs.ashbyhq.com/docker",
+        "company": "Docker",
+        "tenant": "docker",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:15.680041+00:00",
+      "finished_at": "2026-11-01T19:03:16.324492+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 54,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: remote position is restricted to other countries: 29; outside technology role scope: 24; remote India eligibility is unconfirmed: 1"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-egnyte",
+        "name": "Egnyte",
+        "kind": "generic",
+        "url": "https://jobs.jobvite.com/egnyte/jobs",
+        "company": "Egnyte",
+        "tenant": null,
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "partial",
+      "complete": false,
+      "coverage_scope": "Public HTML/JSON-LD vacancies reachable from the configured career/listing pages",
+      "started_at": "2026-11-01T19:03:04.549640+00:00",
+      "finished_at": "2026-11-01T19:03:23.029551+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 29,
+      "jobs_kept": 6,
+      "expected_count": null,
+      "warnings": [
+        "Public HTML discovery does not establish exhaustive active-catalog coverage",
+        "Filtered: outside technology role scope: 16; no India location and not fully remote: 7"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-ergeon",
+        "name": "Ergeon",
+        "kind": "greenhouse",
+        "url": "https://job-boards.greenhouse.io/ergeon",
+        "company": "Ergeon",
+        "tenant": "ergeon",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/ergeon.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:28.889530+00:00",
+      "finished_at": "2026-11-01T19:03:28.930843+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 0,
+      "jobs_kept": 0,
+      "expected_count": 0,
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-extreme-networks",
+        "name": "Extreme Networks",
+        "kind": "workday",
+        "url": "https://extremenetworks.wd503.myworkdayjobs.com/Extreme_Networks",
+        "company": "Extreme Networks",
+        "tenant": "extremenetworks",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {
+          "site": "Extreme_Networks"
+        },
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/extreme-networks.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:10.598547+00:00",
+      "finished_at": "2026-11-01T19:03:29.631977+00:00",
+      "pages_fetched": 3,
+      "jobs_seen": 60,
+      "jobs_kept": 17,
+      "expected_count": 60,
+      "warnings": [
+        "Filtered: remote position is restricted to other countries: 7; no India location and not fully remote: 5; outside technology role scope: 31"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-findem",
+        "name": "Findem",
+        "kind": "lever",
+        "url": "https://jobs.lever.co/findem",
+        "company": "Findem",
+        "tenant": "findem",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/findem.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:06.167832+00:00",
+      "finished_at": "2026-11-01T19:03:08.107641+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 7,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: outside technology role scope: 5; remote position is restricted to other countries: 2"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-flexera",
+        "name": "Flexera",
+        "kind": "workday",
+        "url": "https://flexerasoftware.wd1.myworkdayjobs.com/FlexeraSoftware",
+        "company": "Flexera",
+        "tenant": "flexerasoftware",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {
+          "site": "FlexeraSoftware"
+        },
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/flexera.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:31.502877+00:00",
+      "finished_at": "2026-11-01T19:03:37.544384+00:00",
+      "pages_fetched": 2,
+      "jobs_seen": 23,
+      "jobs_kept": 4,
+      "expected_count": 23,
+      "warnings": [
+        "Filtered: outside technology role scope: 15; no India location and not fully remote: 3; remote position is restricted to other countries: 1"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-fly",
+        "name": "Fly.io",
+        "kind": "generic",
+        "url": "https://fly.io/jobs/",
+        "company": "Fly.io",
+        "tenant": null,
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "partial",
+      "complete": false,
+      "coverage_scope": "Public HTML/JSON-LD vacancies reachable from the configured career/listing pages",
+      "started_at": "2026-11-01T19:03:08.154633+00:00",
+      "finished_at": "2026-11-01T19:03:12.068118+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 4,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Public HTML discovery does not establish exhaustive active-catalog coverage",
+        "Filtered: outside technology role scope: 3; no India location and not fully remote: 1"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-formstack",
+        "name": "Formstack",
+        "kind": "ashby",
+        "url": "https://jobs.ashbyhq.com/Intellistack",
+        "company": "Formstack",
+        "tenant": "Intellistack",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/formstack.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:28.931095+00:00",
+      "finished_at": "2026-11-01T19:03:28.971528+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 12,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: outside technology role scope: 8; no India location and not fully remote: 4"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-freshworks",
+        "name": "Freshworks",
+        "kind": "smartrecruiters",
+        "url": "https://careers.smartrecruiters.com/Freshworks",
+        "company": "Freshworks",
+        "tenant": "Freshworks",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:12.709651+00:00",
+      "finished_at": "2026-11-01T19:04:30.797266+00:00",
+      "pages_fetched": 2,
+      "jobs_seen": 125,
+      "jobs_kept": 18,
+      "expected_count": 125,
+      "warnings": [
+        "Filtered: outside technology role scope: 83; no India location and not fully remote: 17; remote position is restricted to other countries: 7"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-general-assembly",
+        "name": "General Assembly",
+        "kind": "greenhouse",
+        "url": "https://job-boards.greenhouse.io/generalassembly",
+        "company": "General Assembly",
+        "tenant": "generalassembly",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/general-assembly.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:10.796486+00:00",
+      "finished_at": "2026-11-01T19:03:11.147045+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 27,
+      "jobs_kept": 0,
+      "expected_count": 27,
+      "warnings": [
+        "Filtered: outside technology role scope: 19; no India location and not fully remote: 8"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-ghost",
+        "name": "Ghost",
+        "kind": "generic",
+        "url": "https://careers.ghost.org/",
+        "company": "Ghost",
+        "tenant": null,
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "partial",
+      "complete": false,
+      "coverage_scope": "Public HTML/JSON-LD vacancies reachable from the configured career/listing pages",
+      "started_at": "2026-11-01T19:03:18.801033+00:00",
+      "finished_at": "2026-11-01T19:03:20.777068+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 2,
+      "jobs_kept": 1,
+      "expected_count": null,
+      "warnings": [
+        "Public HTML discovery does not establish exhaustive active-catalog coverage",
+        "Filtered: India outside required residence timezone band: 1"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-gitlab",
+        "name": "GitLab",
+        "kind": "greenhouse",
+        "url": "https://job-boards.greenhouse.io/gitlab",
+        "company": "GitLab",
+        "tenant": "gitlab",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:05.207189+00:00",
+      "finished_at": "2026-11-01T19:03:06.338634+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 238,
+      "jobs_kept": 18,
+      "expected_count": 238,
+      "warnings": [
+        "Filtered: outside technology role scope: 144; remote position is restricted to other countries: 65; remote India eligibility is unconfirmed: 10; description explicitly restricts candidate geography: 1"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-grafana",
+        "name": "Grafana Labs",
+        "kind": "greenhouse",
+        "url": "https://job-boards.greenhouse.io/grafanalabs",
+        "company": "Grafana Labs",
+        "tenant": "grafanalabs",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:02.403137+00:00",
+      "finished_at": "2026-11-01T19:03:03.410271+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 120,
+      "jobs_kept": 0,
+      "expected_count": 120,
+      "warnings": [
+        "Filtered: outside technology role scope: 50; remote position is restricted to other countries: 50; remote India eligibility is unconfirmed: 19; talent pool rather than a vacancy: 1"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-helpscout",
+        "name": "Help Scout",
+        "kind": "ashby",
+        "url": "https://jobs.ashbyhq.com/helpscout",
+        "company": "Help Scout",
+        "tenant": "helpscout",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:04.396400+00:00",
+      "finished_at": "2026-11-01T19:03:05.523806+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 6,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: outside technology role scope: 6"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-highlevel",
+        "name": "HighLevel",
+        "kind": "lever",
+        "url": "https://jobs.lever.co/gohighlevel",
+        "company": "HighLevel",
+        "tenant": "gohighlevel",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:06.764665+00:00",
+      "finished_at": "2026-11-01T19:03:09.188733+00:00",
+      "pages_fetched": 2,
+      "jobs_seen": 108,
+      "jobs_kept": 58,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: outside technology role scope: 46; remote position is restricted to other countries: 4"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-hugging-face",
+        "name": "Hugging Face",
+        "kind": "workable",
+        "url": "https://apply.workable.com/huggingface/",
+        "company": "Hugging Face",
+        "tenant": "huggingface",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/hugging-face.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:06.236726+00:00",
+      "finished_at": "2026-11-01T19:03:06.473189+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 6,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: no India location and not fully remote: 5; outside technology role scope: 1"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-human-made",
+        "name": "Human Made",
+        "kind": "workable",
+        "url": "https://apply.workable.com/humanmade",
+        "company": "Human Made",
+        "tenant": "humanmade",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/human-made.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:37.544803+00:00",
+      "finished_at": "2026-11-01T19:03:37.767182+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 6,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: description explicitly restricts candidate geography: 2; outside technology role scope: 4"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-inngest",
+        "name": "Inngest",
+        "kind": "ashby",
+        "url": "https://jobs.ashbyhq.com/inngest",
+        "company": "Inngest",
+        "tenant": "inngest",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:15.656047+00:00",
+      "finished_at": "2026-11-01T19:03:15.679845+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 2,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: remote position is restricted to other countries: 1; no India location and not fully remote: 1"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-intuition-machines-inc",
+        "name": "Intuition Machines, Inc.",
+        "kind": "workable",
+        "url": "https://apply.workable.com/imachines",
+        "company": "Intuition Machines, Inc.",
+        "tenant": "imachines",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/intuition-machines-inc.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:28.971738+00:00",
+      "finished_at": "2026-11-01T19:03:29.360630+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 18,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: outside technology role scope: 5; no India location and not fully remote: 13"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-invesco",
+        "name": "Invesco",
+        "kind": "workday",
+        "url": "https://invesco.wd1.myworkdayjobs.com/IVZ",
+        "company": "Invesco",
+        "tenant": "invesco",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {
+          "site": "IVZ"
+        },
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/invesco.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:11.147485+00:00",
+      "finished_at": "2026-11-01T19:03:30.960320+00:00",
+      "pages_fetched": 11,
+      "jobs_seen": 206,
+      "jobs_kept": 4,
+      "expected_count": 206,
+      "warnings": [
+        "Filtered: outside technology role scope: 184; no India location and not fully remote: 18"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-kindred",
+        "name": "Kindred",
+        "kind": "ashby",
+        "url": "https://jobs.ashbyhq.com/kindred",
+        "company": "Kindred",
+        "tenant": "kindred",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/kindred.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:06.473476+00:00",
+      "finished_at": "2026-11-01T19:03:06.654737+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 4,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: remote position is restricted to other countries: 2; outside technology role scope: 2"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-kit",
+        "name": "Kit",
+        "kind": "ashby",
+        "url": "https://jobs.ashbyhq.com/kit",
+        "company": "Kit",
+        "tenant": "kit",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:02.411471+00:00",
+      "finished_at": "2026-11-01T19:03:02.547028+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 7,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: outside technology role scope: 6; remote position is restricted to other countries: 1"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-kong",
+        "name": "Kong",
+        "kind": "ashby",
+        "url": "https://jobs.ashbyhq.com/kong",
+        "company": "Kong",
+        "tenant": "kong",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:08.970781+00:00",
+      "finished_at": "2026-11-01T19:03:09.589636+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 100,
+      "jobs_kept": 6,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: remote position is restricted to other countries: 10; outside technology role scope: 63; no India location and not fully remote: 21"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-kraken",
+        "name": "Kraken",
+        "kind": "ashby",
+        "url": "https://jobs.ashbyhq.com/kraken.com",
+        "company": "Kraken",
+        "tenant": "kraken.com",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/kraken.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:37.767495+00:00",
+      "finished_at": "2026-11-01T19:03:37.916278+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 87,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: remote position is restricted to other countries: 37; outside technology role scope: 50"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-launch-potato",
+        "name": "Launch Potato",
+        "kind": "greenhouse",
+        "url": "https://boards.greenhouse.io/launchpotato",
+        "company": "Launch Potato",
+        "tenant": "launchpotato",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/launch-potato.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:29.361042+00:00",
+      "finished_at": "2026-11-01T19:03:29.611486+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 10,
+      "jobs_kept": 0,
+      "expected_count": 10,
+      "warnings": [
+        "Filtered: outside technology role scope: 7; remote position is restricted to other countries: 3"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-lifen",
+        "name": "Lifen",
+        "kind": "generic",
+        "url": "https://www.welcometothejungle.com/fr/companies/lifen/jobs",
+        "company": "Lifen",
+        "tenant": null,
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {
+          "render": true
+        },
+        "discovery_url": null
+      },
+      "status": "blocked",
+      "complete": false,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:09.301195+00:00",
+      "finished_at": "2026-11-01T19:03:09.914746+00:00",
+      "pages_fetched": 0,
+      "jobs_seen": 0,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [],
+      "errors": [
+        "HTTP 403 from www.welcometothejungle.com"
+      ]
+    },
+    {
+      "source": {
+        "id": "employer-linear",
+        "name": "Linear",
+        "kind": "ashby",
+        "url": "https://jobs.ashbyhq.com/linear",
+        "company": "Linear",
+        "tenant": "linear",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:07.213910+00:00",
+      "finished_at": "2026-11-01T19:03:08.796054+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 31,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: outside technology role scope: 17; remote position is restricted to other countries: 13; no India location and not fully remote: 1"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-luxor-technology",
+        "name": "Luxor Technology",
+        "kind": "ashby",
+        "url": "https://jobs.ashbyhq.com/luxor",
+        "company": "Luxor Technology",
+        "tenant": "luxor",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/luxor.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:13.024486+00:00",
+      "finished_at": "2026-11-01T19:03:13.083404+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 1,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: remote position is restricted to other countries: 1"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-mariadb",
+        "name": "MariaDB",
+        "kind": "greenhouse",
+        "url": "https://boards.eu.greenhouse.io/mariadbplc/jobs/4288212101",
+        "company": "MariaDB",
+        "tenant": "mariadbplc",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/mariadb.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:06.655060+00:00",
+      "finished_at": "2026-11-01T19:03:06.774043+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 30,
+      "jobs_kept": 2,
+      "expected_count": 30,
+      "warnings": [
+        "Filtered: outside technology role scope: 13; no India location and not fully remote: 10; remote India eligibility is unconfirmed: 4; talent pool rather than a vacancy: 1"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-metamask",
+        "name": "MetaMask",
+        "kind": "greenhouse",
+        "url": "https://boards.greenhouse.io/consensys/jobs/1990589",
+        "company": "MetaMask",
+        "tenant": "consensys",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/metamask.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:37.916813+00:00",
+      "finished_at": "2026-11-01T19:03:38.024522+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 13,
+      "jobs_kept": 0,
+      "expected_count": 13,
+      "warnings": [
+        "Filtered: outside technology role scope: 9; remote position is restricted to other countries: 4"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-mixcloud",
+        "name": "Mixcloud",
+        "kind": "workable",
+        "url": "https://apply.workable.com/mixcloud-limited/",
+        "company": "Mixcloud",
+        "tenant": "mixcloud-limited",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/mixcloud.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:29.611772+00:00",
+      "finished_at": "2026-11-01T19:03:29.677151+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 0,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-modern-health",
+        "name": "Modern Health",
+        "kind": "greenhouse",
+        "url": "https://boards.greenhouse.io/modernhealth",
+        "company": "Modern Health",
+        "tenant": "modernhealth",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/modern-health.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:13.083707+00:00",
+      "finished_at": "2026-11-01T19:03:13.156263+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 2,
+      "jobs_kept": 0,
+      "expected_count": 2,
+      "warnings": [
+        "Filtered: outside technology role scope: 1; remote India eligibility is unconfirmed: 1"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-modsquad",
+        "name": "MODSQUAD",
+        "kind": "workday",
+        "url": "https://modsquad.wd5.myworkdayjobs.com/ModSquad_Contractor",
+        "company": "MODSQUAD",
+        "tenant": "modsquad",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {
+          "site": "ModSquad_Contractor"
+        },
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/modsquad.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:06.774545+00:00",
+      "finished_at": "2026-11-01T19:03:07.216995+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 15,
+      "jobs_kept": 0,
+      "expected_count": 15,
+      "warnings": [
+        "Filtered: outside technology role scope: 15"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-motherduck",
+        "name": "MotherDuck",
+        "kind": "ashby",
+        "url": "https://jobs.ashbyhq.com/MotherDuck",
+        "company": "MotherDuck",
+        "tenant": "MotherDuck",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:16.324866+00:00",
+      "finished_at": "2026-11-01T19:03:16.875576+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 7,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: outside technology role scope: 4; no India location and not fully remote: 3"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-mozilla",
+        "name": "Mozilla",
+        "kind": "greenhouse",
+        "url": "https://job-boards.greenhouse.io/mozilla",
+        "company": "Mozilla",
+        "tenant": "mozilla",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:16.875835+00:00",
+      "finished_at": "2026-11-01T19:03:17.546815+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 113,
+      "jobs_kept": 0,
+      "expected_count": 113,
+      "warnings": [
+        "Filtered: remote India eligibility is unconfirmed: 48; remote position is restricted to other countries: 37; outside technology role scope: 28"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-multidots",
+        "name": "Multidots",
+        "kind": "generic",
+        "url": "https://careers.multidots.com/",
+        "company": "Multidots",
+        "tenant": null,
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "partial",
+      "complete": false,
+      "coverage_scope": "Public HTML/JSON-LD vacancies reachable from the configured career/listing pages",
+      "started_at": "2026-11-01T19:03:10.924191+00:00",
+      "finished_at": "2026-11-01T19:03:13.653660+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 3,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Public HTML discovery does not establish exhaustive active-catalog coverage",
+        "Filtered: remote position is restricted to other countries: 3"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-multiplier",
+        "name": "Multiplier",
+        "kind": "generic",
+        "url": "https://careers.kula.ai/usemultiplier",
+        "company": "Multiplier",
+        "tenant": null,
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "partial",
+      "complete": false,
+      "coverage_scope": "Public HTML/JSON-LD vacancies reachable from the configured career/listing pages",
+      "started_at": "2026-11-01T19:03:06.933588+00:00",
+      "finished_at": "2026-11-01T19:04:09.532520+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 99,
+      "jobs_kept": 18,
+      "expected_count": null,
+      "warnings": [
+        "Public HTML discovery does not establish exhaustive active-catalog coverage",
+        "Filtered: outside technology role scope: 76; remote position is restricted to other countries: 3; no India location and not fully remote: 2"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-n8n",
+        "name": "n8n",
+        "kind": "ashby",
+        "url": "https://jobs.ashbyhq.com/n8n",
+        "company": "n8n",
+        "tenant": "n8n",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:03.085442+00:00",
+      "finished_at": "2026-11-01T19:03:03.726665+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 49,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: remote position is restricted to other countries: 11; outside technology role scope: 33; talent pool rather than a vacancy: 5"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-nearform",
+        "name": "Nearform",
+        "kind": "greenhouse",
+        "url": "https://job-boards.greenhouse.io/nearform",
+        "company": "Nearform",
+        "tenant": "nearform",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/nearform.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:38.024925+00:00",
+      "finished_at": "2026-11-01T19:03:38.609914+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 24,
+      "jobs_kept": 0,
+      "expected_count": 24,
+      "warnings": [
+        "Filtered: outside technology role scope: 12; no India location and not fully remote: 8; remote India eligibility is unconfirmed: 2; remote position is restricted to other countries: 2"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-netguru",
+        "name": "Netguru",
+        "kind": "workable",
+        "url": "https://apply.workable.com/netguru",
+        "company": "Netguru",
+        "tenant": "netguru",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/netguru.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:29.677425+00:00",
+      "finished_at": "2026-11-01T19:03:30.497144+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 23,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: no India location and not fully remote: 10; outside technology role scope: 13"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-netlify",
+        "name": "Netlify",
+        "kind": "greenhouse",
+        "url": "https://job-boards.greenhouse.io/netlify",
+        "company": "Netlify",
+        "tenant": "netlify",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:15.561676+00:00",
+      "finished_at": "2026-11-01T19:03:15.655828+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 3,
+      "jobs_kept": 0,
+      "expected_count": 3,
+      "warnings": [
+        "Filtered: outside technology role scope: 1; remote India eligibility is unconfirmed: 1; talent pool rather than a vacancy: 1"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-nvidia",
+        "name": "Nvidia",
+        "kind": "workday",
+        "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite",
+        "company": "Nvidia",
+        "tenant": "nvidia",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {
+          "site": "NVIDIAExternalCareerSite"
+        },
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/nvidia.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:13.156594+00:00",
+      "finished_at": "2026-11-01T19:14:42.617623+00:00",
+      "pages_fetched": 100,
+      "jobs_seen": 2000,
+      "jobs_kept": 60,
+      "expected_count": 2000,
+      "warnings": [
+        "Filtered: outside technology role scope: 1012; no India location and not fully remote: 668; remote India eligibility is unconfirmed: 230; remote position is restricted to other countries: 30"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-ollie",
+        "name": "Ollie",
+        "kind": "lever",
+        "url": "https://jobs.lever.co/myollie",
+        "company": "Ollie",
+        "tenant": "myollie",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/ollie.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:07.217290+00:00",
+      "finished_at": "2026-11-01T19:03:08.173832+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 3,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: outside technology role scope: 3"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-oyster",
+        "name": "Oyster",
+        "kind": "ashby",
+        "url": "https://jobs.ashbyhq.com/oyster",
+        "company": "Oyster",
+        "tenant": "oyster",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:03.727140+00:00",
+      "finished_at": "2026-11-01T19:03:04.908471+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 24,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: outside technology role scope: 18; talent pool rather than a vacancy: 1; remote position is restricted to other countries: 4; no India location and not fully remote: 1"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-payscale",
+        "name": "PayScale",
+        "kind": "smartrecruiters",
+        "url": "https://jobs.smartrecruiters.com/PayScale/743999782844766-associate-software-engineer-remote-",
+        "company": "PayScale",
+        "tenant": "PayScale",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/payscale.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:38.610260+00:00",
+      "finished_at": "2026-11-01T19:03:39.621311+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 0,
+      "jobs_kept": 0,
+      "expected_count": 0,
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-percona",
+        "name": "Percona",
+        "kind": "ashby",
+        "url": "https://jobs.ashbyhq.com/percona",
+        "company": "Percona",
+        "tenant": "percona",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/percona.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:30.497563+00:00",
+      "finished_at": "2026-11-01T19:03:30.532239+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 16,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: remote position is restricted to other countries: 3; no India location and not fully remote: 4; remote India eligibility is unconfirmed: 1; outside technology role scope: 6; talent pool rather than a vacancy: 2"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-phantombuster",
+        "name": "PhantomBuster",
+        "kind": "teamtailor",
+        "url": "https://app.teamtailor.com",
+        "company": "PhantomBuster",
+        "tenant": "app",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/phantombuster.md"
+      },
+      "status": "failed",
+      "complete": false,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:29.632818+00:00",
+      "finished_at": "2026-11-01T19:03:30.113999+00:00",
+      "pages_fetched": 0,
+      "jobs_seen": 0,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [],
+      "errors": [
+        "ParseError: not well-formed (invalid token): line 14, column 88"
+      ]
+    },
+    {
+      "source": {
+        "id": "employer-rakuten-travel-xchange",
+        "name": "Rakuten Travel Xchange",
+        "kind": "workday",
+        "url": "https://rakuten.wd1.myworkdayjobs.com/RakutenTravelXchange",
+        "company": "Rakuten Travel Xchange",
+        "tenant": "rakuten",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {
+          "site": "RakutenTravelXchange"
+        },
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/rakuten-travel-xchange.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:07.554808+00:00",
+      "finished_at": "2026-11-01T19:03:08.413420+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 0,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-ramp",
+        "name": "Ramp",
+        "kind": "ashby",
+        "url": "https://jobs.ashbyhq.com/ramp",
+        "company": "Ramp",
+        "tenant": "ramp",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/ramp.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:39.621592+00:00",
+      "finished_at": "2026-11-01T19:03:39.757304+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 172,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: no India location and not fully remote: 41; outside technology role scope: 121; remote position is restricted to other countries: 10"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-razorpay",
+        "name": "Razorpay",
+        "kind": "greenhouse",
+        "url": "https://job-boards.greenhouse.io/razorpaysoftwareprivatelimited",
+        "company": "Razorpay",
+        "tenant": "razorpaysoftwareprivatelimited",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:04.908815+00:00",
+      "finished_at": "2026-11-01T19:03:05.571612+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 31,
+      "jobs_kept": 6,
+      "expected_count": 31,
+      "warnings": [
+        "Filtered: outside technology role scope: 24; no India location and not fully remote: 1"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-recharge",
+        "name": "ReCharge Payments",
+        "kind": "ashby",
+        "url": "https://jobs.ashbyhq.com/recharge",
+        "company": "ReCharge Payments",
+        "tenant": "recharge",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/recharge.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:30.532526+00:00",
+      "finished_at": "2026-11-01T19:03:31.116253+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 4,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: outside technology role scope: 3; no India location and not fully remote: 1"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-red-hat",
+        "name": "Red Hat",
+        "kind": "workday",
+        "url": "https://redhat.wd5.myworkdayjobs.com/jobs",
+        "company": "Red Hat",
+        "tenant": "redhat",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {
+          "site": "jobs"
+        },
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/red-hat.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:30.114259+00:00",
+      "finished_at": "2026-11-01T19:03:58.149130+00:00",
+      "pages_fetched": 7,
+      "jobs_seen": 127,
+      "jobs_kept": 3,
+      "expected_count": 127,
+      "warnings": [
+        "Filtered: outside technology role scope: 88; remote India eligibility is unconfirmed: 9; no India location and not fully remote: 25; remote position is restricted to other countries: 2"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-remote",
+        "name": "Remote",
+        "kind": "generic",
+        "url": "https://remote.com/openings",
+        "company": "Remote",
+        "tenant": null,
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {
+          "render_details": true
+        },
+        "discovery_url": null
+      },
+      "status": "partial",
+      "complete": false,
+      "coverage_scope": "Public HTML/JSON-LD vacancies reachable from the configured career/listing pages",
+      "started_at": "2026-11-01T19:03:09.249995+00:00",
+      "finished_at": "2026-11-01T19:05:03.931114+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 52,
+      "jobs_kept": 1,
+      "expected_count": null,
+      "warnings": [
+        "Public HTML discovery does not establish exhaustive active-catalog coverage",
+        "Filtered: outside technology role scope: 51"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-remotebase",
+        "name": "RemoteBase",
+        "kind": "workable",
+        "url": "https://apply.workable.com/remotebase/",
+        "company": "RemoteBase",
+        "tenant": "remotebase",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/remotebase.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:08.108363+00:00",
+      "finished_at": "2026-11-01T19:03:08.239878+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 8,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: no India location and not fully remote: 3; outside technology role scope: 3; remote India eligibility is unconfirmed: 2"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-renaissance",
+        "name": "Renaissance",
+        "kind": "smartrecruiters",
+        "url": "https://careers.smartrecruiters.com/Renaissance",
+        "company": "Renaissance",
+        "tenant": "Renaissance",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/renaissance.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:39.758610+00:00",
+      "finished_at": "2026-11-01T19:03:40.827488+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 0,
+      "jobs_kept": 0,
+      "expected_count": 0,
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-render",
+        "name": "Render",
+        "kind": "ashby",
+        "url": "https://jobs.ashbyhq.com/render",
+        "company": "Render",
+        "tenant": "render",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:02.621143+00:00",
+      "finished_at": "2026-11-01T19:03:03.085009+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 35,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: remote position is restricted to other countries: 28; outside technology role scope: 7"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-replit",
+        "name": "Replit",
+        "kind": "ashby",
+        "url": "https://jobs.ashbyhq.com/replit",
+        "company": "Replit",
+        "tenant": "replit",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/replit.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:31.116521+00:00",
+      "finished_at": "2026-11-01T19:03:31.739628+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 34,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: no India location and not fully remote: 14; outside technology role scope: 20"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-revenuecat",
+        "name": "RevenueCat",
+        "kind": "ashby",
+        "url": "https://jobs.ashbyhq.com/revenuecat",
+        "company": "RevenueCat",
+        "tenant": "revenuecat",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/revenuecat.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:30.961123+00:00",
+      "finished_at": "2026-11-01T19:03:31.066221+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 19,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: outside technology role scope: 9; remote position is restricted to other countries: 10"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-rtcamp",
+        "name": "rtCamp",
+        "kind": "generic",
+        "url": "https://careers.rtcamp.com/",
+        "company": "rtCamp",
+        "tenant": null,
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "partial",
+      "complete": false,
+      "coverage_scope": "Public HTML/JSON-LD vacancies reachable from the configured career/listing pages",
+      "started_at": "2026-11-01T19:03:04.404826+00:00",
+      "finished_at": "2026-11-01T19:03:13.909227+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 13,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Public HTML discovery does not establish exhaustive active-catalog coverage",
+        "Filtered: outside technology role scope: 11; remote India eligibility is unconfirmed: 1; remote position is restricted to other countries: 1"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-safeguard-global",
+        "name": "Safeguard Global",
+        "kind": "workday",
+        "url": "https://safeguardglobal.wd3.myworkdayjobs.com/External_Careers",
+        "company": "Safeguard Global",
+        "tenant": "safeguardglobal",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {
+          "site": "External_Careers"
+        },
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/safeguard-global.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:08.174078+00:00",
+      "finished_at": "2026-11-01T19:03:09.532108+00:00",
+      "pages_fetched": 2,
+      "jobs_seen": 24,
+      "jobs_kept": 0,
+      "expected_count": 24,
+      "warnings": [
+        "Filtered: outside technology role scope: 24"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-salesforce",
+        "name": "Salesforce",
+        "kind": "workday",
+        "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site",
+        "company": "Salesforce",
+        "tenant": "salesforce",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 1200,
+        "options": {
+          "site": "External_Career_Site"
+        },
+        "discovery_url": null
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:20.777429+00:00",
+      "finished_at": "2026-11-01T19:07:00.983051+00:00",
+      "pages_fetched": 78,
+      "jobs_seen": 1545,
+      "jobs_kept": 27,
+      "expected_count": 1545,
+      "warnings": [
+        "Filtered: outside technology role scope: 1259; no India location and not fully remote: 222; remote India eligibility is unconfirmed: 17; remote position is restricted to other countries: 20"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-seaplane",
+        "name": "Seaplane",
+        "kind": "smartrecruiters",
+        "url": "https://careers.smartrecruiters.com/SeaplaneIOInc",
+        "company": "Seaplane",
+        "tenant": "SeaplaneIOInc",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/seaplane.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:40.827808+00:00",
+      "finished_at": "2026-11-01T19:03:42.033475+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 0,
+      "jobs_kept": 0,
+      "expected_count": 0,
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-searchapi",
+        "name": "SearchApi",
+        "kind": "ashby",
+        "url": "https://jobs.ashbyhq.com/SearchApi",
+        "company": "SearchApi",
+        "tenant": "SearchApi",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/searchapi.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:31.739954+00:00",
+      "finished_at": "2026-11-01T19:03:32.337117+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 12,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: remote position is restricted to other countries: 7; outside technology role scope: 5"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-seeq",
+        "name": "Seeq",
+        "kind": "workable",
+        "url": "https://apply.workable.com/seeq",
+        "company": "Seeq",
+        "tenant": "seeq",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/seeq.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:31.066592+00:00",
+      "finished_at": "2026-11-01T19:03:31.449665+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 24,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: remote India eligibility is unconfirmed: 10; outside technology role scope: 9; no India location and not fully remote: 5"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-shippabo",
+        "name": "Shippabo",
+        "kind": "workable",
+        "url": "https://apply.workable.com/shippabo/?lng=en#jobs",
+        "company": "Shippabo",
+        "tenant": "shippabo",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/shippabo.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:08.240114+00:00",
+      "finished_at": "2026-11-01T19:03:08.807651+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 0,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-sketch",
+        "name": "Sketch",
+        "kind": "generic",
+        "url": "https://www.sketch.com/careers/",
+        "company": "Sketch",
+        "tenant": null,
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {
+          "render": true
+        },
+        "discovery_url": null
+      },
+      "status": "unsupported",
+      "complete": false,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:05.572100+00:00",
+      "finished_at": "2026-11-01T19:03:07.554471+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 0,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "JavaScript-rendered public listing page used"
+      ],
+      "errors": [
+        "No job records or explicit no-openings message exposed; dynamic rendering or a dedicated adapter is required"
+      ]
+    },
+    {
+      "source": {
+        "id": "employer-smile-io",
+        "name": "Smile.io",
+        "kind": "lever",
+        "url": "https://jobs.lever.co/Smile.io",
+        "company": "Smile.io",
+        "tenant": "Smile.io",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/smile.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:42.033762+00:00",
+      "finished_at": "2026-11-01T19:03:42.165966+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 1,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: remote position is restricted to other countries: 1"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-sonatype",
+        "name": "Sonatype",
+        "kind": "lever",
+        "url": "https://jobs.lever.co/sonatype",
+        "company": "Sonatype",
+        "tenant": "sonatype",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/sonatype.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:32.337430+00:00",
+      "finished_at": "2026-11-01T19:03:34.787421+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 15,
+      "jobs_kept": 4,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: outside technology role scope: 5; remote position is restricted to other countries: 4; no India location and not fully remote: 2"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-sourcegraph",
+        "name": "Sourcegraph",
+        "kind": "greenhouse",
+        "url": "https://job-boards.greenhouse.io/sourcegraph91",
+        "company": "Sourcegraph",
+        "tenant": "sourcegraph91",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:09.190138+00:00",
+      "finished_at": "2026-11-01T19:03:09.249708+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 7,
+      "jobs_kept": 0,
+      "expected_count": 7,
+      "warnings": [
+        "Filtered: outside technology role scope: 3; talent pool rather than a vacancy: 1; remote India eligibility is unconfirmed: 3"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-supabase",
+        "name": "Supabase",
+        "kind": "ashby",
+        "url": "https://jobs.ashbyhq.com/supabase",
+        "company": "Supabase",
+        "tenant": "supabase",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:05.142035+00:00",
+      "finished_at": "2026-11-01T19:03:05.491201+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 68,
+      "jobs_kept": 35,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: outside technology role scope: 25; remote position is restricted to other countries: 5; remote India eligibility is unconfirmed: 3"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-tailscale",
+        "name": "Tailscale",
+        "kind": "greenhouse",
+        "url": "https://job-boards.greenhouse.io/tailscale",
+        "company": "Tailscale",
+        "tenant": "tailscale",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:06.732315+00:00",
+      "finished_at": "2026-11-01T19:03:07.213426+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 58,
+      "jobs_kept": 0,
+      "expected_count": 58,
+      "warnings": [
+        "Filtered: remote position is restricted to other countries: 22; outside technology role scope: 36"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-teleport",
+        "name": "Teleport",
+        "kind": "ashby",
+        "url": "https://jobs.ashbyhq.com/goteleport",
+        "company": "Teleport",
+        "tenant": "goteleport",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:03.411020+00:00",
+      "finished_at": "2026-11-01T19:03:04.404629+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 20,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: outside technology role scope: 8; remote position is restricted to other countries: 12"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-temporal",
+        "name": "Temporal",
+        "kind": "ashby",
+        "url": "https://jobs.ashbyhq.com/temporal",
+        "company": "Temporal",
+        "tenant": "temporal",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:05.225347+00:00",
+      "finished_at": "2026-11-01T19:03:07.039595+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 75,
+      "jobs_kept": 1,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: outside technology role scope: 35; remote position is restricted to other countries: 35; no India location and not fully remote: 4"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-testgorilla",
+        "name": "TestGorilla",
+        "kind": "ashby",
+        "url": "https://jobs.ashbyhq.com/testgorilla",
+        "company": "TestGorilla",
+        "tenant": "testgorilla",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:17.578641+00:00",
+      "finished_at": "2026-11-01T19:03:18.167502+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 2,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: talent pool rather than a vacancy: 1; outside technology role scope: 1"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-tigerdata",
+        "name": "Tiger Data",
+        "kind": "ashby",
+        "url": "https://jobs.ashbyhq.com/tigerdata",
+        "company": "Tiger Data",
+        "tenant": "tigerdata",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:04.550868+00:00",
+      "finished_at": "2026-11-01T19:03:04.647993+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 5,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: remote position is restricted to other countries: 3; outside technology role scope: 2"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-todoist",
+        "name": "Todoist",
+        "kind": "ashby",
+        "url": "https://jobs.ashbyhq.com/todoist-inc",
+        "company": "Todoist",
+        "tenant": "todoist-inc",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:06.811267+00:00",
+      "finished_at": "2026-11-01T19:03:06.933320+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 2,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: outside technology role scope: 1; remote position is restricted to other countries: 1"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-toggl",
+        "name": "Toggl",
+        "kind": "generic",
+        "url": "https://jobs.ashbyhq.com/toggl",
+        "company": "Toggl",
+        "tenant": null,
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {
+          "skip_ats_detection": true,
+          "render": true,
+          "render_details": true,
+          "render_wait_selector": "a[href*=\"/toggl/\"]"
+        },
+        "discovery_url": null
+      },
+      "status": "partial",
+      "complete": false,
+      "coverage_scope": "Public HTML/JSON-LD vacancies reachable from the configured career/listing pages",
+      "started_at": "2026-11-01T19:03:07.611159+00:00",
+      "finished_at": "2026-11-01T19:03:10.796130+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 1,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Public HTML discovery does not establish exhaustive active-catalog coverage",
+        "JavaScript-rendered public listing page used",
+        "Filtered: remote position is restricted to other countries: 1"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-trigger",
+        "name": "Trigger.dev",
+        "kind": "ashby",
+        "url": "https://jobs.ashbyhq.com/triggerdev",
+        "company": "Trigger.dev",
+        "tenant": "triggerdev",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:06.549929+00:00",
+      "finished_at": "2026-11-01T19:03:07.610793+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 6,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: remote position is restricted to other countries: 3; outside technology role scope: 3"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-vercel",
+        "name": "Vercel",
+        "kind": "greenhouse",
+        "url": "https://job-boards.greenhouse.io/vercel",
+        "company": "Vercel",
+        "tenant": "vercel",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:06.339997+00:00",
+      "finished_at": "2026-11-01T19:03:06.731860+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 91,
+      "jobs_kept": 0,
+      "expected_count": 91,
+      "warnings": [
+        "Filtered: outside technology role scope: 52; no India location and not fully remote: 35; remote position is restricted to other countries: 4"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-wikimedia",
+        "name": "Wikimedia Foundation",
+        "kind": "greenhouse",
+        "url": "https://job-boards.greenhouse.io/wikimedia",
+        "company": "Wikimedia Foundation",
+        "tenant": "wikimedia",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:02.410686+00:00",
+      "finished_at": "2026-11-01T19:03:03.660970+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 15,
+      "jobs_kept": 0,
+      "expected_count": 15,
+      "warnings": [
+        "Filtered: outside technology role scope: 8; remote India eligibility is unconfirmed: 7"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-wombat-security-technologies",
+        "name": "Wombat Security Technologies",
+        "kind": "workday",
+        "url": "https://proofpoint.wd5.myworkdayjobs.com/ProofpointCareers",
+        "company": "Wombat Security Technologies",
+        "tenant": "proofpoint",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {
+          "site": "ProofpointCareers"
+        },
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/wombat-security.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:31.450044+00:00",
+      "finished_at": "2026-11-01T19:03:59.820328+00:00",
+      "pages_fetched": 7,
+      "jobs_seen": 131,
+      "jobs_kept": 11,
+      "expected_count": 131,
+      "warnings": [
+        "Filtered: no India location and not fully remote: 25; outside technology role scope: 91; remote India eligibility is unconfirmed: 2; remote position is restricted to other countries: 2"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-wp-media",
+        "name": "WP-Media",
+        "kind": "workable",
+        "url": "https://apply.workable.com/wp-media/",
+        "company": "WP-Media",
+        "tenant": "wp-media",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/wp-media.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:08.413742+00:00",
+      "finished_at": "2026-11-01T19:03:09.411693+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 0,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-xapo",
+        "name": "Xapo Bank",
+        "kind": "greenhouse",
+        "url": "https://job-boards.greenhouse.io/xapo61",
+        "company": "Xapo Bank",
+        "tenant": "xapo61",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:08.336524+00:00",
+      "finished_at": "2026-11-01T19:03:08.403537+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 4,
+      "jobs_kept": 0,
+      "expected_count": 4,
+      "warnings": [
+        "Filtered: outside technology role scope: 3; talent pool rather than a vacancy: 1"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-zapier",
+        "name": "Zapier",
+        "kind": "ashby",
+        "url": "https://jobs.ashbyhq.com/zapier",
+        "company": "Zapier",
+        "tenant": "zapier",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:17.547436+00:00",
+      "finished_at": "2026-11-01T19:03:17.578394+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 11,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: outside technology role scope: 8; remote position is restricted to other countries: 3"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "employer-zup",
+        "name": "Zup",
+        "kind": "greenhouse",
+        "url": "https://boards.greenhouse.io/zupinnovation",
+        "company": "Zup",
+        "tenant": "zupinnovation",
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": "https://github.com/remoteintech/remote-jobs/blob/main/src/companies/zup.md"
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:42.166182+00:00",
+      "finished_at": "2026-11-01T19:03:42.220219+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 3,
+      "jobs_kept": 0,
+      "expected_count": 3,
+      "warnings": [
+        "Filtered: no India location and not fully remote: 3"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "foundit",
+        "name": "foundit",
+        "kind": "generic",
+        "url": "https://www.foundit.in/search/software-developer-jobs-in-india",
+        "company": null,
+        "tenant": null,
+        "group": "board",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 400,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "blocked",
+      "complete": false,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:10.287221+00:00",
+      "finished_at": "2026-11-01T19:03:10.904978+00:00",
+      "pages_fetched": 0,
+      "jobs_seen": 0,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [],
+      "errors": [
+        "HTTP 403 from www.foundit.in"
+      ]
+    },
+    {
+      "source": {
+        "id": "fourdayweek",
+        "name": "4dayweek.io",
+        "kind": "fourdayweek",
+        "url": "https://4dayweek.io/api/v2/jobs",
+        "company": null,
+        "tenant": null,
+        "group": "feed",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "4dayweek public India-filtered API; up to 48-hour publication delay",
+      "started_at": "2026-11-01T19:02:53.256964+00:00",
+      "finished_at": "2026-11-01T19:03:03.272954+00:00",
+      "pages_fetched": 13,
+      "jobs_seen": 1265,
+      "jobs_kept": 566,
+      "expected_count": 1265,
+      "warnings": [
+        "Filtered: outside technology role scope: 652; remote India eligibility is unconfirmed: 47"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "freshersworld",
+        "name": "Freshersworld",
+        "kind": "generic",
+        "url": "https://www.freshersworld.com/jobs/category/it-software-job-vacancies",
+        "company": null,
+        "tenant": null,
+        "group": "board",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "blocked",
+      "complete": false,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:05.700715+00:00",
+      "finished_at": "2026-11-01T19:03:06.082806+00:00",
+      "pages_fetched": 0,
+      "jobs_seen": 0,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [],
+      "errors": [
+        "HTTP 403 from www.freshersworld.com"
+      ]
+    },
+    {
+      "source": {
+        "id": "geektrust",
+        "name": "Geektrust",
+        "kind": "generic",
+        "url": "https://www.geektrust.com/jobs",
+        "company": null,
+        "tenant": null,
+        "group": "board",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {
+          "render": true,
+          "render_wait_selector": "text=Apply"
+        },
+        "discovery_url": null
+      },
+      "status": "unsupported",
+      "complete": false,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:10.287882+00:00",
+      "finished_at": "2026-11-01T19:03:16.290435+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 0,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "JavaScript-rendered public listing page used"
+      ],
+      "errors": [
+        "No job records or explicit no-openings message exposed; dynamic rendering or a dedicated adapter is required"
+      ]
+    },
+    {
+      "source": {
+        "id": "glassdoor",
+        "name": "Glassdoor India",
+        "kind": "jobspy",
+        "url": "https://www.glassdoor.co.in/",
+        "company": null,
+        "tenant": "glassdoor",
+        "group": "portal",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 2100,
+        "options": {
+          "queries": [
+            "software engineer",
+            "backend developer",
+            "frontend developer",
+            "full stack developer",
+            "data engineer",
+            "data scientist",
+            "machine learning engineer",
+            "devops engineer",
+            "site reliability engineer",
+            "qa engineer",
+            "security engineer",
+            "mobile developer"
+          ],
+          "results_per_query": 1000,
+          "query_timeout_seconds": 150
+        },
+        "discovery_url": null
+      },
+      "status": "blocked",
+      "complete": false,
+      "coverage_scope": "Configured keyword searches; descriptions are retained as supplied by the search response",
+      "started_at": "2026-11-01T19:02:50.980902+00:00",
+      "finished_at": "2026-11-01T19:02:52.117256+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 0,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [
+        "Keyword-query coverage; portals may cap results and this is not a full-site census",
+        "software engineer, offset 0: {'glassdoor': 'response status code 403 (blocked: use a proxy)'}",
+        "Stopped remaining queries after source access denial; no bypass attempted"
+      ],
+      "errors": [
+        "Portal denied access"
+      ]
+    },
+    {
+      "source": {
+        "id": "hasjob",
+        "name": "Hasjob",
+        "kind": "rss",
+        "url": "https://hasjob.co/feed",
+        "company": null,
+        "tenant": null,
+        "group": "feed",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "partial",
+      "complete": false,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:02:55.314829+00:00",
+      "finished_at": "2026-11-01T19:02:56.342225+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 18,
+      "jobs_kept": 5,
+      "expected_count": null,
+      "warnings": [
+        "RSS/Atom feed retention may omit older active vacancies",
+        "Filtered: outside technology role scope: 13"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "himalayas",
+        "name": "Himalayas",
+        "kind": "himalayas",
+        "url": "https://himalayas.app/jobs/api",
+        "company": null,
+        "tenant": null,
+        "group": "feed",
+        "enabled": true,
+        "max_pages": 500,
+        "max_details": 250,
+        "timeout_seconds": 900,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "partial",
+      "complete": false,
+      "coverage_scope": "Himalayas public feed; country restrictions preserved",
+      "started_at": "2026-11-01T19:02:53.533336+00:00",
+      "finished_at": "2026-11-01T19:08:31.012447+00:00",
+      "pages_fetched": 500,
+      "jobs_seen": 10000,
+      "jobs_kept": 328,
+      "expected_count": 116631,
+      "warnings": [
+        "Himalayas page budget reached",
+        "Filtered: outside technology role scope: 7525; remote position is restricted to other countries: 2093; no India location and not fully remote: 42; remote India eligibility is unconfirmed: 12"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "hirist",
+        "name": "Hirist",
+        "kind": "generic",
+        "url": "https://www.hirist.tech/c/backend-development-jobs",
+        "company": null,
+        "tenant": null,
+        "group": "board",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {
+          "render": true,
+          "render_details": true,
+          "render_wait_selector": "a[href*=\"/j/\"]"
+        },
+        "discovery_url": null
+      },
+      "status": "partial",
+      "complete": false,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:11.551075+00:00",
+      "finished_at": "2026-11-01T19:13:11.656280+00:00",
+      "pages_fetched": 9,
+      "jobs_seen": 172,
+      "jobs_kept": 158,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: outside technology role scope: 14"
+      ],
+      "errors": [
+        "Source time budget reached (600s)"
+      ]
+    },
+    {
+      "source": {
+        "id": "indeed",
+        "name": "Indeed India",
+        "kind": "jobspy",
+        "url": "https://in.indeed.com/",
+        "company": null,
+        "tenant": "indeed",
+        "group": "portal",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 2100,
+        "options": {
+          "queries": [
+            "software engineer",
+            "backend developer",
+            "frontend developer",
+            "full stack developer",
+            "data engineer",
+            "data scientist",
+            "machine learning engineer",
+            "devops engineer",
+            "site reliability engineer",
+            "qa engineer",
+            "security engineer",
+            "mobile developer"
+          ],
+          "results_per_query": 1000,
+          "query_timeout_seconds": 150
+        },
+        "discovery_url": null
+      },
+      "status": "partial",
+      "complete": false,
+      "coverage_scope": "Configured keyword searches; descriptions are retained as supplied by the search response",
+      "started_at": "2026-11-01T19:02:52.763385+00:00",
+      "finished_at": "2026-11-01T19:05:50.105274+00:00",
+      "pages_fetched": 49,
+      "jobs_seen": 6223,
+      "jobs_kept": 5325,
+      "expected_count": null,
+      "warnings": [
+        "Keyword-query coverage; portals may cap results and this is not a full-site census",
+        "Filtered: outside technology role scope: 898"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "instahyre",
+        "name": "Instahyre",
+        "kind": "instahyre",
+        "url": "https://www.instahyre.com/software-engineering-jobs/",
+        "company": null,
+        "tenant": null,
+        "group": "board",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 600,
+        "timeout_seconds": 900,
+        "options": {
+          "render": true,
+          "render_wait_selector": "a[href*=\"/job-\"]",
+          "render_next_selector": "li[ng-click=\"nextPage()\"]:not(.hidden)",
+          "render_max_pages": 5,
+          "seed_urls": [
+            "https://www.instahyre.com/software-engineering-jobs/",
+            "https://www.instahyre.com/backend-development-jobs/",
+            "https://www.instahyre.com/frontend-development-jobs/",
+            "https://www.instahyre.com/data-science-analytics-jobs/",
+            "https://www.instahyre.com/remote-software-engineering-jobs/"
+          ]
+        },
+        "discovery_url": null
+      },
+      "status": "partial",
+      "complete": false,
+      "coverage_scope": "Public HTML/JSON-LD vacancies reachable from the configured career/listing pages",
+      "started_at": "2026-11-01T19:03:05.660881+00:00",
+      "finished_at": "2026-11-01T19:04:21.884632+00:00",
+      "pages_fetched": 10,
+      "jobs_seen": 100,
+      "jobs_kept": 90,
+      "expected_count": null,
+      "warnings": [
+        "Listing has pagination controls but no crawlable next-page URL was exposed",
+        "Public HTML discovery does not establish exhaustive active-catalog coverage",
+        "JavaScript-rendered public listing page used",
+        "Filtered: no India location and not fully remote: 6; outside technology role scope: 4"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "internshala",
+        "name": "Internshala",
+        "kind": "generic",
+        "url": "https://internshala.com/jobs/software-development-jobs/",
+        "company": null,
+        "tenant": null,
+        "group": "board",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "partial",
+      "complete": false,
+      "coverage_scope": "Public HTML/JSON-LD vacancies reachable from the configured career/listing pages",
+      "started_at": "2026-11-01T19:03:05.700334+00:00",
+      "finished_at": "2026-11-01T19:06:22.854106+00:00",
+      "pages_fetched": 29,
+      "jobs_seen": 151,
+      "jobs_kept": 116,
+      "expected_count": null,
+      "warnings": [
+        "Public HTML discovery does not establish exhaustive active-catalog coverage",
+        "Filtered: outside technology role scope: 35"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "javascriptjobs",
+        "name": "JavaScript.jobs",
+        "kind": "generic",
+        "url": "https://javascript.jobs/remote",
+        "company": null,
+        "tenant": null,
+        "group": "board",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "partial",
+      "complete": false,
+      "coverage_scope": "Public HTML/JSON-LD vacancies reachable from the configured career/listing pages",
+      "started_at": "2026-11-01T19:03:12.232493+00:00",
+      "finished_at": "2026-11-01T19:04:51.602515+00:00",
+      "pages_fetched": 9,
+      "jobs_seen": 150,
+      "jobs_kept": 8,
+      "expected_count": null,
+      "warnings": [
+        "Public HTML discovery does not establish exhaustive active-catalog coverage",
+        "Filtered: remote position is restricted to other countries: 17; remote India eligibility is unconfirmed: 97; no India location and not fully remote: 7; outside technology role scope: 19; closed or expired: 2"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "jobicy",
+        "name": "Jobicy",
+        "kind": "jobicy",
+        "url": "https://jobicy.com/api/jobs",
+        "company": null,
+        "tenant": null,
+        "group": "feed",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "partial",
+      "complete": false,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:02:53.265047+00:00",
+      "finished_at": "2026-11-01T19:03:16.027621+00:00",
+      "pages_fetched": 31,
+      "jobs_seen": 1606,
+      "jobs_kept": 15,
+      "expected_count": null,
+      "warnings": [
+        "Jobicy discovery covers the last 7 days, delayed 3 hours; older unknown IDs cannot be bootstrapped",
+        "Filtered: outside technology role scope: 1091; remote position is restricted to other countries: 356; remote India eligibility is unconfirmed: 109; no India location and not fully remote: 29; description explicitly restricts candidate geography: 5; talent pool rather than a vacancy: 1"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "linkedin",
+        "name": "LinkedIn Jobs",
+        "kind": "jobspy",
+        "url": "https://in.linkedin.com/jobs/",
+        "company": null,
+        "tenant": "linkedin",
+        "group": "portal",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 2100,
+        "options": {
+          "queries": [
+            "software engineer",
+            "backend developer",
+            "frontend developer",
+            "full stack developer",
+            "data engineer",
+            "data scientist",
+            "machine learning engineer",
+            "devops engineer",
+            "site reliability engineer",
+            "qa engineer",
+            "security engineer",
+            "mobile developer"
+          ],
+          "results_per_query": 1000,
+          "batch_size": 25,
+          "query_timeout_seconds": 90
+        },
+        "discovery_url": null
+      },
+      "status": "partial",
+      "complete": false,
+      "coverage_scope": "Configured keyword searches; descriptions are retained as supplied by the search response",
+      "started_at": "2026-11-01T19:02:51.382859+00:00",
+      "finished_at": "2026-11-01T19:03:13.842950+00:00",
+      "pages_fetched": 3,
+      "jobs_seen": 50,
+      "jobs_kept": 50,
+      "expected_count": null,
+      "warnings": [
+        "Keyword-query coverage; portals may cap results and this is not a full-site census",
+        "software engineer, offset 50: {'linkedin': 'response status code 429 (blocked: use a proxy)'}",
+        "Stopped remaining queries after source access denial; no bypass attempted"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "naukri",
+        "name": "Naukri",
+        "kind": "jobspy",
+        "url": "https://www.naukri.com/",
+        "company": null,
+        "tenant": "naukri",
+        "group": "portal",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 2100,
+        "options": {
+          "queries": [
+            "software engineer",
+            "backend developer",
+            "frontend developer",
+            "full stack developer",
+            "data engineer",
+            "data scientist",
+            "machine learning engineer",
+            "devops engineer",
+            "site reliability engineer",
+            "qa engineer",
+            "security engineer",
+            "mobile developer"
+          ],
+          "results_per_query": 1000,
+          "query_timeout_seconds": 150
+        },
+        "discovery_url": null
+      },
+      "status": "partial",
+      "complete": false,
+      "coverage_scope": "Configured keyword searches; descriptions are retained as supplied by the search response",
+      "started_at": "2026-11-01T19:02:52.945766+00:00",
+      "finished_at": "2026-11-01T19:24:08.109587+00:00",
+      "pages_fetched": 20,
+      "jobs_seen": 3576,
+      "jobs_kept": 3569,
+      "expected_count": null,
+      "warnings": [
+        "Keyword-query coverage; portals may cap results and this is not a full-site census",
+        "software engineer: configured result limit reached (1000)",
+        "backend developer: configured result limit reached (1000)",
+        "frontend developer: configured result limit reached (1000)",
+        "full stack developer, offset 800: {'naukri': 'response status code 406 (recaptcha required): the address is rate limited, or the request token was rejected (the public key in jobspy/naukri/constant.py may be out of date)'}",
+        "Stopped remaining queries after source access denial; no bypass attempted",
+        "Filtered: outside technology role scope: 7"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "nodesk",
+        "name": "NoDesk",
+        "kind": "generic",
+        "url": "https://nodesk.co/remote-jobs/",
+        "company": null,
+        "tenant": null,
+        "group": "board",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "partial",
+      "complete": false,
+      "coverage_scope": "Public HTML/JSON-LD vacancies reachable from the configured career/listing pages",
+      "started_at": "2026-11-01T19:03:10.905318+00:00",
+      "finished_at": "2026-11-01T19:03:40.579587+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 48,
+      "jobs_kept": 6,
+      "expected_count": null,
+      "warnings": [
+        "Public HTML discovery does not establish exhaustive active-catalog coverage",
+        "Filtered: outside technology role scope: 40; description explicitly restricts candidate geography: 1; talent pool rather than a vacancy: 1"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "peerlist",
+        "name": "Peerlist Jobs",
+        "kind": "generic",
+        "url": "https://peerlist.io/jobs",
+        "company": null,
+        "tenant": null,
+        "group": "board",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "partial",
+      "complete": false,
+      "coverage_scope": "Public HTML/JSON-LD vacancies reachable from the configured career/listing pages",
+      "started_at": "2026-11-01T19:03:11.609754+00:00",
+      "finished_at": "2026-11-01T19:05:47.937724+00:00",
+      "pages_fetched": 5,
+      "jobs_seen": 250,
+      "jobs_kept": 6,
+      "expected_count": null,
+      "warnings": [
+        "Detail budget (250) reached; more listings may exist",
+        "Crawl ended with unvisited listing pages",
+        "Public HTML discovery does not establish exhaustive active-catalog coverage",
+        "Filtered: no India location and not fully remote: 208; outside technology role scope: 14; remote India eligibility is unconfirmed: 13; remote position is restricted to other countries: 7; talent pool rather than a vacancy: 1; description explicitly restricts candidate geography: 1"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "pythonjobs",
+        "name": "Python.org Jobs",
+        "kind": "rss",
+        "url": "https://www.python.org/jobs/feed/rss/",
+        "company": null,
+        "tenant": null,
+        "group": "feed",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "partial",
+      "complete": false,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:02:56.342692+00:00",
+      "finished_at": "2026-11-01T19:02:56.524769+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 20,
+      "jobs_kept": 1,
+      "expected_count": null,
+      "warnings": [
+        "RSS/Atom feed retention may omit older active vacancies",
+        "Filtered: no India location and not fully remote: 5; remote India eligibility is unconfirmed: 12; remote position is restricted to other countries: 2"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "railway",
+        "name": "Railway",
+        "kind": "generic",
+        "url": "https://railway.com/careers",
+        "company": "Railway",
+        "tenant": null,
+        "group": "employer",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 100,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "partial",
+      "complete": false,
+      "coverage_scope": "Public HTML/JSON-LD vacancies reachable from the configured career/listing pages",
+      "started_at": "2026-11-01T19:03:04.492909+00:00",
+      "finished_at": "2026-11-01T19:03:15.560988+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 17,
+      "jobs_kept": 12,
+      "expected_count": null,
+      "warnings": [
+        "Public HTML discovery does not establish exhaustive active-catalog coverage",
+        "Filtered: outside technology role scope: 5"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "remoteio",
+        "name": "Remote.io India",
+        "kind": "generic",
+        "url": "https://remote.io/remote-jobs/india",
+        "company": null,
+        "tenant": null,
+        "group": "board",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {
+          "render": true,
+          "render_details": true,
+          "render_wait_selector": "a[href*=\"-at-\"]"
+        },
+        "discovery_url": null
+      },
+      "status": "partial",
+      "complete": false,
+      "coverage_scope": "Public HTML/JSON-LD vacancies reachable from the configured career/listing pages",
+      "started_at": "2026-11-01T19:03:06.083136+00:00",
+      "finished_at": "2026-11-01T19:03:26.514367+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 30,
+      "jobs_kept": 14,
+      "expected_count": null,
+      "warnings": [
+        "Public HTML discovery does not establish exhaustive active-catalog coverage",
+        "JavaScript-rendered public listing page used",
+        "Filtered: outside technology role scope: 16"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "remoteok",
+        "name": "Remote OK",
+        "kind": "remoteok",
+        "url": "https://remoteok.com/api",
+        "company": null,
+        "tenant": null,
+        "group": "feed",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "partial",
+      "complete": false,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:02:53.254373+00:00",
+      "finished_at": "2026-11-01T19:02:54.069526+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 99,
+      "jobs_kept": 3,
+      "expected_count": null,
+      "warnings": [
+        "Public Remote OK feed; full active-catalog coverage and pagination are not guaranteed",
+        "Filtered: outside technology role scope: 66; remote India eligibility is unconfirmed: 29; remote position is restricted to other countries: 1"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "remotive",
+        "name": "Remotive",
+        "kind": "remotive",
+        "url": "https://remotive.com/api/remote-jobs",
+        "company": null,
+        "tenant": null,
+        "group": "feed",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "success",
+      "complete": true,
+      "coverage_scope": "Remotive public active-job API; 24-hour publication delay; premium inventory excluded",
+      "started_at": "2026-11-01T19:02:53.203774+00:00",
+      "finished_at": "2026-11-01T19:02:53.532856+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 12,
+      "jobs_kept": 3,
+      "expected_count": null,
+      "warnings": [
+        "Filtered: remote position is restricted to other countries: 3; outside technology role scope: 6"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "shine",
+        "name": "Shine",
+        "kind": "generic",
+        "url": "https://www.shine.com/job-search/software-developer-jobs",
+        "company": null,
+        "tenant": null,
+        "group": "board",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "partial",
+      "complete": false,
+      "coverage_scope": "Public HTML/JSON-LD vacancies reachable from the configured career/listing pages",
+      "started_at": "2026-11-01T19:03:11.610495+00:00",
+      "finished_at": "2026-11-01T19:06:17.417182+00:00",
+      "pages_fetched": 13,
+      "jobs_seen": 247,
+      "jobs_kept": 231,
+      "expected_count": null,
+      "warnings": [
+        "Detail budget (250) reached; more listings may exist",
+        "Crawl ended with unvisited listing pages",
+        "Public HTML discovery does not establish exhaustive active-catalog coverage",
+        "Filtered: closed or expired: 16"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "startupjobs",
+        "name": "Startup.jobs",
+        "kind": "generic",
+        "url": "https://startup.jobs/locations/india",
+        "company": null,
+        "tenant": null,
+        "group": "board",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "blocked",
+      "complete": false,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:03:11.611055+00:00",
+      "finished_at": "2026-11-01T19:03:12.232111+00:00",
+      "pages_fetched": 0,
+      "jobs_seen": 0,
+      "jobs_kept": 0,
+      "expected_count": null,
+      "warnings": [],
+      "errors": [
+        "HTTP 403 from startup.jobs"
+      ]
+    },
+    {
+      "source": {
+        "id": "tryremote",
+        "name": "TryRemote",
+        "kind": "generic",
+        "url": "https://tryremote.com/",
+        "company": null,
+        "tenant": null,
+        "group": "board",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "partial",
+      "complete": false,
+      "coverage_scope": "Public HTML/JSON-LD vacancies reachable from the configured career/listing pages",
+      "started_at": "2026-11-01T19:03:11.625261+00:00",
+      "finished_at": "2026-11-01T19:03:24.432387+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 20,
+      "jobs_kept": 5,
+      "expected_count": null,
+      "warnings": [
+        "Public HTML discovery does not establish exhaustive active-catalog coverage",
+        "Filtered: outside technology role scope: 2; no India location and not fully remote: 1; remote position is restricted to other countries: 12"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "unstop",
+        "name": "Unstop",
+        "kind": "generic",
+        "url": "https://unstop.com/job/software-development-jobs",
+        "company": null,
+        "tenant": null,
+        "group": "board",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {
+          "render": true,
+          "render_details": true,
+          "render_wait_selector": "a[href*=\"/jobs/\"]"
+        },
+        "discovery_url": null
+      },
+      "status": "partial",
+      "complete": false,
+      "coverage_scope": "Public HTML/JSON-LD vacancies reachable from the configured career/listing pages",
+      "started_at": "2026-11-01T19:03:10.917491+00:00",
+      "finished_at": "2026-11-01T19:04:02.913324+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 18,
+      "jobs_kept": 12,
+      "expected_count": null,
+      "warnings": [
+        "Public HTML discovery does not establish exhaustive active-catalog coverage",
+        "JavaScript-rendered public listing page used",
+        "Filtered: outside technology role scope: 6"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "web3career",
+        "name": "Web3.career",
+        "kind": "generic",
+        "url": "https://web3.career/web3-jobs-india",
+        "company": null,
+        "tenant": null,
+        "group": "board",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "partial",
+      "complete": false,
+      "coverage_scope": "Public HTML/JSON-LD vacancies reachable from the configured career/listing pages",
+      "started_at": "2026-11-01T19:03:16.290784+00:00",
+      "finished_at": "2026-11-01T19:03:55.254189+00:00",
+      "pages_fetched": 6,
+      "jobs_seen": 202,
+      "jobs_kept": 50,
+      "expected_count": null,
+      "warnings": [
+        "Detail access blocked: HTTP 403 from web3.career",
+        "Stopped source traversal after access denial; no bypass attempted",
+        "Public HTML discovery does not establish exhaustive active-catalog coverage",
+        "Filtered: outside technology role scope: 49; closed or expired: 96; no India location and not fully remote: 7"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "weekday",
+        "name": "Weekday",
+        "kind": "weekday",
+        "url": "https://www.weekday.works/jobs/remote-backend-developer-jobs",
+        "company": null,
+        "tenant": null,
+        "group": "board",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 1200,
+        "timeout_seconds": 1500,
+        "options": {
+          "seed_urls": [
+            "https://www.weekday.works/jobs/remote-backend-developer-jobs",
+            "https://www.weekday.works/jobs/remote-frontend-developer-jobs",
+            "https://www.weekday.works/jobs/remote-devops-engineer-jobs",
+            "https://www.weekday.works/jobs/remote-software-engineer-jobs",
+            "https://www.weekday.works/jobs/backend-developer-jobs-in-bangalore",
+            "https://www.weekday.works/jobs/frontend-developer-jobs-in-bangalore",
+            "https://www.weekday.works/jobs/backend-developer-jobs-in-delhi",
+            "https://www.weekday.works/jobs/backend-developer-jobs-in-hyderabad",
+            "https://www.weekday.works/jobs/backend-developer-jobs-in-pune",
+            "https://www.weekday.works/jobs/backend-developer-jobs-in-mumbai",
+            "https://www.weekday.works/jobs/backend-developer-jobs-in-chennai"
+          ]
+        },
+        "discovery_url": null
+      },
+      "status": "partial",
+      "complete": false,
+      "coverage_scope": "Public HTML/JSON-LD vacancies reachable from the configured career/listing pages",
+      "started_at": "2026-11-01T19:03:10.230104+00:00",
+      "finished_at": "2026-11-01T19:15:19.643700+00:00",
+      "pages_fetched": 82,
+      "jobs_seen": 1194,
+      "jobs_kept": 1026,
+      "expected_count": null,
+      "warnings": [
+        "Detail failed: HTTPStatusError: Client error '410 Gone' for url 'https://jobs.weekday.works/otipl-guidewire-architect'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/410",
+        "Detail failed: HTTPStatusError: Client error '410 Gone' for url 'https://jobs.weekday.works/thewalt-senior-backend-engineer'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/41",
+        "Detail access blocked: robots.txt disallows /applied-materials-c%2B%2B-developer-c0i6",
+        "Detail failed: HTTPStatusError: Client error '410 Gone' for url 'https://jobs.weekday.works/getinz-staff-devops-engineer-mu5y'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/",
+        "Detail failed: HTTPStatusError: Client error '410 Gone' for url 'https://jobs.weekday.works/sepia-innovations-senior-cloud-iam-engineer'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HT",
+        "Detail budget (1200) reached; more listings may exist",
+        "Crawl ended with unvisited listing pages",
+        "Public HTML discovery does not establish exhaustive active-catalog coverage",
+        "Filtered: outside technology role scope: 168"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "wellfound",
+        "name": "Wellfound India",
+        "kind": "generic",
+        "url": "https://wellfound.com/location/india",
+        "company": null,
+        "tenant": null,
+        "group": "board",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 400,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "partial",
+      "complete": false,
+      "coverage_scope": "Public HTML/JSON-LD vacancies reachable from the configured career/listing pages",
+      "started_at": "2026-11-01T19:03:05.699801+00:00",
+      "finished_at": "2026-11-01T19:07:18.405220+00:00",
+      "pages_fetched": 11,
+      "jobs_seen": 396,
+      "jobs_kept": 217,
+      "expected_count": null,
+      "warnings": [
+        "Detail failed: HTTPStatusError: Client error '410 Gone' for url 'https://wellfound.com/jobs/4943289-channel-solutions-engineer'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status",
+        "Detail failed: HTTPStatusError: Client error '410 Gone' for url 'https://wellfound.com/jobs/4824641-forward-deployed-builder-full-stack-ai'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web",
+        "Detail budget (400) reached; more listings may exist",
+        "Crawl ended with unvisited listing pages",
+        "Public HTML discovery does not establish exhaustive active-catalog coverage",
+        "Filtered: outside technology role scope: 177; remote position is restricted to other countries: 2"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "weworkremotely",
+        "name": "We Work Remotely",
+        "kind": "rss",
+        "url": "https://weworkremotely.com/remote-jobs.rss",
+        "company": null,
+        "tenant": null,
+        "group": "feed",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {
+          "remote_only": true
+        },
+        "discovery_url": null
+      },
+      "status": "partial",
+      "complete": false,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:02:54.512816+00:00",
+      "finished_at": "2026-11-01T19:02:55.313523+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 98,
+      "jobs_kept": 28,
+      "expected_count": null,
+      "warnings": [
+        "RSS/Atom feed retention may omit older active vacancies",
+        "Filtered: outside technology role scope: 63; remote position is restricted to other countries: 2; no India location and not fully remote: 3; description explicitly restricts candidate geography: 2"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "workingnomads",
+        "name": "Working Nomads",
+        "kind": "workingnomads",
+        "url": "https://www.workingnomads.com/api/exposed_jobs/",
+        "company": null,
+        "tenant": null,
+        "group": "feed",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "partial",
+      "complete": false,
+      "coverage_scope": "published jobs on this configured source",
+      "started_at": "2026-11-01T19:02:54.070194+00:00",
+      "finished_at": "2026-11-01T19:02:54.512398+00:00",
+      "pages_fetched": 1,
+      "jobs_seen": 35,
+      "jobs_kept": 3,
+      "expected_count": null,
+      "warnings": [
+        "Working Nomads public exposed feed; premium inventory and full-active coverage unverified",
+        "Filtered: remote position is restricted to other countries: 11; outside technology role scope: 7; remote India eligibility is unconfirmed: 14"
+      ],
+      "errors": []
+    },
+    {
+      "source": {
+        "id": "yc",
+        "name": "YC Work at a Startup",
+        "kind": "generic",
+        "url": "https://www.ycombinator.com/jobs/location/india",
+        "company": null,
+        "tenant": null,
+        "group": "board",
+        "enabled": true,
+        "max_pages": 100,
+        "max_details": 250,
+        "timeout_seconds": 600,
+        "options": {},
+        "discovery_url": null
+      },
+      "status": "partial",
+      "complete": false,
+      "coverage_scope": "Public HTML/JSON-LD vacancies reachable from the configured career/listing pages",
+      "started_at": "2026-11-01T19:03:10.918035+00:00",
+      "finished_at": "2026-11-01T19:05:48.346411+00:00",
+      "pages_fetched": 16,
+      "jobs_seen": 184,
+      "jobs_kept": 9,
+      "expected_count": null,
+      "warnings": [
+        "Detail budget (250) reached; more listings may exist",
+        "Crawl ended with unvisited listing pages",
+        "Public HTML discovery does not establish exhaustive active-catalog coverage",
+        "Filtered: remote position is restricted to other countries: 28; outside technology role scope: 102; no India location and not fully remote: 44; remote India eligibility is unconfirmed: 1"
+      ],
+      "errors": []
+    }
+  ]
+}
