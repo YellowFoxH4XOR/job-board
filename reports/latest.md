@@ -1,16 +1,16 @@
 # Daily job collection
 
-- Date: **2026-11-15 (IST)**
-- Matching jobs: **18758**
+- Date: **2026-11-16 (IST)**
+- Matching jobs: **18135**
 - Sources: **207**
 - Coverage complete: **False**
-- Source outcomes: `{'success': 156, 'unsupported': 4, 'partial': 40, 'blocked': 5, 'failed': 2}`
+- Source outcomes: `{'success': 157, 'unsupported': 4, 'partial': 39, 'blocked': 5, 'failed': 2}`
 
 | Source | Status | Seen | Kept | Notes |
 |---|---|---:|---:|---|
-| apna | partial | 87 | 57 | HTTPStatusError: Client error '481 unknown' for url 'https://apna.co/jobs/software-engineering-jobs?page=5' For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/481; Detail failed: HTTPStatusError: Client error '481 unknown' for url 'https://apna.co/job/1950656720' Fo |
+| apna | partial | 95 | 66 | HTTPStatusError: Client error '481 unknown' for url 'https://apna.co/jobs/software-engineering-jobs?page=5' For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/481; Detail failed: HTTPStatusError: Client error '404 Not Found' for url 'https://apna.co/job/1166832387'  |
 | Authentic Jobs | partial | 10 | 0 | RSS/Atom feed retention may omit older active vacancies; Filtered: no India location and not fully remote: 7; outside technology role scope: 2; remote position is restricted to other countries: 1 |
-| Built In India | partial | 120 | 43 | Detail access blocked: HTTP 429 from builtin.com; Stopped source traversal after access denial; no bypass attempted; Public HTML discovery does not establish exhaustive active-catalog coverage; Filtered: outside technology role scope: 62; closed or expired: 15 |
+| Built In India | partial | 120 | 41 | Detail access blocked: HTTP 429 from builtin.com; Stopped source traversal after access denial; no bypass attempted; Public HTML discovery does not establish exhaustive active-catalog coverage; Filtered: outside technology role scope: 63; closed or expired: 16 |
 | CryptoJobsList | partial | 38 | 18 | Public HTML discovery does not establish exhaustive active-catalog coverage; Filtered: outside technology role scope: 14; no India location and not fully remote: 6 |
 | Cutshort | unsupported | 0 | 0 | No job records or explicit no-openings message exposed; dynamic rendering or a dedicated adapter is required |
 | DataJobs | partial | 249 | 0 | Detail failed: HTTPStatusError: Server error '500 INTERNAL SERVER ERROR' for url 'https://datajobs.com/Caleba-S/Data-Science-Senior-Engineer-Job~3076' For more information check: https://developer.mozilla.org/en-; Detail budget (250) reached; more listings may exist; Crawl ended with unvisited listi |
@@ -25,7 +25,7 @@
 | Appinio | success | 9 | 0 | Filtered: outside technology role scope: 9 |
 | Applaudo | success | 38 | 0 | Filtered: remote position is restricted to other countries: 12; outside technology role scope: 17; no India location and not fully remote: 9 |
 | Appwrite | success | 0 | 0 |  |
-| Atlassian | partial | 437 | 11 | Detail budget (500) reached; more listings may exist; Crawl ended with unvisited listing pages; Public HTML discovery does not establish exhaustive active-catalog coverage; Filtered: outside technology role scope: 263; remote India eligibility is unconfirmed: 146; no India location and not fully rem |
+| Atlassian | partial | 436 | 11 | Detail budget (500) reached; more listings may exist; Crawl ended with unvisited listing pages; Public HTML discovery does not establish exhaustive active-catalog coverage; Filtered: outside technology role scope: 262; remote India eligibility is unconfirmed: 146; no India location and not fully rem |
 | Automattic | success | 8 | 1 | Filtered: outside technology role scope: 5; remote India eligibility is unconfirmed: 2 |
 | Balena | success | 0 | 0 |  |
 | BandLab | success | 0 | 0 |  |
@@ -34,12 +34,12 @@
 | BlueCat Networks | success | 25 | 0 | Filtered: outside technology role scope: 19; remote position is restricted to other countries: 1; no India location and not fully remote: 5 |
 | BrowserStack | success | 34 | 5 | Filtered: outside technology role scope: 29 |
 | Buffer | unsupported | 0 | 0 | No job records or explicit no-openings message exposed; dynamic rendering or a dedicated adapter is required |
-| Cal.com | partial | 1 | 1 | Public HTML discovery does not establish exhaustive active-catalog coverage |
+| Cal.com | success | 0 | 0 |  |
 | Canonical | success | 316 | 59 | Filtered: outside technology role scope: 153; remote position is restricted to other countries: 72; remote India eligibility is unconfirmed: 17; no India location and not fully remote: 15 |
 | Capmo | success | 9 | 0 | Filtered: outside technology role scope: 6; talent pool rather than a vacancy: 1; no India location and not fully remote: 2 |
 | Casumo | success | 2 | 0 | Filtered: outside technology role scope: 2 |
 | Chainguard | success | 113 | 2 | Filtered: outside technology role scope: 65; remote India eligibility is unconfirmed: 3; remote position is restricted to other countries: 42; talent pool rather than a vacancy: 1 |
-| CircleCI | success | 15 | 0 | Filtered: outside technology role scope: 8; no India location and not fully remote: 5; remote position is restricted to other countries: 2 |
+| CircleCI | success | 16 | 0 | Filtered: outside technology role scope: 9; no India location and not fully remote: 5; remote position is restricted to other countries: 2 |
 | ClickHouse | success | 205 | 5 | Filtered: no India location and not fully remote: 27; remote position is restricted to other countries: 109; outside technology role scope: 64 |
 | Close | success | 3 | 0 | Filtered: remote position is restricted to other countries: 3 |
 | CloudEra | success | 50 | 1 | Filtered: remote position is restricted to other countries: 4; no India location and not fully remote: 14; remote India eligibility is unconfirmed: 4; outside technology role scope: 27 |
@@ -51,7 +51,7 @@
 | CrowdStrike | success | 377 | 11 | Filtered: outside technology role scope: 241; no India location and not fully remote: 76; remote position is restricted to other countries: 45; remote India eligibility is unconfirmed: 4 |
 | Customer.io | success | 26 | 0 | Filtered: outside technology role scope: 14; remote India eligibility is unconfirmed: 10; remote position is restricted to other countries: 2 |
 | Dave | success | 12 | 0 | Filtered: outside technology role scope: 8; remote position is restricted to other countries: 4 |
-| Deel | partial | 239 | 4 | Public HTML discovery does not establish exhaustive active-catalog coverage; Filtered: outside technology role scope: 203; no India location and not fully remote: 32 |
+| Deel | partial | 238 | 4 | Public HTML discovery does not establish exhaustive active-catalog coverage; Filtered: outside technology role scope: 202; no India location and not fully remote: 32 |
 | Devsquad | success | 0 | 0 |  |
 | Discourse | success | 0 | 0 |  |
 | Docker | success | 53 | 0 | Filtered: remote position is restricted to other countries: 29; outside technology role scope: 23; remote India eligibility is unconfirmed: 1 |
@@ -61,7 +61,7 @@
 | Ergeon | success | 1 | 0 | Filtered: outside technology role scope: 1 |
 | Extreme Networks | success | 72 | 19 | Filtered: remote position is restricted to other countries: 6; no India location and not fully remote: 8; outside technology role scope: 39 |
 | Findem | success | 7 | 0 | Filtered: outside technology role scope: 5; remote position is restricted to other countries: 2 |
-| FIS GLOBAL | success | 493 | 27 | Filtered: outside technology role scope: 356; no India location and not fully remote: 110 |
+| FIS GLOBAL | success | 491 | 27 | Filtered: outside technology role scope: 355; no India location and not fully remote: 109 |
 | Flexera | success | 20 | 6 | Filtered: outside technology role scope: 11; no India location and not fully remote: 2; remote position is restricted to other countries: 1 |
 | Fly.io | partial | 4 | 0 | Public HTML discovery does not establish exhaustive active-catalog coverage; Filtered: outside technology role scope: 2; no India location and not fully remote: 2 |
 | Formidable | success | 27 | 0 | Filtered: outside technology role scope: 13; remote India eligibility is unconfirmed: 4; no India location and not fully remote: 8; remote position is restricted to other countries: 2 |
@@ -71,7 +71,7 @@
 | Ghost | partial | 2 | 1 | Public HTML discovery does not establish exhaustive active-catalog coverage; Filtered: India outside required residence timezone band: 1 |
 | Giant Swarm | success | 0 | 0 |  |
 | Gitbook | success | 3 | 0 | Filtered: outside technology role scope: 2; remote position is restricted to other countries: 1 |
-| GitLab | success | 251 | 23 | Filtered: outside technology role scope: 161; remote position is restricted to other countries: 58; remote India eligibility is unconfirmed: 8; description explicitly restricts candidate geography: 1 |
+| GitLab | success | 254 | 23 | Filtered: outside technology role scope: 164; remote position is restricted to other countries: 58; remote India eligibility is unconfirmed: 8; description explicitly restricts candidate geography: 1 |
 | Grafana Labs | success | 140 | 0 | Filtered: outside technology role scope: 62; remote position is restricted to other countries: 52; remote India eligibility is unconfirmed: 25; talent pool rather than a vacancy: 1 |
 | Gremlin | success | 3 | 0 | Filtered: remote India eligibility is unconfirmed: 3 |
 | Grubhub | success | 30 | 0 | Filtered: remote position is restricted to other countries: 1; outside technology role scope: 17; no India location and not fully remote: 12 |
@@ -84,7 +84,7 @@
 | Instructure | success | 55 | 0 | Filtered: outside technology role scope: 48; no India location and not fully remote: 5; remote position is restricted to other countries: 2 |
 | Intercom | success | 115 | 0 | Filtered: outside technology role scope: 65; no India location and not fully remote: 50 |
 | Intuition Machines, Inc. | success | 17 | 0 | Filtered: outside technology role scope: 5; no India location and not fully remote: 12 |
-| Invesco | success | 204 | 4 | Filtered: outside technology role scope: 181; no India location and not fully remote: 19 |
+| Invesco | success | 203 | 4 | Filtered: outside technology role scope: 180; no India location and not fully remote: 19 |
 | JOOR | success | 3 | 0 | Filtered: outside technology role scope: 2; remote position is restricted to other countries: 1 |
 | Keen IO | success | 0 | 0 |  |
 | Kindred | success | 6 | 0 | Filtered: remote position is restricted to other countries: 2; outside technology role scope: 4 |
@@ -112,7 +112,7 @@
 | Netguru | success | 21 | 0 | Filtered: no India location and not fully remote: 11; outside technology role scope: 10 |
 | Netlify | success | 5 | 0 | Filtered: outside technology role scope: 2; remote India eligibility is unconfirmed: 2; talent pool rather than a vacancy: 1 |
 | Nuna Inc | success | 5 | 0 | Filtered: no India location and not fully remote: 4; outside technology role scope: 1 |
-| Nvidia | success | 2000 | 55 | Filtered: remote India eligibility is unconfirmed: 239; outside technology role scope: 1011; no India location and not fully remote: 663; remote position is restricted to other countries: 32 |
+| Nvidia | success | 2000 | 55 | Filtered: no India location and not fully remote: 665; outside technology role scope: 1010; remote India eligibility is unconfirmed: 239; remote position is restricted to other countries: 31 |
 | Oddball | success | 11 | 0 | Filtered: no India location and not fully remote: 2; outside technology role scope: 4; description explicitly restricts candidate geography: 5 |
 | Ollie | success | 2 | 0 | Filtered: outside technology role scope: 2 |
 | OpenRouter | success | 26 | 0 | Filtered: outside technology role scope: 15; remote position is restricted to other countries: 10; no India location and not fully remote: 1 |
@@ -124,11 +124,11 @@
 | Pluralsight | success | 9 | 0 | Filtered: outside technology role scope: 9 |
 | Puppet | success | 17 | 11 | Filtered: outside technology role scope: 5; remote position is restricted to other countries: 1 |
 | Rakuten Travel Xchange | success | 0 | 0 |  |
-| Ramp | success | 180 | 0 | Filtered: no India location and not fully remote: 42; outside technology role scope: 126; remote position is restricted to other countries: 12 |
+| Ramp | success | 179 | 0 | Filtered: no India location and not fully remote: 42; outside technology role scope: 125; remote position is restricted to other countries: 12 |
 | Razorpay | success | 25 | 10 | Filtered: outside technology role scope: 14; no India location and not fully remote: 1 |
 | ReCharge Payments | success | 1 | 0 | Filtered: no India location and not fully remote: 1 |
 | Recurly | success | 6 | 0 | Filtered: outside technology role scope: 5; no India location and not fully remote: 1 |
-| Red Hat | success | 134 | 4 | Filtered: no India location and not fully remote: 24; outside technology role scope: 93; remote position is restricted to other countries: 6; remote India eligibility is unconfirmed: 7 |
+| Red Hat | success | 135 | 4 | Filtered: outside technology role scope: 93; no India location and not fully remote: 25; remote position is restricted to other countries: 6; remote India eligibility is unconfirmed: 7 |
 | Reddit | success | 145 | 0 | Filtered: outside technology role scope: 44; remote position is restricted to other countries: 96; no India location and not fully remote: 5 |
 | Remote | partial | 55 | 1 | Public HTML discovery does not establish exhaustive active-catalog coverage; Filtered: outside technology role scope: 54 |
 | RemoteBase | success | 8 | 0 | Filtered: no India location and not fully remote: 3; outside technology role scope: 3; remote India eligibility is unconfirmed: 2 |
@@ -139,7 +139,7 @@
 | Roadtrippers | success | 1 | 0 | Filtered: outside technology role scope: 1 |
 | rtCamp | partial | 13 | 0 | Public HTML discovery does not establish exhaustive active-catalog coverage; Filtered: outside technology role scope: 11; remote India eligibility is unconfirmed: 1; remote position is restricted to other countries: 1 |
 | Safeguard Global | success | 27 | 0 | Filtered: outside technology role scope: 26; remote position is restricted to other countries: 1 |
-| Salesforce | success | 1609 | 23 | Filtered: outside technology role scope: 1313; no India location and not fully remote: 230; remote India eligibility is unconfirmed: 20; remote position is restricted to other countries: 22; description explicitly restricts candidate geography: 1 |
+| Salesforce | success | 1600 | 23 | Filtered: outside technology role scope: 1305; no India location and not fully remote: 229; remote India eligibility is unconfirmed: 20; remote position is restricted to other countries: 22; description explicitly restricts candidate geography: 1 |
 | Scribd | success | 20 | 0 | Filtered: outside technology role scope: 7; no India location and not fully remote: 13 |
 | Seaplane | success | 0 | 0 |  |
 | SearchApi | success | 12 | 0 | Filtered: remote position is restricted to other countries: 7; outside technology role scope: 5 |
@@ -169,7 +169,7 @@
 | Trigger.dev | success | 5 | 0 | Filtered: remote position is restricted to other countries: 3; outside technology role scope: 2 |
 | Udacity | success | 23 | 0 | Filtered: outside technology role scope: 17; remote India eligibility is unconfirmed: 6 |
 | Uncapped | success | 2 | 0 | Filtered: outside technology role scope: 1; remote India eligibility is unconfirmed: 1 |
-| USAA | success | 223 | 0 | Filtered: outside technology role scope: 200; remote India eligibility is unconfirmed: 23 |
+| USAA | success | 219 | 0 | Filtered: outside technology role scope: 196; remote India eligibility is unconfirmed: 23 |
 | Ushahidi | success | 0 | 0 |  |
 | Valimail | success | 3 | 0 | Filtered: outside technology role scope: 2; remote position is restricted to other countries: 1 |
 | Vercel | success | 86 | 0 | Filtered: outside technology role scope: 51; no India location and not fully remote: 34; remote position is restricted to other countries: 1 |
@@ -177,41 +177,41 @@
 | voiio | success | 7 | 0 | Filtered: outside technology role scope: 7 |
 | Vox Media (Product Team) | success | 21 | 0 | Filtered: outside technology role scope: 19; talent pool rather than a vacancy: 1; no India location and not fully remote: 1 |
 | Wikimedia Foundation | success | 16 | 0 | Filtered: outside technology role scope: 8; remote India eligibility is unconfirmed: 8 |
-| Wombat Security Technologies | success | 135 | 11 | Filtered: no India location and not fully remote: 24; outside technology role scope: 97; remote position is restricted to other countries: 2; remote India eligibility is unconfirmed: 1 |
+| Wombat Security Technologies | success | 134 | 11 | Filtered: no India location and not fully remote: 24; outside technology role scope: 96; remote position is restricted to other countries: 2; remote India eligibility is unconfirmed: 1 |
 | WorkOS | success | 27 | 0 | Filtered: remote position is restricted to other countries: 17; outside technology role scope: 8; no India location and not fully remote: 2 |
 | WP-Media | success | 0 | 0 |  |
 | Xapo Bank | success | 4 | 0 | Filtered: outside technology role scope: 3; talent pool rather than a vacancy: 1 |
 | Zapier | success | 10 | 0 | Filtered: outside technology role scope: 7; remote position is restricted to other countries: 3 |
 | Zup | success | 0 | 0 |  |
 | foundit | blocked | 0 | 0 | HTTP 403 from www.foundit.in |
-| 4dayweek.io | success | 1708 | 754 | Filtered: outside technology role scope: 913; remote India eligibility is unconfirmed: 41 |
+| 4dayweek.io | success | 1734 | 756 | Filtered: outside technology role scope: 931; remote India eligibility is unconfirmed: 47 |
 | Freshersworld | blocked | 0 | 0 | HTTP 403 from www.freshersworld.com |
 | Geektrust | unsupported | 0 | 0 | No job records or explicit no-openings message exposed; dynamic rendering or a dedicated adapter is required; JavaScript-rendered public listing page used |
 | Glassdoor India | blocked | 0 | 0 | Portal denied access; Keyword-query coverage; portals may cap results and this is not a full-site census; software engineer, offset 0: {'glassdoor': 'response status code 403 (blocked: use a proxy)'}; Stopped remaining queries after source access denial; no bypass attempted |
-| Hasjob | partial | 18 | 5 | RSS/Atom feed retention may omit older active vacancies; Filtered: outside technology role scope: 13 |
-| Himalayas | partial | 10000 | 151 | Himalayas page budget reached; Filtered: outside technology role scope: 7868; remote position is restricted to other countries: 1911; no India location and not fully remote: 59; remote India eligibility is unconfirmed: 10; talent pool rather than a vacancy: 1 |
-| Hirist | partial | 193 | 177 | Source time budget reached (600s); Filtered: outside technology role scope: 16 |
-| Indeed India | partial | 6386 | 5501 | Keyword-query coverage; portals may cap results and this is not a full-site census; Filtered: outside technology role scope: 885 |
+| Hasjob | partial | 17 | 5 | RSS/Atom feed retention may omit older active vacancies; Filtered: outside technology role scope: 12 |
+| Himalayas | partial | 10000 | 151 | Himalayas page budget reached; Filtered: outside technology role scope: 7860; remote position is restricted to other countries: 1901; no India location and not fully remote: 76; remote India eligibility is unconfirmed: 11; talent pool rather than a vacancy: 1 |
+| Hirist | partial | 174 | 159 | Source time budget reached (600s); Filtered: outside technology role scope: 15 |
+| Indeed India | partial | 6269 | 5379 | Keyword-query coverage; portals may cap results and this is not a full-site census; Filtered: outside technology role scope: 890 |
 | Instahyre | partial | 99 | 90 | Listing has pagination controls but no crawlable next-page URL was exposed; Public HTML discovery does not establish exhaustive active-catalog coverage; Filtered: no India location and not fully remote: 5; outside technology role scope: 4 |
-| Internshala | partial | 127 | 95 | Public HTML discovery does not establish exhaustive active-catalog coverage; Filtered: outside technology role scope: 32 |
+| Internshala | partial | 122 | 90 | Public HTML discovery does not establish exhaustive active-catalog coverage; Filtered: outside technology role scope: 32 |
 | JavaScript.jobs | partial | 150 | 8 | Public HTML discovery does not establish exhaustive active-catalog coverage; Filtered: remote position is restricted to other countries: 18; remote India eligibility is unconfirmed: 96; no India location and not fully remote: 7; outside technology role scope: 19; closed or expired: 2 |
-| Jobicy | partial | 4005 | 42 | Jobicy discovery covers the last 7 days, delayed 3 hours; older unknown IDs cannot be bootstrapped; Filtered: outside technology role scope: 2814; remote position is restricted to other countries: 866; remote India eligibility is unconfirmed: 208; no India location and not fully remote: 62; descript |
-| LinkedIn Jobs | partial | 4254 | 4129 | Source time budget reached (2100s); Keyword-query coverage; portals may cap results and this is not a full-site census; software engineer: configured result limit reached (1000); full stack developer: configured result limit reached (1000); data engineer: configured result limit reached (1000); Filt |
-| Naukri | partial | 6210 | 6069 | Source time budget reached (2100s); Keyword-query coverage; portals may cap results and this is not a full-site census; software engineer: configured result limit reached (1000); backend developer: configured result limit reached (1000); frontend developer: configured result limit reached (1000); fu |
-| NoDesk | partial | 48 | 5 | Public HTML discovery does not establish exhaustive active-catalog coverage; Filtered: outside technology role scope: 40; description explicitly restricts candidate geography: 1; closed or expired: 1; talent pool rather than a vacancy: 1 |
+| Jobicy | partial | 4150 | 45 | Jobicy discovery covers the last 7 days, delayed 3 hours; older unknown IDs cannot be bootstrapped; Filtered: remote position is restricted to other countries: 881; outside technology role scope: 2924; remote India eligibility is unconfirmed: 220; no India location and not fully remote: 67; talent p |
+| LinkedIn Jobs | partial | 4145 | 4007 | Source time budget reached (2100s); Keyword-query coverage; portals may cap results and this is not a full-site census; software engineer: configured result limit reached (1000); backend developer: configured result limit reached (1000); full stack developer: configured result limit reached (1000);  |
+| Naukri | partial | 5804 | 5759 | Source time budget reached (2100s); Keyword-query coverage; portals may cap results and this is not a full-site census; software engineer: configured result limit reached (1000); backend developer: configured result limit reached (1000); frontend developer: configured result limit reached (1000); fu |
+| NoDesk | partial | 48 | 5 | Public HTML discovery does not establish exhaustive active-catalog coverage; Filtered: outside technology role scope: 39; description explicitly restricts candidate geography: 1; closed or expired: 2; talent pool rather than a vacancy: 1 |
 | Peerlist Jobs | partial | 250 | 6 | Crawl ended with unvisited listing pages; Public HTML discovery does not establish exhaustive active-catalog coverage; Filtered: no India location and not fully remote: 215; description explicitly restricts candidate geography: 1; outside technology role scope: 12; remote India eligibility is unconf |
-| Python.org Jobs | partial | 20 | 0 | RSS/Atom feed retention may omit older active vacancies; Filtered: remote India eligibility is unconfirmed: 14; no India location and not fully remote: 4; remote position is restricted to other countries: 2 |
+| Python.org Jobs | partial | 20 | 0 | RSS/Atom feed retention may omit older active vacancies; Filtered: outside technology role scope: 3; remote India eligibility is unconfirmed: 12; no India location and not fully remote: 3; remote position is restricted to other countries: 2 |
 | Railway | partial | 17 | 12 | Public HTML discovery does not establish exhaustive active-catalog coverage; Filtered: outside technology role scope: 5 |
-| Remote.io India | partial | 173 | 76 | Public HTML discovery does not establish exhaustive active-catalog coverage; JavaScript-rendered public listing page used; Filtered: outside technology role scope: 96; remote position is restricted to other countries: 1 |
-| Remote OK | partial | 97 | 6 | Public Remote OK feed; full active-catalog coverage and pagination are not guaranteed; Filtered: outside technology role scope: 55; remote India eligibility is unconfirmed: 33; remote position is restricted to other countries: 2; no India location and not fully remote: 1 |
-| Remotive | success | 16 | 3 | Filtered: outside technology role scope: 9; remote position is restricted to other countries: 4 |
-| Shine | partial | 197 | 176 | Public HTML discovery does not establish exhaustive active-catalog coverage; Filtered: closed or expired: 21 |
+| Remote.io India | partial | 176 | 80 | Public HTML discovery does not establish exhaustive active-catalog coverage; JavaScript-rendered public listing page used; Filtered: outside technology role scope: 95; remote position is restricted to other countries: 1 |
+| Remote OK | partial | 97 | 6 | Public Remote OK feed; full active-catalog coverage and pagination are not guaranteed; Filtered: outside technology role scope: 56; remote India eligibility is unconfirmed: 32; remote position is restricted to other countries: 2; no India location and not fully remote: 1 |
+| Remotive | success | 16 | 3 | Filtered: outside technology role scope: 10; remote position is restricted to other countries: 3 |
+| Shine | partial | 200 | 175 | Public HTML discovery does not establish exhaustive active-catalog coverage; Filtered: closed or expired: 25 |
 | Startup.jobs | blocked | 0 | 0 | HTTP 403 from startup.jobs |
 | TryRemote | partial | 20 | 3 | Public HTML discovery does not establish exhaustive active-catalog coverage; Filtered: remote position is restricted to other countries: 15; outside technology role scope: 2 |
 | Unstop | partial | 18 | 14 | Public HTML discovery does not establish exhaustive active-catalog coverage; JavaScript-rendered public listing page used; Filtered: outside technology role scope: 4 |
 | Web3.career | partial | 205 | 52 | Detail access blocked: HTTP 403 from web3.career; Stopped source traversal after access denial; no bypass attempted; Public HTML discovery does not establish exhaustive active-catalog coverage; Filtered: outside technology role scope: 48; closed or expired: 95; no India location and not fully remote |
-| Weekday | partial | 1195 | 1065 | Detail failed: HTTPStatusError: Client error '410 Gone' for url 'https://jobs.weekday.works/otipl-guidewire-architect' For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/410; Detail access blocked: robots.txt disallows /applied-materials-c%2B%2B-developer-c0i6; Deta |
-| Wellfound India | partial | 387 | 222 | Detail failed: HTTPStatusError: Client error '410 Gone' for url 'https://wellfound.com/jobs/5061461-embodied-ai-engineer' For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/410; Detail failed: HTTPStatusError: Client error '410 Gone' for url 'https://wellfound.com/j |
-| We Work Remotely | partial | 100 | 21 | RSS/Atom feed retention may omit older active vacancies; Filtered: outside technology role scope: 64; remote India eligibility is unconfirmed: 2; remote position is restricted to other countries: 10; no India location and not fully remote: 1; description explicitly restricts candidate geography: 2 |
+| Weekday | partial | 1195 | 1058 | Detail access blocked: robots.txt disallows /applied-materials-c%2B%2B-developer-c0i6; Detail failed: HTTPStatusError: Client error '410 Gone' for url 'https://jobs.weekday.works/otipl-guidewire-architect' For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/410; Deta |
+| Wellfound India | partial | 390 | 207 | Detail failed: HTTPStatusError: Client error '410 Gone' for url 'https://wellfound.com/jobs/4521046-co-founder-gtm-sales-clone' For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status; Detail failed: HTTPStatusError: Client error '410 Gone' for url 'https://wellfound.com |
+| We Work Remotely | partial | 100 | 21 | RSS/Atom feed retention may omit older active vacancies; Filtered: outside technology role scope: 63; remote position is restricted to other countries: 10; remote India eligibility is unconfirmed: 2; no India location and not fully remote: 2; description explicitly restricts candidate geography: 2 |
 | Working Nomads | partial | 34 | 3 | Working Nomads public exposed feed; premium inventory and full-active coverage unverified; Filtered: outside technology role scope: 8; remote position is restricted to other countries: 10; remote India eligibility is unconfirmed: 13 |
 | YC Work at a Startup | partial | 177 | 10 | Source time budget reached (600s); Filtered: outside technology role scope: 95; remote position is restricted to other countries: 25; no India location and not fully remote: 46; remote India eligibility is unconfirmed: 1 |
